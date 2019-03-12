@@ -1,16 +1,14 @@
 {
-  "name": "emanueldelay",
+  "name": "mad_project",
   "version": "1.0.0",
-  "description": "Emmanuel Delay Website made by Jan Hamara",
+  "description": "mad_project",
   "main": "index.js",
   "dependencies": {
-    "aos": "^2.2.0",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.5",
-    "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "node-sass": "^4.6.1",
     "raw-loader": "^0.5.1",
@@ -23,8 +21,9 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "file-loader": "^1.1.5",
-    "less": "^2.7.3",
-    "webpack": "^3.8.1"
+    "less": "^3.9.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
