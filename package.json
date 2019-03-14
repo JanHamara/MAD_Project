@@ -1,33 +1,22 @@
 {
   "name": "mad_project",
   "version": "1.0.0",
-  "description": "mad_project",
+  "description": "Digital essay from Multimedia & Design assignment",
   "main": "index.js",
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.5",
-    "less-loader": "^4.0.5",
-    "node-sass": "^4.6.1",
-    "raw-loader": "^0.5.1",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.0",
-    "url-loader": "^0.6.2"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "file-loader": "^1.1.5",
-    "less": "^3.9.0",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanHamara/MAD_Project.git"
+  },
   "author": "Jan Hamara",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JanHamara/MAD_Project/issues"
+  },
+  "homepage": "https://github.com/JanHamara/MAD_Project#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
