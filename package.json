@@ -4,7 +4,9 @@
   "description": "Digital essay from Multimedia & Design assignment",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "prod": "webpack --config prod.config.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,11 @@
     "lodash": "^4.17.11"
   },
   "devDependencies": {
+    "css-loader": "^2.1.1",
     "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   }
