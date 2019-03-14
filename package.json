@@ -2,7 +2,7 @@
   "name": "mad_project",
   "version": "1.0.0",
   "description": "Digital essay from Multimedia & Design assignment",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,9 +18,12 @@
   "homepage": "https://github.com/JanHamara/MAD_Project#readme",
   "dependencies": {
     "aos": "^2.3.4",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "less": "^3.9.0"
+    "less": "^3.9.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   }
 }

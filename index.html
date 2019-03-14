@@ -37,7 +37,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- All css should be bundled here / Webpack -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./src/index.css">
 </head>
 
 <!-- ----------------------------------------------------------------------------------------------------------- -->
@@ -50,29 +50,29 @@
 <!--Test availability of Bootstrap CSS CDN-->
 <div id="bootstrapCssTest" class="hidden"></div>
 
-<header class="jumbotron">
-    <h1 class="text-center">Basic HTML Boilerplate</h1>
-</header>
+<!--<header class="jumbotron">-->
+    <!--<h1 class="text-center">Basic HTML Boilerplate</h1>-->
+<!--</header>-->
 
-<div class="container-fluid">
-    <h2 class="text-center">This boilerplate includes</h2>
-    <div>
-        <ul class="text-center">
-            <li>Bootstrap</li>
-            <li>jQuery</li>
-            <li>Webpack</li>
-            <li>AOS (Animations Framework)</li>
-            <li>Font Awesome</li>
-            <li>LESS Pre-compiler</li>
-        </ul>
-    </div>
-</div>
+<!--<div class="container-fluid">-->
+    <!--<h2 class="text-center">This boilerplate includes</h2>-->
+    <!--<div>-->
+        <!--<ul class="text-center">-->
+            <!--<li>Bootstrap</li>-->
+            <!--<li>jQuery</li>-->
+            <!--<li>Webpack</li>-->
+            <!--<li>AOS (Animations Framework)</li>-->
+            <!--<li>Font Awesome</li>-->
+            <!--<li>LESS Pre-compiler</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
 
-<footer class="text-center">
-    <div class="jumbotron">
-        <h6>Made by Jan Hamara</h6>
-    </div>
-</footer>
+<!--<footer class="text-center">-->
+    <!--<div class="jumbotron">-->
+        <!--<h6>Made by Jan Hamara</h6>-->
+    <!--</div>-->
+<!--</footer>-->
 
 
 
@@ -95,7 +95,7 @@
 <!--    I test for availability of Bootstrap online via CDN, only in case, it is not available we load it locally -->
 <!--    Local copy of Bootstrap is used only if CDN in not available, because via CDN Bootstrap loads faster -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/vendor/bootstrap.min.js"><\/script>')}</script>
+<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./src/vendor/bootstrap.min.js"><\/script>')}</script>
 
 <!--       AOS       -->
 <script src="./node_modules/aos/dist/aos.js"></script>
@@ -103,12 +103,12 @@
 <!--    Test Bootstrap CSS CDN    -->
 <script type="text/javascript">
     if ($('#bootstrapCssTest').is(':visible') === true) {
-        $('<link href="./css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
-        $('<link href="./css/vendor/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
+        $('<link href="./src/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
+        $('<link href="./src/vendor/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
     }
 </script>
 
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="./dist/main.js"></script>
 
 <script type="text/javascript">
     jQuery( document ).ready(function() {
