@@ -60,6 +60,7 @@ i {
   display: block;
   margin: 0%;
   padding: 0%;
+  outline: red 1px solid;
 }
 body:focus,
 html:focus,
@@ -110,7 +111,7 @@ html {
   overflow-y: scroll;
 }
 body h2 {
-  margin: 2% 0;
+  margin: 3% 0;
 }
 body li {
   margin: 1% 0;
@@ -121,3 +122,4 @@ body footer {
 body footer .jumbotron {
   margin-bottom: 0px !important;
 }
+/*# sourceMappingURL=index.css.map */
