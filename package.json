@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/JanHamara/MAD_Project#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "jquery": "^3.3.1"
   }
 }

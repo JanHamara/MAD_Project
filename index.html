@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!--    CDN AOS   -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
 
     <!--    CDN Bootstrap   -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -64,7 +64,6 @@
             <li>AOS (Animations Framework)</li>
             <li>Font Awesome</li>
             <li>LESS Pre-compiler</li>
-            <li class="alert">WATCH OUT</li>
         </ul>
     </div>
 </div>
@@ -99,7 +98,7 @@
 <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/vendor/bootstrap.min.js"><\/script>')}</script>
 
 <!--       AOS       -->
-<script src="https://cdn.jsdelivr.net/gh/michalsnik/aos@2.1.1/dist/aos.js"></script>
+<script src="./node_modules/aos/dist/aos.js"></script>
 
 <!--    Test Bootstrap CSS CDN    -->
 <script type="text/javascript">
@@ -112,11 +111,8 @@
 <script type="text/javascript" src="js/index.js"></script>
 
 <script type="text/javascript">
-    $( document ).ready(function() {
-        AOS.init({
-            easing: 'ease-out-back',
-            duration: 1000
-        });
+    jQuery( document ).ready(function() {
+        AOS.init();
     });
 </script>
 
