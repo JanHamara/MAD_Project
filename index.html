@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>WebDev Template</title>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--    Metadata    -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="og:author" content="Jan Hamara"/>
+    <meta property="og:title" content="WebDev Template" />
+    <meta property="og:description" content="WebDev Tempate" />
+    <meta property="og:url" content="WebDev Tempate" />
+    <meta property="og:site_name" content="WebDev Tempate" />
+    <meta name="og:keywords" content="Web, Dev, Template"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+
+    <!-- Fix for automatic detection of numbers on Apple devices -->
+    <meta name="format-detection" content="telephone=no"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+    <!--     Fonts      -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&amp;‌​subset=greek,latin-e‌​xt"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--    CDN Bootstrap   -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--    Font Awesome    -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+
+<!--                                    -->
+<!--            Main Content            -->
+<!--                                    -->
+
+<body>
+<!--Test availability of Bootstrap CSS CDN-->
+<div id="bootstrapCssTest" class="hidden"></div>
+
+<header data-aos="slide-down" class="jumbotron">
+    <h1 class="text-center">Basic HTML Boilerplate</h1>
+</header>
+
+<div class="container-fluid">
+    <h2 class="text-center">This boilerplate includes</h2>
+    <div>
+        <ul class="text-center">
+            <li>Bootstrap</li>
+            <li>jQuery</li>
+            <li>Webpack</li>
+            <li>AOS (Animations Framework)</li>
+            <li>Font Awesome</li>
+            <li>LESS Pre-compiler</li>
+        </ul>
+    </div>
+</div>
+
+<footer class="text-center">
+    <div class="jumbotron">
+        <h6>Made by Jan Hamara</h6>
+    </div>
+</footer>
+
+
+
+
+
+<!--                                           -->
+<!--            End of Main Content            -->
+<!--                                           -->
+
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+
+<!--     jQuery      -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="./node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+
+<!--     Popper.js   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<!--    Bootstrap JS    -->
+<!--    I test for availability of Bootstrap online via CDN, only in case, it is not available we load it locally -->
+<!--    Local copy of Bootstrap is used only if CDN in not available, because via CDN Bootstrap loads faster -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./src/vendor/bootstrap.min.js"><\/script>')}</script>
+
+<!--       AOS       -->
+<script src="./node_modules/aos/dist/aos.js"></script>
+
+<!--    Test Bootstrap CSS CDN    -->
+<script type="text/javascript">
+    if ($('#bootstrapCssTest').is(':visible') === true) {
+        $('<link href="./src/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
+        $('<link href="./src/vendor/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
+    }
+</script>
+
+<!--    All stylesheets and scripts are loaded via this Webpack bundle    -->
+<script type="text/javascript" src="./dist/main.js"></script>
+
+<script type="text/javascript">
+    jQuery( document ).ready(function() {
+        AOS.init();
+    });
+</script>
+
+</body>
+</html>
