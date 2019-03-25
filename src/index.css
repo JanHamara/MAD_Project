@@ -32,6 +32,16 @@
   -webkit-background-size: cover;
   -ms-content-zooming: none;
 }
+strong {
+  color: #2f2f2f !important;
+  font-weight: bolder !important;
+}
+.main-text-style {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+}
 body,
 html,
 div,
@@ -89,6 +99,33 @@ i:focus {
   border: none;
   outline: none;
 }
+a:link,
+a:visited,
+a:hover,
+a:active {
+  display: inline;
+  color: #2f2f2f;
+  text-decoration: none !important;
+  font-weight: bolder;
+}
+a:hover {
+  text-decoration: underline !important;
+}
+a.mad-ref-link:link,
+a.mad-ref-link:visited,
+a.mad-ref-link:hover,
+a.mad-ref-link:active {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none !important;
+  font-size: 14px;
+  opacity: 0.6;
+}
+a.mad-ref-link:hover {
+  opacity: 1;
+}
+.link-main {
+  color: #de6868 !important;
+}
 html {
   background: #f7f2ea;
   background-position: center;
@@ -142,7 +179,7 @@ body {
   margin: 0%;
   padding: 0%;
   height: 100vh !important;
-  padding: 3% 20% 0;
+  padding: 3% 20% 3%;
 }
 #mad-content #mad-header .container-fluid {
   width: 100%;
@@ -184,5 +221,64 @@ body {
 #mad-content #mad-header .container-fluid #mad-header-author-tag a:active {
   color: #2f2f2f;
   font-weight: bolder;
+}
+#mad-content #mad-introduction {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  height: auto !important;
+  padding: 10% 20% 10%;
+}
+#mad-content #mad-introduction .container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+#mad-content #mad-introduction .container-fluid #mad-introduction-content {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+}
+#mad-content #mad-introduction .container-fluid #mad-introduction-content p {
+  margin: 5% 0;
+}
+#mad-content #mad-references {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  font-size: 10px !important;
+  height: auto;
+  padding: 10% 20% 10%;
+}
+#mad-content #mad-references .container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+#mad-content #mad-references .container-fluid h1 {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  font-family: 'Germania One', cursive;
+  font-size: 20px;
+}
+#mad-content #mad-references .container-fluid #mad-references-list {
+  padding-left: 5%;
+}
+#mad-content #mad-references .container-fluid #mad-references-list li {
+  text-align: left !important;
+  margin: 2% 0;
 }
 /*# sourceMappingURL=index.css.map */

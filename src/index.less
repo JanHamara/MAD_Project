@@ -13,6 +13,7 @@
 @font: 'Raleway', sans-serif;
 @main-font-color: #2f2f2f;
 @main-font-color-50: rgba(0, 0, 0, 0.6);
+@main-red: #de6868;
 
 //--------------------------
 // Media Queries
@@ -86,6 +87,18 @@
   -ms-content-zooming: none;
 }
 
+strong {
+  color: @main-font-color !important;
+  font-weight: bolder !important;
+}
+
+.main-text-style {
+  color: @main-font-color-50;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+}
+
 //
 
 //-------------------------------------------------------------
@@ -108,6 +121,40 @@ body, html, div, span, p, a, img, header, footer, span, ul, li, section, nav, as
     outline: none;
   }
 }
+
+// Link General Styling
+
+a:link, a:visited, a:hover, a:active {
+  .display(inline);
+  color: @main-font-color;
+  text-decoration: none !important;
+  font-weight: bolder;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+//
+
+a.mad-ref-link:link, a.mad-ref-link:visited, a.mad-ref-link:hover, a.mad-ref-link:active {
+  color: @main-font-color-50;
+  text-decoration: none !important;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+a.mad-ref-link:hover {
+  opacity: 1;
+}
+
+//
+
+.link-main {
+  color: @main-red !important;
+}
+
+//
 
 html {
   background: #f7f2ea;
@@ -161,7 +208,7 @@ body {
     .nobound;
     //
     height: 100vh !important;
-    padding: 3% 20% 0;
+    padding: 3% 20% 3%;
 
     .container-fluid {
       .fs;
@@ -205,6 +252,66 @@ body {
         a:link, a:visited, a:hover, a:active {
           color: @main-font-color;
           font-weight: bolder;
+        }
+      }
+    }
+  }
+
+  // 02 Introduction
+  #mad-introduction {
+    .fs;
+    .nobound;
+    //
+    height: auto !important;
+    padding: 10% 20% 10%;
+
+    .container-fluid {
+      .fs;
+      .nobound;
+
+      #mad-introduction-content {
+        .aligntext(justify);
+        width: 90%;
+        margin: auto;
+        //
+        .main-text-style;
+
+        p {
+          margin: 5% 0;
+        }
+      }
+    }
+  }
+
+  // References
+  #mad-references {
+    .fs;
+    .nobound;
+    .main-text-style;
+    font-size: 10px !important;
+    //
+    height: auto;
+    padding: 10% 20% 10%;
+
+    .container-fluid {
+      .fs;
+      .nobound;
+
+      h1 {
+        .aligntext(left);
+        width: 90%;
+        margin: auto;
+        //
+        font-family: 'Germania One', cursive;
+        font-size: 20px;
+      }
+
+      #mad-references-list {
+        padding-left: 5%;
+
+        li {
+          .aligntext(left) !important;
+          margin: 2% 0;
         }
       }
     }

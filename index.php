@@ -62,7 +62,9 @@
 <!--    Here we need to set CSS Display property inline, because we want to hide this content BEFORE our stylesheets load   -->
 <main id="mad-content" style="display: none">
 
+    <!--                  -->
     <!--    01 Header     -->
+    <!--                  -->
 
     <section id="mad-header">
         <div class="container-fluid">
@@ -80,12 +82,76 @@
             </h2>
 
             <!--    Author Tag      -->
-            <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="-1000" id="mad-header-author-tag">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.facebook.com/jancihamaramain" target="_blank">Jan Hamara</span>
+            <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="-1000" id="mad-header-author-tag">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.facebook.com/jancihamaramain" target="_blank">Jan Hamara</a></span>
         </div>
     </section>
 
+    <!--                        -->
+    <!--    02 Introduction     -->
+    <!--                        -->
 
+    <section id="mad-introduction">
+        <div class="container-fluid">
+            <div id="mad-introduction-content" class="aos-anchor-1">
+                <p data-aos="fade-up" data-aos-offset="-200" data-aos-anchor=".aos-anchor-1">
+                One Sunday evening, when I was browsing <strong>Medium</strong> (fantastic website
+                that curates some of the best articles on the internet on various topics), I came across
+                an <a class="link-main" href="https://medium.com/personal-finance-series-by-richard-reis/how-to-become-a-millionaire-19b1421a50a1" target="_blank" alt="medium-article-link">
+                    article</a> discussing <strong>how could one realistically become a millionaire</strong>. It was talking about
+                some of the most important principles for achieving this goal, among which three stood out in my view.
+                These were talking about <strong>living below your means</strong>,
+                <strong>thinking long term</strong> and <strong>having more than one source of income</strong>.
+                </p>
+
+                <p>
+                It really got me thinking about conditions that accompany each person on their way to the first million
+                and why only so few reach this goal. I kept on browsing and I found an <a class="link-main" href="https://www.inc.com/business-insider/36-million-millionaires-in-the-world-hold-46-percent-wealth-credit-suisse-global-wealth-report-2017.html" target="_blank">
+                    online report</a> from Credit Suisse showing that there were <strong>2.3 million new millionaires in the world in 2016</strong>,
+                putting the total at <strong>36 million</strong> millionaires in the world (2016)<a class="mad-ref-link" href="#mad-ref-1"><sup>[1]</sup></a>.
+                That still makes up less than <strong>1%</strong> of the world's population, however,
+                this one percent owns the same amount of wealth as <strong>46% of the world</strong>.
+                </p>
+
+                <p>
+                Despite the widely discussed fact that <a class="link-main" href="http://www.bbc.com/future/story/20130326-why-money-cant-buy-you-happiness" target="_blank">
+                    money cannot buy you happiness</a>, everybody would surely like to be a part of this one percent
+                and become a millionaire in their lifetime. And that got me thinking about a question..
+                </p>
+
+                <p>
+                Depending on the environment (country) that you're coming from, having an average lifestyle
+                and by simple decision of lowering your expenses as much as possible while keeping an average standard of living -
+                <strong>COULD YOU ACHIEVE IT IN A LIFETIME?</strong>
+                </p>
+
+                <p>I have decided to conduct research and gather enough data to be able to determine
+                    <strong style="text-decoration: underline;">which countries wages and living conditions would allow a person to earn first million in fastest time
+                        and on the other side, which country would be the worst choice.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mad-references">
+        <div class="container-fluid">
+
+            <h1>References</h1>
+
+            <ol id="mad-references-list">
+                <li id="mad-ref-1">
+                    1. Weller Chris, There Are 36 Million Millionaires in the World and They Own Nearly Half the Planet's Wealth [online]
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.inc.com/business-insider/36-million-millionaires-in-the-world-hold-46-percent-wealth-credit-suisse-global-wealth-report-2017.html" target="_blank">Source</a>
+                </li>
+            </ol>
+        </div>
+    </section>
 </main>
+
+<div class="clearfix"></div>
+
+
+<footer id="mad-footer"></footer>
 
 
 
