@@ -21,12 +21,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="123" column="62" selection-start-line="123" selection-start-column="62" selection-end-line="123" selection-end-column="62" />
+            <state relative-caret-position="356">
+              <caret line="158" column="48" selection-start-line="158" selection-start-column="48" selection-end-line="158" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#strong#0;n#p#4;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="e#7163#7169#0#HTML" expanded="true" />
                 <element signature="e#7169#7175#0#HTML" expanded="true" />
                 <element signature="e#7175#7181#0#HTML" expanded="true" />
@@ -38,10 +40,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="279" column="22" selection-start-line="279" selection-start-column="22" selection-end-line="279" selection-end-column="22" />
+            <state relative-caret-position="125">
+              <caret line="108" column="19" lean-forward="true" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
               <folding>
+                <element signature="e#2037#2285#0" />
+                <element signature="e#2696#2832#0" />
+                <element signature="e#3306#3459#0" />
                 <element signature="e#3097#4007#0" />
+                <element signature="e#3259#3310#0" />
+                <element signature="e#3338#3509#0" />
+                <element signature="e#3541#3696#0" />
+                <element signature="e#3727#3997#0" />
+                <element signature="e#4498#4508#0" />
               </folding>
             </state>
           </provider>
@@ -116,7 +126,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553540416395" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553542045702" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="" />
@@ -153,12 +163,12 @@
       <workItem from="1552577397904" duration="245000" />
       <workItem from="1553169244618" duration="656000" />
       <workItem from="1553519156026" duration="1143000" />
-      <workItem from="1553523911490" duration="12454000" />
+      <workItem from="1553523911490" duration="14076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19501000" />
+    <option name="totallyTimeSpent" value="21123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="706" extended-state="0" />
@@ -249,13 +259,6 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/prod.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -297,24 +300,41 @@
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/prod.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="279" column="22" selection-start-line="279" selection-start-column="22" selection-end-line="279" selection-end-column="22" />
+        <state relative-caret-position="125">
+          <caret line="108" column="19" lean-forward="true" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
           <folding>
+            <element signature="e#2037#2285#0" />
+            <element signature="e#2696#2832#0" />
+            <element signature="e#3306#3459#0" />
             <element signature="e#3097#4007#0" />
+            <element signature="e#3259#3310#0" />
+            <element signature="e#3338#3509#0" />
+            <element signature="e#3541#3696#0" />
+            <element signature="e#3727#3997#0" />
+            <element signature="e#4498#4508#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="123" column="62" selection-start-line="123" selection-start-column="62" selection-end-line="123" selection-end-column="62" />
+        <state relative-caret-position="356">
+          <caret line="158" column="48" selection-start-line="158" selection-start-column="48" selection-end-line="158" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#strong#0;n#p#4;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="e#7163#7169#0#HTML" expanded="true" />
             <element signature="e#7169#7175#0#HTML" expanded="true" />
             <element signature="e#7175#7181#0#HTML" expanded="true" />

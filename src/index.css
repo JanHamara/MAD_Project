@@ -36,6 +36,53 @@ strong {
   color: #2f2f2f !important;
   font-weight: bolder !important;
 }
+.section-setup {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  height: auto !important;
+  padding: 5% 20% 5%;
+}
+.section-setup .container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.section-setup .container-fluid h1 {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  color: #2f2f2f !important;
+  font-size: 27px;
+  font-family: 'Raleway', cursive;
+  font-weight: bolder;
+}
+.section-setup .container-fluid h1 .h1-numbering {
+  display: inline;
+  opacity: 0.4;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+.main-content-style {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+}
+.main-content-style p {
+  margin: 5% 0;
+}
 .main-text-style {
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
@@ -228,13 +275,34 @@ body {
   margin: 0%;
   padding: 0%;
   height: auto !important;
-  padding: 10% 20% 10%;
+  padding: 5% 20% 5%;
 }
 #mad-content #mad-introduction .container-fluid {
   width: 100%;
   height: 100%;
   margin: 0%;
   padding: 0%;
+}
+#mad-content #mad-introduction .container-fluid h1 {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  color: #2f2f2f !important;
+  font-size: 27px;
+  font-family: 'Raleway', cursive;
+  font-weight: bolder;
+}
+#mad-content #mad-introduction .container-fluid h1 .h1-numbering {
+  display: inline;
+  opacity: 0.4;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
 }
 #mad-content #mad-introduction .container-fluid #mad-introduction-content {
   text-align: justify;
@@ -248,18 +316,60 @@ body {
 #mad-content #mad-introduction .container-fluid #mad-introduction-content p {
   margin: 5% 0;
 }
+#mad-content #mad-preparation {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  height: auto !important;
+  padding: 5% 20% 5%;
+}
+#mad-content #mad-preparation .container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+#mad-content #mad-preparation .container-fluid h1 {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  color: #2f2f2f !important;
+  font-size: 27px;
+  font-family: 'Raleway', cursive;
+  font-weight: bolder;
+}
+#mad-content #mad-preparation .container-fluid h1 .h1-numbering {
+  display: inline;
+  opacity: 0.4;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+#mad-content #mad-preparation .container-fluid #mad-preparation-content {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+}
+#mad-content #mad-preparation .container-fluid #mad-preparation-content p {
+  margin: 5% 0;
+}
 #mad-content #mad-references {
   width: 100%;
   height: 100%;
   margin: 0%;
   padding: 0%;
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  line-height: 200%;
-  font-size: 10px !important;
-  height: auto;
-  padding: 10% 20% 10%;
+  height: auto !important;
+  padding: 5% 20% 5%;
 }
 #mad-content #mad-references .container-fluid {
   width: 100%;
@@ -271,11 +381,36 @@ body {
   text-align: left;
   width: 90%;
   margin: auto;
-  font-family: 'Germania One', cursive;
-  font-size: 20px;
+  padding-bottom: 5%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  color: #2f2f2f !important;
+  font-size: 27px;
+  font-family: 'Raleway', cursive;
+  font-weight: bolder;
+}
+#mad-content #mad-references .container-fluid h1 .h1-numbering {
+  display: inline;
+  opacity: 0.4;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+#mad-content #mad-references .container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
 }
 #mad-content #mad-references .container-fluid #mad-references-list {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
   padding-left: 5%;
+  font-size: 10px !important;
 }
 #mad-content #mad-references .container-fluid #mad-references-list li {
   text-align: left !important;

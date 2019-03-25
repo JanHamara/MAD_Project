@@ -92,6 +92,52 @@ strong {
   font-weight: bolder !important;
 }
 
+.section-setup {
+  .fs;
+  .nobound;
+  //
+  height: auto !important;
+  padding: 5% 20% 5%;
+
+  .container-fluid {
+    .fs;
+    .nobound;
+
+    h1 {
+      .aligntext(left);
+      width: 90%;
+      margin: auto;
+      padding-bottom: 5%;
+      //
+      .main-text-style;
+      color: @main-font-color !important;
+      font-size: 27px;
+      font-family: 'Raleway', cursive;
+      font-weight: bolder;
+
+      .h1-numbering {
+        .display(inline);
+        opacity: 0.4;
+        font-size: 30px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.main-content-style {
+  .aligntext(justify);
+  width: 90%;
+  margin: auto;
+  //
+  .main-text-style;
+
+  p {
+    margin: 5% 0;
+  }
+}
+
 .main-text-style {
   color: @main-font-color-50;
   font-size: 14px;
@@ -259,55 +305,40 @@ body {
 
   // 02 Introduction
   #mad-introduction {
-    .fs;
-    .nobound;
-    //
-    height: auto !important;
-    padding: 10% 20% 10%;
+    .section-setup;
 
     .container-fluid {
-      .fs;
-      .nobound;
 
       #mad-introduction-content {
-        .aligntext(justify);
-        width: 90%;
-        margin: auto;
-        //
-        .main-text-style;
-
-        p {
-          margin: 5% 0;
-        }
+        .main-content-style;
       }
     }
   }
 
-  // References
+  // 03 Preparation
+  #mad-preparation {
+    .section-setup;
+
+    .container-fluid {
+
+      #mad-preparation-content {
+        .main-content-style;
+      }
+    }
+  }
+
+  // XX References
   #mad-references {
-    .fs;
-    .nobound;
-    .main-text-style;
-    font-size: 10px !important;
-    //
-    height: auto;
-    padding: 10% 20% 10%;
+    .section-setup;
 
     .container-fluid {
       .fs;
       .nobound;
 
-      h1 {
-        .aligntext(left);
-        width: 90%;
-        margin: auto;
-        //
-        font-family: 'Germania One', cursive;
-        font-size: 20px;
-      }
-
       #mad-references-list {
+        .main-text-style;
         padding-left: 5%;
+        font-size: 10px !important;
 
         li {
           .aligntext(left) !important;

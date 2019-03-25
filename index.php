@@ -132,6 +132,41 @@
         </div>
     </section>
 
+    <!--                        -->
+    <!--     03 Preparation     -->
+    <!--                        -->
+
+    <section id="mad-preparation">
+        <div class="container-fluid">
+
+            <h1><span class="h1-numbering">01</span> Preparation</h1>
+
+            <div id="mad-preparation-content">
+                <p>
+                    There is an uncountable number of factors that can influence a journey to a point,
+                    where person can be defined as a <strong>'milionaire'</strong>.
+                </p>
+                <p>
+                    Therefore in order to sucessfully conduct this project, there were several standards and definitions that I needed to set, in order to collect useful
+                    and relevant dataset that could provide meaningful results, necessary for answering the set question.
+                </p>
+                <p>
+                    <ol>
+                        <li>Define millionaire</li>
+                        <li>What data I was going to collect: Average Income / Average Expenses</li>
+                        <li>Wages (Way of Calculating Average Salary)</li>
+                        <li>User Profile (Way of Calculating Average Expenses)</li>
+                        <li>Return on Investment</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--                        -->
+    <!--      XX References     -->
+    <!--                        -->
+
     <section id="mad-references">
         <div class="container-fluid">
 
