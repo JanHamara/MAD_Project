@@ -90,6 +90,7 @@ i:focus {
   outline: none;
 }
 html {
+  background: #f7f2ea;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -103,22 +104,85 @@ body,
 html {
   width: 100%;
   height: 100%;
+  text-align: center;
   color: #2f2f2f;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Raleway', sans-serif;
   font-size: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
 }
-body h2 {
-  margin: 3% 0;
+body {
+  background: #f7f2ea;
 }
-body li {
-  margin: 1% 0;
+#pre-loader {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  transition: opacity 1s, transform 1s;
+  opacity: 1 !important;
+  transform: scale(1) !important;
 }
-body footer {
-  margin-top: 5%;
+#pre-loader #pre-loader-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
 }
-body footer .jumbotron {
-  margin-bottom: 0px !important;
+#mad-content {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+#mad-content #mad-header {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  height: 100vh !important;
+  padding: 3% 20% 0;
+}
+#mad-content #mad-header .container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+#mad-content #mad-header .container-fluid #mad-header-image {
+  width: 80%;
+  margin: auto;
+}
+#mad-content #mad-header .container-fluid #mad-header-heading {
+  text-align: center;
+  padding-bottom: 5%;
+  font-family: 'Germania One', cursive;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+}
+#mad-content #mad-header .container-fluid #mad-header-sub-heading {
+  padding-bottom: 6%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: bolder;
+}
+#mad-content #mad-header .container-fluid #mad-header-author-tag {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+#mad-content #mad-header .container-fluid #mad-header-author-tag .fa-heart {
+  color: #de6868;
+}
+#mad-content #mad-header .container-fluid #mad-header-author-tag a {
+  display: inline;
+}
+#mad-content #mad-header .container-fluid #mad-header-author-tag a:link,
+#mad-content #mad-header .container-fluid #mad-header-author-tag a:visited,
+#mad-content #mad-header .container-fluid #mad-header-author-tag a:hover,
+#mad-content #mad-header .container-fluid #mad-header-author-tag a:active {
+  color: #2f2f2f;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=index.css.map */

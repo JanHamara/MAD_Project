@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>WebDev Template</title>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--    Metadata    -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="og:author" content="Jan Hamara"/>
+    <meta property="og:title" content="WebDev Template" />
+    <meta property="og:description" content="WebDev Tempate" />
+    <meta property="og:url" content="WebDev Tempate" />
+    <meta property="og:site_name" content="WebDev Tempate" />
+    <meta name="og:keywords" content="Web, Dev, Template"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+
+    <!-- Fix for automatic detection of numbers on Apple devices -->
+    <meta name="format-detection" content="telephone=no"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+    <!--     Fonts      -->
+    <link href="https://fonts.googleapis.com/css?family=Germania+One|Montserrat|Raleway" rel="stylesheet">
+
+    <!--    CDN Bootstrap   -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--    Font Awesome    -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!--    AOS    -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        html, body {
+            /* I am setting background colour inline in HTML index file, because otherwise we would get approx. 1 second of white page before CSS stylesheets load */
+            background: #f7f2ea;
+        }
+    </style>
+</head>
+
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+
+<!--                                    -->
+<!--            Main Content            -->
+<!--                                    -->
+
+<body>
+<!--Test availability of Bootstrap CSS CDN-->
+<div id="bootstrapCssTest" class="hidden"></div>
+
+<!--    We're going to use this pre-loader to show a loading screen while all images and data pre-load    -->
+<div id="pre-loader" style="opacity: 0; transform: scale(0);">
+    <div id="pre-loader-spinner"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></div>
+</div>
+
+<!--    Here we need to set CSS Display property inline, because we want to hide this content BEFORE our stylesheets load   -->
+<main id="mad-content" style="display: none">
+
+    <!--    01 Header     -->
+
+    <section id="mad-header">
+        <div class="container-fluid">
+            <!--    Header Picture     -->
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/header-pic-placeholder.png" id="mad-header-image" class="img-responsive" alt="world-map-header-picture">
+
+            <!--    Main Heading   -->
+            <h1 data-aos="fade-up" data-aos-duration="1000" id="mad-header-heading">
+                Which country of the world is the best for becoming a millionaire?
+            </h1>
+
+            <!--    Main Sub-Heading   -->
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="-1000" id="mad-header-sub-heading">
+                Average person's guide on how fast you can become a millionaire on an average income
+            </h2>
+
+            <!--    Author Tag      -->
+            <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="-1000" id="mad-header-author-tag">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.facebook.com/jancihamaramain" target="_blank">Jan Hamara</span>
+        </div>
+    </section>
+
+
+</main>
+
+
+
+
+
+<!--                                           -->
+<!--            End of Main Content            -->
+<!--                                           -->
+
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+
+<!--     jQuery      -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="./node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+
+<!--     Popper.js   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<!--    Bootstrap JS    -->
+<!--    I test for availability of Bootstrap online via CDN, only in case, it is not available we load it locally -->
+<!--    Local copy of Bootstrap is used only if CDN in not available, because via CDN Bootstrap loads faster -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./src/vendor/bootstrap.min.js"><\/script>')}</script>
+
+<!--       AOS       -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--    Test Bootstrap CSS CDN    -->
+<script type="text/javascript">
+    if ($('#bootstrapCssTest').is(':visible') === true) {
+        $('<link href="./src/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
+        $('<link href="./src/vendor/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
+    }
+</script>
+
+<!--    All stylesheets and scripts are loaded via this Webpack bundle    -->
+<script type="text/javascript" src="./dist/main.js?v=<?=time();?>"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+<script type="text/javascript">
+    $( document ).ready(function() {
+        setTimeout(function () {
+            $("#pre-loader").hide(500);
+            $("#mad-content").show(500);
+        }, 0)
+    });
+</script>
+
+</body>
+</html>

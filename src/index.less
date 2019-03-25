@@ -10,8 +10,9 @@
 
 @min: 0%;
 @max: 100%;
-@font: 'Comfortaa', cursive;
+@font: 'Raleway', sans-serif;
 @main-font-color: #2f2f2f;
+@main-font-color-50: rgba(0, 0, 0, 0.6);
 
 //--------------------------
 // Media Queries
@@ -85,6 +86,16 @@
   -ms-content-zooming: none;
 }
 
+//
+
+//-------------------------------------------------------------
+
+//                        Animations
+
+//-------------------------------------------------------------
+
+
+
 //-------------------------------------------------------------
 
 body, html, div, span, p, a, img, header, footer, span, ul, li, section, nav, aside, article, figure, figcaption, h1, h2, h3, h4, h5, h6, i {
@@ -99,18 +110,23 @@ body, html, div, span, p, a, img, header, footer, span, ul, li, section, nav, as
 }
 
 html {
-  //background-image: url(../assets/img/background-2.svg);
+  background: #f7f2ea;
   .bg-setup;
 }
 
 
 body,html {
   .fs;
+  .aligntext;
   color: @main-font-color;
   font-family: @font;
   font-size: @max;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+body {
+  background: #f7f2ea;
 }
 
 //-------------------------------------------------------------
@@ -119,21 +135,78 @@ body,html {
 
 //-------------------------------------------------------------
 
-body {
+// Pre-Loader
+#pre-loader {
+  //.rel;
+  .fs;
+  .nobound;
+  //
+  transition: opacity 1s, transform 1s;
+  opacity: 1 !important;
+  transform: scale(1) !important;
 
-  h2 {
-    margin: 3% 0;
+  #pre-loader-spinner {
+    .p-center;
+    font-size: 25px;
   }
+}
 
-  li {
-    margin: 1% 0;
-  }
+#mad-content {
+  .fs;
+  .nobound;
 
-  footer {
-    margin-top: 5%;
+  // 01 Header
+  #mad-header {
+    .fs;
+    .nobound;
+    //
+    height: 100vh !important;
+    padding: 3% 20% 0;
 
-    .jumbotron {
-      margin-bottom: 0px !important;
+    .container-fluid {
+      .fs;
+      .nobound;
+
+      #mad-header-image {
+        width: 80%;
+        margin: auto;
+      }
+
+      #mad-header-heading {
+        .aligntext;
+        padding-bottom: 5%;
+        //
+        font-family: 'Germania One', cursive;
+        font-size: 40px;
+        letter-spacing: 0.05em;
+      }
+
+      #mad-header-sub-heading {
+        padding-bottom: 6%;
+        //
+        color: @main-font-color-50;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        font-weight: bolder;
+      }
+
+      #mad-header-author-tag {
+        font-size: 11px;
+        letter-spacing: 0.1em;
+
+        .fa-heart {
+          color: #de6868;
+        }
+
+        a {
+          .display(inline);
+        }
+
+        a:link, a:visited, a:hover, a:active {
+          color: @main-font-color;
+          font-weight: bolder;
+        }
+      }
     }
   }
 }

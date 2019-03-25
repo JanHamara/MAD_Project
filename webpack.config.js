@@ -8,6 +8,8 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist')
     },
+    // We also define mode in which files are getting bundled (development / production)
+    mode: 'production',
     module: {
         rules: [
             {
