@@ -11,6 +11,7 @@
 @min: 0%;
 @max: 100%;
 @font: 'Raleway', sans-serif;
+@font2: 'Montserrat', sans-serif;
 @main-font-color: #2f2f2f;
 @main-font-color-50: rgba(0, 0, 0, 0.6);
 @main-font-color-20: rgba(0, 0, 0, 0.2);
@@ -144,6 +145,14 @@ strong {
   font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 200%;
+}
+
+.h4-heading-style {
+  padding: 0 0 4%;
+  //
+  color: @main-font-color;
+  font-size: 16px !important;
+  font-weight: bold;
 }
 
 .red-highlight {
@@ -340,11 +349,7 @@ body {
             border-top: 0.5px @main-font-color-20 solid !important;
 
             h4 {
-              padding: 0 0 4%;
-              //
-              color: @main-font-color;
-              font-size: 16px !important;
-              font-weight: bold;
+              .h4-heading-style;
 
               .fa-question-circle-o {
                 color: @main-red;
@@ -365,11 +370,86 @@ body {
   // 03 Average Income
   #mad-income {
     .section-setup;
+    padding: 5% 10% 5% !important;
 
     .container-fluid {
 
+      h3.mad-section-header {
+        width: 100%;
+        padding: 0 16% 5%;
+      }
+
       #mad-income-content {
         .main-content-style;
+        width: 100%;
+        padding: 0 16% 5%;
+      }
+
+      #mad-income-stats {
+        .main-content-style;
+        width: 90% !important;
+
+        h4 {
+          .h4-heading-style;
+          color: @main-font-color-50 !important;
+          letter-spacing: 0px;
+          margin-bottom: 3%;
+        }
+
+        ol.mad-income-stats-list {
+          .nobound;
+
+          li:first-child {
+            border-top: 0.5px @main-font-color-20 solid;
+          }
+
+          li {
+            width: 90%;
+            padding: 3%;
+            border-bottom: 0.5px @main-font-color-20 solid;
+
+            &:hover {
+              background: rgba(200, 200, 200, 0.2);
+              cursor: pointer;
+            }
+
+            span {
+              .display(inline);
+            }
+
+            .mad-income-stats-no {
+              opacity: 0.4;
+              font-weight: normal;
+              margin-right: 5px;
+            }
+
+            .mad-income-stats-no-last {
+              opacity: 0.4;
+              font-weight: normal;
+              margin-right: 8px;
+            }
+
+            .mad-income-stats-img {
+              .display(inline);
+              width: 30px !important;
+              height: 18px !important;
+              vertical-align: middle;
+              margin: 0 2%;
+              //
+              box-shadow: 0 0 5px @main-font-color-50;
+            }
+
+            .mad-income-stats-country {
+              font-weight: bolder !important;
+            }
+
+            .mad-income-stats-value {
+              float: right;
+              font-family: @font2 !important;
+            }
+          }
+        }
+
       }
     }
   }

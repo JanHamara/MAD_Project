@@ -97,7 +97,7 @@
                 One Sunday evening, when I was browsing <strong>Medium</strong> (fantastic website
                 that curates some of the best articles on the internet on various topics), I came across
                 an <a class="link-main" href="https://medium.com/personal-finance-series-by-richard-reis/how-to-become-a-millionaire-19b1421a50a1" target="_blank">
-                    article</a> discussing <strong>how could one realistically become a millionaire</strong>. It was talking about
+                    article</a> discussing <strong>how one could realistically become a millionaire</strong>. It was talking about
                 some of the most important principles for achieving this goal, among which three stood out in my view.
                 These were talking about <strong>living below your means</strong>,
                 <strong>thinking long term</strong> and <strong>having more than one source of income</strong>.
@@ -160,7 +160,7 @@
 
                 <p>
                     There is an uncountable number of factors that can influence a journey to a point,
-                    where person can be defined as a <strong>'milionaire'</strong>. Therefore, there are several standards
+                    when a person can be defined as a <strong>'milionaire'</strong>. Therefore, there are several standards
                     and definitions that are needed to be explained first - to show how this research presents
                     gathered results in order to answer the set question.
                 </p>
@@ -226,7 +226,7 @@
                                 considering how many separate factors can an individual spend money on throughout one month.
                                 Luckily, there are certain processes in place that are suited for computing exactly this value
                                 and after consulting few of these techniques, as well as staying relevant to resolution of <strong>living below your means</strong>,
-                                I have defined a <strong>base profile</strong> of a individual and his necessary spending throughout one month,
+                                I have defined a <strong>base profile</strong> of an individual and his necessary spending throughout one month,
                                 while keeping a reasonably <strong>average standard of living</strong>.
                             </p>
                             <p>
@@ -234,7 +234,6 @@
                                 and <strong>no special expenses</strong> (e.g. taking care of parents, medicine for illness),
                                 who is living in an <strong>average single bedroom apartment</strong> in <strong>non-expensive area</strong>
                                 and <strong>commuting 5 days a week</strong> to a regular <strong>9-5 job</strong>.
-                                These are the expenses that will be counted in the <strong>total sum spent per each month</strong>...
                             </p>
                             <p>
                                 These are the expenses that will be counted in the <strong>total sum spent each month (per each country)</strong>...
@@ -256,6 +255,11 @@
                             </p>
                         </li>
                 </ol>
+
+                <p>
+                    Now that we have specified all necessary conditions for managing the data used in this project,
+                    it's time to use this information and present some of the most interesting findings.
+                </p>
             </div>
 
         </div>
@@ -273,7 +277,100 @@
             </h3>
 
             <div id="mad-income-content">
-                Yo, wassup!
+                <p>
+                    Yo, wassup! This is just some placeholder text to show how it would display on the site
+                    while you try to create the list of top 10 countries with highest and lowest income.
+                </p>
+            </div>
+
+            <div id="mad-income-stats">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Top 10 countries with highest average wage (USD)</h4>
+
+                        <ol class="mad-income-stats-list">
+
+                            <!--    We use PHP and MySQLi in order to connect to the database    -->
+                            <?php
+                            $servername = "localhost";
+                            $username = "root";
+                            $password = "#Excelsior1808";
+                            $dbname = "Countries";
+
+                            // We create connection with the database, using the login credentials
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+
+                            // We select three columns from the database that are required for our table [Country, CountryCode, AverageIncome]
+                            // We order the retrieved table by Average Income with DESCENDING option as we are looking for Top 10 Highest Salaries
+                            // Finally we limit the number of results to 10, as we will be only showing 10 results in the table
+                            $sql = "SELECT Country, CountryCode, AverageIncome FROM Countries ORDER BY AverageIncome DESC limit 10";
+                            // We run the query on the database table
+                            $result = $conn->query($sql);
+
+                            // We test if the query retrieved any rows of information
+                            if ($result->num_rows > 0) {
+
+                                //
+                                // If there is data, we follow by outputting it into page - formatted into a list
+                                //
+
+                                // We use variable count to index list items with a number
+                                $count = 1;
+                                while($row = $result->fetch_assoc()) {
+                                    echo "<li>";
+                                    // Here we test for $count variable because after it reaches number 10,
+                                    // we don't want to output "010" but "10" for the last item
+                                    if ($count < 10) {
+                                        echo "<span class=\"mad-income-stats-no\">" . "0" . $count . "</span>";
+                                    } else {
+                                        echo "<span class=\"mad-income-stats-no-last\">" . $count . "</span>";
+                                    }
+                                    // After the iteration, we increment the $count variable to get another number
+                                    $count++;
+                                    // Here we use the CountryCode to select the correct flag from our directory
+                                    // (This is the reason why we named flags of countries by their respective country code)
+                                    echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
+                                    // We output the Country name
+                                    echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
+                                    // And finally we output the AverageIncome value
+                                    echo "<span class=\"mad-income-stats-value\">" . $row["AverageIncome"] . "$" . "</span>";
+                                    echo "</li>";
+                                }
+                            } else {
+                                echo "0 results";
+                            }
+                            ?>
+                        </ol>
+
+                        <?php
+                        $conn->close();
+                        ?>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Top 10 countries with lowest average wage (USD)</h4>
+
+                        <ol class="mad-income-stats-list">
+                            <li>
+                                <span class="mad-income-stats-no">01</span>
+                                <img src="./assets/flags/cd.png" class="mad-income-stats-img img-responsive" alt="Liechtenstein-flag"/>
+                                <span class="mad-income-stats-country">DR Congo</span>
+                                <span class="mad-income-stats-value">32.85$</span>
+                            </li>
+                            <li>
+                                <span class="mad-income-stats-no">02</span>
+                                <img src="./assets/flags/gw.png" class="mad-income-stats-img img-responsive" alt="Liechtenstein-flag"/>
+                                <span class="mad-income-stats-country">Guinea-Bissau</span>
+                                <span class="mad-income-stats-value">36.95$</span>
+                            </li>
+                            <li>
+                                <span class="mad-income-stats-no">03</span>
+                                <img src="./assets/flags/mg.png" class="mad-income-stats-img img-responsive" alt="Liechtenstein-flag"/>
+                                <span class="mad-income-stats-country">Madagascar</span>
+                                <span class="mad-income-stats-value">44.10$</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

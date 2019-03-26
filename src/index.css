@@ -89,6 +89,12 @@ strong {
   letter-spacing: 0.1em;
   line-height: 200%;
 }
+.h4-heading-style {
+  padding: 0 0 4%;
+  color: #2f2f2f;
+  font-size: 16px !important;
+  font-weight: bold;
+}
 .red-highlight {
   color: #de6868 !important;
 }
@@ -398,6 +404,7 @@ body {
   padding: 0%;
   height: auto !important;
   padding: 5% 20% 5%;
+  padding: 5% 10% 5% !important;
 }
 #mad-content #mad-income .container-fluid {
   width: 100%;
@@ -426,6 +433,10 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
 }
+#mad-content #mad-income .container-fluid h3.mad-section-header {
+  width: 100%;
+  padding: 0 16% 5%;
+}
 #mad-content #mad-income .container-fluid #mad-income-content {
   text-align: justify;
   width: 90%;
@@ -434,9 +445,77 @@ body {
   font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 200%;
+  width: 100%;
+  padding: 0 16% 5%;
 }
 #mad-content #mad-income .container-fluid #mad-income-content p {
   margin: 5% 0;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  width: 90% !important;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats p {
+  margin: 5% 0;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats h4 {
+  padding: 0 0 4%;
+  color: #2f2f2f;
+  font-size: 16px !important;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6) !important;
+  letter-spacing: 0px;
+  margin-bottom: 3%;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats ol.mad-income-stats-list {
+  margin: 0%;
+  padding: 0%;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats ol.mad-income-stats-list li:first-child {
+  border-top: 0.5px rgba(0, 0, 0, 0.2) solid;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats ol.mad-income-stats-list li {
+  width: 90%;
+  padding: 3%;
+  border-bottom: 0.5px rgba(0, 0, 0, 0.2) solid;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats ol.mad-income-stats-list li:hover {
+  background: rgba(200, 200, 200, 0.2);
+  cursor: pointer;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats ol.mad-income-stats-list li span {
+  display: inline;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats ol.mad-income-stats-list li .mad-income-stats-no {
+  opacity: 0.4;
+  font-weight: normal;
+  margin-right: 5px;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats ol.mad-income-stats-list li .mad-income-stats-no-last {
+  opacity: 0.4;
+  font-weight: normal;
+  margin-right: 8px;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats ol.mad-income-stats-list li .mad-income-stats-img {
+  display: inline;
+  width: 30px !important;
+  height: 18px !important;
+  vertical-align: middle;
+  margin: 0 2%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+#mad-content #mad-income .container-fluid #mad-income-stats ol.mad-income-stats-list li .mad-income-stats-country {
+  font-weight: bolder !important;
+}
+#mad-content #mad-income .container-fluid #mad-income-stats ol.mad-income-stats-list li .mad-income-stats-value {
+  float: right;
+  font-family: 'Montserrat', sans-serif !important;
 }
 #mad-content #mad-references {
   width: 100%;
