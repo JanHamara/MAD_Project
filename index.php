@@ -221,10 +221,60 @@
 
                         <li>
                             <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i> Individual Profile / Calculating Cost of Living</h4>
+
+                            <p>Calculating an average cost of living in a country can be a very complicated and lengthy process,
+                                considering how many separate factors can an individual spend money on throughout one month.
+                                Luckily, there are certain processes in place that are suited for computing exactly this value
+                                and after consulting few of these techniques, as well as staying relevant to resolution of <strong>living below your means</strong>,
+                                I have defined a <strong>base profile</strong> of a individual and his necessary spending throughout one month,
+                                while keeping a reasonably <strong>average standard of living</strong>.
+                            </p>
+                            <p>
+                                Our base individual for this project is a <strong>single person</strong> with <strong>no kids</strong>, <strong>no debts</strong>
+                                and <strong>no special expenses</strong> (e.g. taking care of parents, medicine for illness),
+                                who is living in an <strong>average single bedroom apartment</strong> in <strong>non-expensive area</strong>
+                                and <strong>commuting 5 days a week</strong> to a regular <strong>9-5 job</strong>.
+                                These are the expenses that will be counted in the <strong>total sum spent per each month</strong>...
+                            </p>
+                            <p>
+                                These are the expenses that will be counted in the <strong>total sum spent each month (per each country)</strong>...
+                            </p>
+                            <p>
+                                <strong class="red-highlight">Rent</strong> = average monthly rent for a <strong>1 bedroom apartment in non-expensive area</strong>
+                            </p>
+                            <p>
+                                <strong class="red-highlight">Utilities</strong> = average monthly bill for <strong>electricity, heating, water, garbage collection</strong>
+                            </p>
+                            <p>
+                                <strong class="red-highlight">Internet</strong> = average monthly charge for <strong>unlimited internet connection</strong> (required for work)
+                            </p>
+                            <p>
+                                <strong class="red-highlight">Transportation</strong> = average price for a <strong>regular monthly pass</strong> for transportation
+                            </p>
+                            <p>
+                                <strong class="red-highlight">Food & Drink</strong> = average monthly expense for <strong>food & drink groceries</strong>
+                            </p>
                         </li>
                 </ol>
             </div>
 
+        </div>
+    </section>
+
+    <!--                        -->
+    <!--    03 Average Income   -->
+    <!--                        -->
+
+    <section id="mad-income">
+        <div class="container-fluid">
+
+            <h3 class="mad-section-header">
+                <span class="mad-section-header-numbering">02</span> Average Income
+            </h3>
+
+            <div id="mad-income-content">
+                Yo, wassup!
+            </div>
         </div>
     </section>
 
