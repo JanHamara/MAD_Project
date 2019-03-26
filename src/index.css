@@ -50,7 +50,7 @@ strong {
   margin: 0%;
   padding: 0%;
 }
-.section-setup .container-fluid h1 {
+.section-setup .container-fluid h3.mad-section-header {
   text-align: left;
   width: 90%;
   margin: auto;
@@ -64,7 +64,7 @@ strong {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
-.section-setup .container-fluid h1 .h1-numbering {
+.section-setup .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
   font-size: 30px;
@@ -88,6 +88,12 @@ strong {
   font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 200%;
+}
+.red-highlight {
+  color: #de6868 !important;
+}
+.sub-explanation {
+  font-size: 10px !important;
 }
 body,
 html,
@@ -283,7 +289,7 @@ body {
   margin: 0%;
   padding: 0%;
 }
-#mad-content #mad-introduction .container-fluid h1 {
+#mad-content #mad-introduction .container-fluid h3.mad-section-header {
   text-align: left;
   width: 90%;
   margin: auto;
@@ -297,7 +303,7 @@ body {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
-#mad-content #mad-introduction .container-fluid h1 .h1-numbering {
+#mad-content #mad-introduction .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
   font-size: 30px;
@@ -330,7 +336,7 @@ body {
   margin: 0%;
   padding: 0%;
 }
-#mad-content #mad-preparation .container-fluid h1 {
+#mad-content #mad-preparation .container-fluid h3.mad-section-header {
   text-align: left;
   width: 90%;
   margin: auto;
@@ -344,7 +350,7 @@ body {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
-#mad-content #mad-preparation .container-fluid h1 .h1-numbering {
+#mad-content #mad-preparation .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
   font-size: 30px;
@@ -363,6 +369,28 @@ body {
 #mad-content #mad-preparation .container-fluid #mad-preparation-content p {
   margin: 5% 0;
 }
+#mad-content #mad-preparation .container-fluid #mad-preparation-content #mad-preparation-standards {
+  margin: 0%;
+  padding: 0%;
+}
+#mad-content #mad-preparation .container-fluid #mad-preparation-content #mad-preparation-standards li {
+  padding: 5% 0 3%;
+  border-top: 0.5px rgba(0, 0, 0, 0.2) solid !important;
+}
+#mad-content #mad-preparation .container-fluid #mad-preparation-content #mad-preparation-standards li h4 {
+  padding: 0 0 4%;
+  color: #2f2f2f;
+  font-size: 16px !important;
+  font-weight: bold;
+}
+#mad-content #mad-preparation .container-fluid #mad-preparation-content #mad-preparation-standards li h4 .fa-question-circle-o {
+  color: #de6868;
+  transform: scale(1.5);
+  margin-right: 1%;
+}
+#mad-content #mad-preparation .container-fluid #mad-preparation-content #mad-preparation-standards li p {
+  margin: 0 0 2%;
+}
 #mad-content #mad-references {
   width: 100%;
   height: 100%;
@@ -377,7 +405,7 @@ body {
   margin: 0%;
   padding: 0%;
 }
-#mad-content #mad-references .container-fluid h1 {
+#mad-content #mad-references .container-fluid h3.mad-section-header {
   text-align: left;
   width: 90%;
   margin: auto;
@@ -391,7 +419,7 @@ body {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
-#mad-content #mad-references .container-fluid h1 .h1-numbering {
+#mad-content #mad-references .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
   font-size: 30px;

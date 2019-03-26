@@ -96,7 +96,7 @@
                 <p data-aos="fade-up" data-aos-offset="-200" data-aos-anchor=".aos-anchor-1">
                 One Sunday evening, when I was browsing <strong>Medium</strong> (fantastic website
                 that curates some of the best articles on the internet on various topics), I came across
-                an <a class="link-main" href="https://medium.com/personal-finance-series-by-richard-reis/how-to-become-a-millionaire-19b1421a50a1" target="_blank" alt="medium-article-link">
+                an <a class="link-main" href="https://medium.com/personal-finance-series-by-richard-reis/how-to-become-a-millionaire-19b1421a50a1" target="_blank">
                     article</a> discussing <strong>how could one realistically become a millionaire</strong>. It was talking about
                 some of the most important principles for achieving this goal, among which three stood out in my view.
                 These were talking about <strong>living below your means</strong>,
@@ -105,17 +105,30 @@
 
                 <p>
                 It really got me thinking about conditions that accompany each person on their way to the first million
-                and why only so few reach this goal. I kept on browsing and I found an <a class="link-main" href="https://www.inc.com/business-insider/36-million-millionaires-in-the-world-hold-46-percent-wealth-credit-suisse-global-wealth-report-2017.html" target="_blank">
-                    online report</a> from Credit Suisse showing that there were <strong>2.3 million new millionaires in the world in 2016</strong>,
+                and why only so few reach this goal. After a bit more of browsing around, I have found an <a class="link-main" href="https://www.inc.com/business-insider/36-million-millionaires-in-the-world-hold-46-percent-wealth-credit-suisse-global-wealth-report-2017.html" target="_blank">
+                    online report</a> from Credit Suisse that was showing how there were <strong>2.3 million new millionaires in the world in 2016</strong>,
                 putting the total at <strong>36 million</strong> millionaires in the world (2016)<a class="mad-ref-link" href="#mad-ref-1"><sup>[1]</sup></a>.
-                That still makes up less than <strong>1%</strong> of the world's population, however,
+                That makes up less than <strong>1%</strong> of the world's population, however,
                 this one percent owns the same amount of wealth as <strong>46% of the world</strong>.
                 </p>
+
+<!--                <p>-->
+<!--                    <div id="mad-chart1">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-lg-6">-->
+<!--                                <canvas id="mad-chart-1" width="200" height="200"></canvas>-->
+<!--                            </div>-->
+<!--                            <div class="col-lg-6">-->
+<!---->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </p>-->
 
                 <p>
                 Despite the widely discussed fact that <a class="link-main" href="http://www.bbc.com/future/story/20130326-why-money-cant-buy-you-happiness" target="_blank">
                     money cannot buy you happiness</a>, everybody would surely like to be a part of this one percent
-                and become a millionaire in their lifetime. And that got me thinking about a question..
+                and become a millionaire in their lifetime. And that got me thinking about a question...
                 </p>
 
                 <p>
@@ -139,27 +152,79 @@
     <section id="mad-preparation">
         <div class="container-fluid">
 
-            <h1><span class="h1-numbering">01</span> Preparation</h1>
+            <h3 class="mad-section-header">
+                <span class="mad-section-header-numbering">01</span> Preparation
+            </h3>
 
             <div id="mad-preparation-content">
+
                 <p>
                     There is an uncountable number of factors that can influence a journey to a point,
-                    where person can be defined as a <strong>'milionaire'</strong>.
+                    where person can be defined as a <strong>'milionaire'</strong>. Therefore, there are several standards
+                    and definitions that are needed to be explained first - to show how this research presents
+                    gathered results in order to answer the set question.
                 </p>
-                <p>
-                    Therefore in order to sucessfully conduct this project, there were several standards and definitions that I needed to set, in order to collect useful
-                    and relevant dataset that could provide meaningful results, necessary for answering the set question.
-                </p>
-                <p>
-                    <ol>
-                        <li>Define millionaire</li>
-                        <li>What data I was going to collect: Average Income / Average Expenses</li>
-                        <li>Wages (Way of Calculating Average Salary)</li>
-                        <li>User Profile (Way of Calculating Average Expenses)</li>
-                        <li>Return on Investment</li>
-                    </ol>
-                </p>
+
+                <ol id="mad-preparation-standards">
+
+                        <li>
+                            <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i> Who is a millionaire</h4>
+
+                            <p>
+                                <em>Being a millionaire</em> doesn't have to mean <em>being rich</em>
+                                in certain countries in the world.
+                            </p>
+                            <p>
+                                While millionaire in <strong>France</strong> 🇫🇷(net worth bigger than <strong>1 000 000 €</strong>) is certainly considered worldwide as an extremely wealthy individual,
+                                if we take for second example a person in <strong>Indonesia</strong> 🇮🇩 - their <strong>1 000 000 Rp</strong>
+                                (Indonesian Rupiah) is barely worth <strong>62€</strong>.
+                            </p>
+                            <p>
+                                This means that the actual wealth of the millionaire in Indonesia would be approximately
+                                <strong>16 thousand times smaller</strong> than that of the millionaire in France.
+                            </p>
+                            <p>
+                                Therefore in order to avoid confusion, I have decided to set a <strong>base currency</strong> for the project,
+                                to convert all of the other world currencies into - with the intention to set a <strong>uniform measure of wealth</strong>
+                                that would be most familiar to the majority of the readers.
+
+                                Thus for purposes of this project..
+                            </p>
+                            <p>
+                                <strong class="red-highlight">Millionaire</strong> = an individual whose <strong>net worth</strong> is bigger than <strong>1 000 000$ (USD)</strong>
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i> What data to use</h4>
+
+                            <p>
+                                The goal of this project is to analyze time, that it would take in each country to become a millionaire,
+                                while living on average terms and earning an average salary. Therefore it was needed to collect relevant data
+                                on <strong>average salary</strong> and <strong>average living cost</strong> per each country,
+                                that would represent a true value of income, after taking into account all taxes and other required payments in each country.
+                            </p>
+                            <p>
+                                It was, therefore, again necessary to set standards for collecting these values,
+                                in order to get meaningful results. Thus following definitions...
+                            </p>
+                            <p>
+                                <strong class="red-highlight">Average Salary</strong> = average <strong>netto</strong> monthly wage<br/>
+                                <em class="sub-explanation">(accounting for all taxes, insurance schemes and other compulsory monthly payments per respective country)</em>
+                            </p>
+
+                            <p>
+                                <strong class="red-highlight">Average Living Cost</strong> = average <strong>minimum</strong> monthly expenses<br/>
+                                <em class="sub-explanation">(based on an individual profile explained in the next section)</em>
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i> Individual Profile / Calculating Cost of Living</h4>
+                        </li>
+                </ol>
             </div>
+
         </div>
     </section>
 
@@ -170,7 +235,9 @@
     <section id="mad-references">
         <div class="container-fluid">
 
-            <h1>References</h1>
+            <h3 class="mad-section-header">
+                <span class="mad-section-header-numbering">07</span> References
+            </h3>
 
             <ol id="mad-references-list">
                 <li id="mad-ref-1">

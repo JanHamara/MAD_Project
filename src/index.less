@@ -13,6 +13,7 @@
 @font: 'Raleway', sans-serif;
 @main-font-color: #2f2f2f;
 @main-font-color-50: rgba(0, 0, 0, 0.6);
+@main-font-color-20: rgba(0, 0, 0, 0.2);
 @main-red: #de6868;
 
 //--------------------------
@@ -103,7 +104,7 @@ strong {
     .fs;
     .nobound;
 
-    h1 {
+    h3.mad-section-header {
       .aligntext(left);
       width: 90%;
       margin: auto;
@@ -115,7 +116,7 @@ strong {
       font-family: 'Raleway', cursive;
       font-weight: bolder;
 
-      .h1-numbering {
+      .mad-section-header-numbering {
         .display(inline);
         opacity: 0.4;
         font-size: 30px;
@@ -145,7 +146,13 @@ strong {
   line-height: 200%;
 }
 
-//
+.red-highlight {
+  color: @main-red !important;
+}
+
+.sub-explanation {
+  font-size: 10px !important;
+}
 
 //-------------------------------------------------------------
 
@@ -323,6 +330,34 @@ body {
 
       #mad-preparation-content {
         .main-content-style;
+
+        #mad-preparation-standards {
+          .nobound;
+
+          li {
+            padding: 5% 0 3%;
+            //
+            border-top: 0.5px @main-font-color-20 solid !important;
+
+            h4 {
+              padding: 0 0 4%;
+              //
+              color: @main-font-color;
+              font-size: 16px !important;
+              font-weight: bold;
+
+              .fa-question-circle-o {
+                color: @main-red;
+                transform: scale(1.5);
+                margin-right: 1%;
+              }
+            }
+
+            p {
+              margin: 0 0 2%;
+            }
+          }
+        }
       }
     }
   }
@@ -343,6 +378,7 @@ body {
         li {
           .aligntext(left) !important;
           margin: 2% 0;
+          //
         }
       }
     }
