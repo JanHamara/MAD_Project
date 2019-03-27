@@ -379,21 +379,28 @@ body {
         padding: 0 16% 5%;
       }
 
-      #mad-income-content {
+      .mad-income-content {
         .main-content-style;
         width: 100%;
-        padding: 0 16% 5%;
+        padding: 0 16% 0;
       }
 
       #mad-income-stats {
         .main-content-style;
         width: 90% !important;
+        padding: 5% 0;
 
         h4 {
           .h4-heading-style;
           color: @main-font-color-50 !important;
           letter-spacing: 0px;
           margin-bottom: 3%;
+
+          span {
+            .display(inline);
+            font-size: 14px;
+            opacity: 0.4;
+          }
         }
 
         ol.mad-income-stats-list {

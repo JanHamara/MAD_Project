@@ -276,17 +276,44 @@
                 <span class="mad-section-header-numbering">02</span> Average Income
             </h3>
 
-            <div id="mad-income-content">
+            <div class="mad-income-content">
                 <p>
-                    Yo, wassup! This is just some placeholder text to show how it would display on the site
-                    while you try to create the list of top 10 countries with highest and lowest income.
+                    First step in calculating time required for becoming a millionaire in a particular country
+                    is looking at their average income and, indeed, these statistics are already a great indicator regarding
+                    which countries will be most likely to be the best for becoming a millionaire
+                    and which, on the other side, would be absolutely unsuitable for such goal.
+                </p>
+                <p>
+                    Looking at <a class="link-main" href="#top10-highest-wage">Top 10 countries with the highest average wage</a>, we can immediately notice
+                    that <strong>8 of them are in Europe</strong>, demonstrating its strong overall economic dominance in the world.
+                    The <strong>highest average wage worldwide</strong> is in <strong>Liechtenstein</strong>🇱🇮, a German-speaking microstate in central Europe,
+                    that was once known once known as a billionaire tax haven, nowadays much well known for its prosperous,
+                    highly industrialized free-enterprise economy.
+                    Its neighbouring country <strong>Switzerland</strong>🇨🇭 has the second-highest average wage,
+                    also famous for being one of the most developed countries in the world, in terms of nominal wealth per adult,
+                    quality of life and economic competitiveness. <strong>Luxembourg</strong> 🇱🇺 has the third place
+                    in close tie with <strong>Monaco</strong> 🇲🇨, another super-wealthy microstate.
+                    The rest of European countries in Top 10 are (in respective order) <strong>Austria</strong> 🇦🇹, Scandinavian duo
+                    of <strong>Denmark</strong> 🇩🇰 and <strong>Norway</strong> 🇳🇴 and finally <strong>Iceland</strong> 🇮🇸.
+                </p>
+                <p>
+                    The only 2 non-European countries to make it into top 10 are <strong>Singapore</strong> 🇸🇬 on the 10th place - the Asian megalopolis and
+                    an island city-state that is ranked very highly in many international rankings,
+                    and is being associated with having <em>best investment potential</em>, being <em>world's smartest city</em> or
+                    <em>the most technology-ready nation</em><a class="mad-ref-link" href="#mad-ref-2"><sup>[2]</sup></a>.
+                    To much less surprise the other place with 9th highest salary goes to <strong>United States of America</strong> 🇺🇸,
+                    a country with <strong>the world's largest economy by nominal GDP</strong>
+                    <a class="mad-ref-link" href="#mad-ref-3"><sup>[3]</sup></a>, whose economic strength is hardly necessary to justify.
+
+
                 </p>
             </div>
 
+            <!--    Lists with Top 10 countries with highest / lowest wage    -->
             <div id="mad-income-stats">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h4>Top 10 countries with highest average wage (USD)</h4>
+                        <h4 id="top10-highest-wage">Top 10 countries with highest average wage <span>(US$ / month)</span></h4>
 
                         <ol class="mad-income-stats-list">
 
@@ -339,38 +366,88 @@
                             } else {
                                 echo "0 results";
                             }
+
+                            $conn->close();
                             ?>
                         </ol>
-
-                        <?php
-                        $conn->close();
-                        ?>
                     </div>
                     <div class="col-lg-6">
-                        <h4>Top 10 countries with lowest average wage (USD)</h4>
+                        <h4 id="top10-lowest-wage">Top 10 countries with lowest average wage <span>(US$ / month)</span></h4>
 
                         <ol class="mad-income-stats-list">
-                            <li>
-                                <span class="mad-income-stats-no">01</span>
-                                <img src="./assets/flags/cd.png" class="mad-income-stats-img img-responsive" alt="Liechtenstein-flag"/>
-                                <span class="mad-income-stats-country">DR Congo</span>
-                                <span class="mad-income-stats-value">32.85$</span>
-                            </li>
-                            <li>
-                                <span class="mad-income-stats-no">02</span>
-                                <img src="./assets/flags/gw.png" class="mad-income-stats-img img-responsive" alt="Liechtenstein-flag"/>
-                                <span class="mad-income-stats-country">Guinea-Bissau</span>
-                                <span class="mad-income-stats-value">36.95$</span>
-                            </li>
-                            <li>
-                                <span class="mad-income-stats-no">03</span>
-                                <img src="./assets/flags/mg.png" class="mad-income-stats-img img-responsive" alt="Liechtenstein-flag"/>
-                                <span class="mad-income-stats-country">Madagascar</span>
-                                <span class="mad-income-stats-value">44.10$</span>
-                            </li>
+                            <?php
+                            $servername = "localhost";
+                            $username = "root";
+                            $password = "#Excelsior1808";
+                            $dbname = "Countries";
+
+                            // We create connection with the database, using the login credentials
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+
+                            // We select three columns from the database that are required for our table [Country, CountryCode, AverageIncome]
+                            // We order the retrieved table by Average Income with DESCENDING option as we are looking for Top 10 Highest Salaries
+                            // Finally we limit the number of results to 10, as we will be only showing 10 results in the table
+                            $sql = "SELECT Country, CountryCode, AverageIncome FROM Countries ORDER BY AverageIncome ASC limit 10";
+                            // We run the query on the database table
+                            $result = $conn->query($sql);
+
+                            // We test if the query retrieved any rows of information
+                            if ($result->num_rows > 0) {
+
+                                //
+                                // If there is data, we follow by outputting it into page - formatted into a list
+                                //
+
+                                // We use variable count to index list items with a number
+                                $count = 1;
+                                while($row = $result->fetch_assoc()) {
+                                    echo "<li>";
+                                    // Here we test for $count variable because after it reaches number 10,
+                                    // we don't want to output "010" but "10" for the last item
+                                    if ($count < 10) {
+                                        echo "<span class=\"mad-income-stats-no\">" . "0" . $count . "</span>";
+                                    } else {
+                                        echo "<span class=\"mad-income-stats-no-last\">" . $count . "</span>";
+                                    }
+                                    // After the iteration, we increment the $count variable to get another number
+                                    $count++;
+                                    // Here we use the CountryCode to select the correct flag from our directory
+                                    // (This is the reason why we named flags of countries by their respective country code)
+                                    echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
+                                    // We output the Country name
+                                    echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
+                                    // And finally we output the AverageIncome value
+                                    echo "<span class=\"mad-income-stats-value\">" . $row["AverageIncome"] . "$" . "</span>";
+                                    echo "</li>";
+                                }
+                            } else {
+                                echo "0 results";
+                            }
+
+                            $conn->close();
+                            ?>
                         </ol>
                     </div>
                 </div>
+            </div>
+
+            <div class="mad-income-content">
+                <p>
+                    On the other side, the list of <a class="link-main" href="#top10-highest-wage">Top 10 countries with the lowest average wage</a>
+                    is dominated by <strong>8 African countries</strong>. Considering the overall economic situation and infrastructure of Africa,
+                    this is not very surprising. The <strong>lowest average wage in the world</strong> is in <strong>The Democratic Republic of Congo</strong> 🇨🇩 with only <strong>32.85$</strong> earned per month.
+                    That is almost <strong>178 times less than the highest average wage</strong> of the world in Liechtenstein,
+                    showing the staggering imbalance in the distribution of wealth in the world.
+                </p>
+                <p>
+                    The DR Congo is closely followed by <strong>Guinea-Bissau</strong> 🇬🇼,
+                    <strong>Madagascar</strong> 🇲🇬 and <strong>Ethiopia</strong> 🇪🇹
+                    - all of them with average monthly income <strong>lower than 50 dollars</strong>.
+                    Two non-African countries present in the lowest 10 are <strong>North Korea</strong> 🇰🇵,
+                    led by the infamous Supreme Leader Kim Jong Un, and <strong>Venezuela</strong> 🇻🇪 -
+                    South-American country going through a tough period of <strong>economic depression</strong>
+                    that is currently dealing with <strong>extreme inflation</strong>, <strong>food shortages</strong> and <strong>electricity blackouts</strong>.<a class="mad-ref-link" href="#mad-ref-4"><sup>[4]</sup></a>
+                </p>
             </div>
         </div>
     </section>
@@ -391,6 +468,21 @@
                     1. Weller Chris, There Are 36 Million Millionaires in the World and They Own Nearly Half the Planet's Wealth [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.inc.com/business-insider/36-million-millionaires-in-the-world-hold-46-percent-wealth-credit-suisse-global-wealth-report-2017.html" target="_blank">Source</a>
+                </li>
+                <li id="mad-ref-2">
+                    2. Wikipedia - the free encyclopedia, Singapore [online]
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://en.wikipedia.org/wiki/Singapore" target="_blank">Source</a>
+                </li>
+                <li id="mad-ref-3">
+                    3. Wikipedia - the free encyclopedia, United States [online]
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://en.wikipedia.org/wiki/United_States" target="_blank">Source</a>
+                </li>
+                <li id="mad-ref-3">
+                    3. BBC News - Venezuela crisis: How the political situation escalated [online]
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.bbc.co.uk/news/world-latin-america-36319877" target="_blank">Source</a>
                 </li>
             </ol>
         </div>
