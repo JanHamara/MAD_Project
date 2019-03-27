@@ -63,7 +63,7 @@
 <main id="mad-content" style="display: none">
 
     <!--                  -->
-    <!--    01 Header     -->
+    <!--      Header      -->
     <!--                  -->
 
     <section id="mad-header">
@@ -87,7 +87,7 @@
     </section>
 
     <!--                        -->
-    <!--    02 Introduction     -->
+    <!--    00 Introduction     -->
     <!--                        -->
 
     <section id="mad-introduction">
@@ -146,7 +146,7 @@
     </section>
 
     <!--                        -->
-    <!--     03 Preparation     -->
+    <!--     01 Preparation     -->
     <!--                        -->
 
     <section id="mad-preparation">
@@ -266,7 +266,7 @@
     </section>
 
     <!--                        -->
-    <!--    03 Average Income   -->
+    <!--    02 Average Income   -->
     <!--                        -->
 
     <section id="mad-income">
@@ -435,7 +435,7 @@
                 <p>
                     On the other side, the list of <a class="link-main" href="#top10-highest-wage">Top 10 countries with the lowest average wage</a>
                     is dominated by <strong>8 African countries</strong>. Considering the overall economic situation and infrastructure of Africa,
-                    this is not very surprising. The <strong>lowest average wage in the world</strong> is in <strong>The Democratic Republic of Congo</strong> 🇨🇩 with only <strong>32.85$</strong> earned per month.
+                    this is not very surprising fact. The <strong>lowest average wage in the world</strong> is earned in <strong>The Democratic Republic of Congo</strong> 🇨🇩 with only <strong>32.85$</strong> earned per month.
                     That is almost <strong>178 times less than the highest average wage</strong> of the world in Liechtenstein,
                     showing the staggering imbalance in the distribution of wealth in the world.
                 </p>
@@ -448,6 +448,212 @@
                     South-American country going through a tough period of <strong>economic depression</strong>
                     that is currently dealing with <strong>extreme inflation</strong>, <strong>food shortages</strong> and <strong>electricity blackouts</strong>.<a class="mad-ref-link" href="#mad-ref-4"><sup>[4]</sup></a>
                 </p>
+
+                <iframe class="mad-content-video" width="560" height="315" src="https://www.youtube.com/embed/ytrS0SntUSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--                          -->
+    <!--    03 Average Expenses   -->
+    <!--                          -->
+
+    <section id="mad-expenses">
+        <div class="container-fluid">
+
+            <h3 class="mad-section-header">
+                <span class="mad-section-header-numbering">03</span> Average Expenses
+            </h3>
+
+            <div class="mad-expenses-content">
+                <p>
+                    As a second factor in our project, we consider the <strong>average cost of living</strong> in each country,
+                    which is a crucial element in creating saving plans and in pursuing the goal of earning <strong>net worth of million dollars</strong>.
+                    While some countries may offer an extremely high average salary, they may also be extremely expensive to live in,
+                    making it difficult to put some money into saving every month. Similar situation appears in poor countries -
+                    while the cost of living may be extremely low, same applies for the average wage,
+                    rendering the chance of having some money to spare nearly impossible.
+                </p>
+                <p>
+                    However, there are exceptions when a country may offer high average income with a reasonably low living expenses,
+                    as well as worst-scenario cases where high living cost meets with low income. While the latter won't be of much interest to us,
+                    the former will be decisive in identifying the best country for becoming a millionaire. After the first look on following tables,
+                    we can already start noticing some interesting statistics.
+                </p>
+                <p>
+                    As much as 7 countries from the <strong>Top 10 countries with highest average wage</strong>
+                    have also made it to the <a class="link-main" href="#top10-highest-expenses">Top 10 countries with highest cost of living</a>.
+                    <strong>Switzerland</strong>🇨🇭 with the <strong>second highest average salary</strong> in the world
+                    takes also <strong>the highest average cost of living in the world</strong>,
+                    while <strong>Liechtenstein</strong>🇱🇮 moves down to 8th place in average cost of living. <strong>Monaco</strong> 🇲🇨
+                    is the second most expensive place to live on average terms and <strong>Australia</strong> 🇦🇺 is third,
+                    with significant drop of <strong>700$</strong> from the amount required per month, compared to Monaco.
+                    Along with <strong>Bahamas</strong> 🇧🇸 on 4th place, <strong>Australia</strong> is very unlikely to be the country suitable for
+                    quick and large savings. An interesting placement is <strong>Papua New Guinea</strong>🇵🇬
+                    on 7th place with <strong>2216.34$ required per month</strong> for maintaining an average standard of living.
+
+                </p>
+            </div>
+
+            <!--    Lists with Top 10 countries with highest / lowest expenses    -->
+            <div id="mad-expenses-stats">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 id="top10-highest-expenses">Top 10 countries with highest cost of living <span>(US$ / month)</span></h4>
+
+                        <ol class="mad-income-stats-list">
+
+                            <!--    We use PHP and MySQLi in order to connect to the database    -->
+                            <?php
+                            $servername = "localhost";
+                            $username = "root";
+                            $password = "#Excelsior1808";
+                            $dbname = "Countries";
+
+                            // We create connection with the database, using the login credentials
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+
+                            // We select three columns from the database that are required for our table [Country, CountryCode, AverageIncome]
+                            // We order the retrieved table by Average Income with DESCENDING option as we are looking for Top 10 Highest Salaries
+                            // Finally we limit the number of results to 10, as we will be only showing 10 results in the table
+                            $sql = "SELECT Country, CountryCode, AverageExpense FROM Countries ORDER BY AverageExpense DESC limit 10";
+                            // We run the query on the database table
+                            $result = $conn->query($sql);
+
+                            // We test if the query retrieved any rows of information
+                            if ($result->num_rows > 0) {
+
+                                //
+                                // If there is data, we follow by outputting it into page - formatted into a list
+                                //
+
+                                // We use variable count to index list items with a number
+                                $count = 1;
+                                while($row = $result->fetch_assoc()) {
+                                    echo "<li>";
+                                    // Here we test for $count variable because after it reaches number 10,
+                                    // we don't want to output "010" but "10" for the last item
+                                    if ($count < 10) {
+                                        echo "<span class=\"mad-income-stats-no\">" . "0" . $count . "</span>";
+                                    } else {
+                                        echo "<span class=\"mad-income-stats-no-last\">" . $count . "</span>";
+                                    }
+                                    // After the iteration, we increment the $count variable to get another number
+                                    $count++;
+                                    // Here we use the CountryCode to select the correct flag from our directory
+                                    // (This is the reason why we named flags of countries by their respective country code)
+                                    echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
+                                    // We output the Country name
+                                    echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
+                                    // And finally we output the AverageIncome value
+                                    echo "<span class=\"mad-income-stats-value\">" . $row["AverageExpense"] . "$" . "</span>";
+                                    echo "</li>";
+                                }
+                            } else {
+                                echo "0 results";
+                            }
+
+                            $conn->close();
+                            ?>
+                        </ol>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 id="top10-lowest-expenses">Top 10 countries with lowest cost of living <span>(US$ / month)</span></h4>
+
+                        <ol class="mad-income-stats-list">
+                            <?php
+                            $servername = "localhost";
+                            $username = "root";
+                            $password = "#Excelsior1808";
+                            $dbname = "Countries";
+
+                            // We create connection with the database, using the login credentials
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+
+                            // We select three columns from the database that are required for our table [Country, CountryCode, AverageIncome]
+                            // We order the retrieved table by Average Income with DESCENDING option as we are looking for Top 10 Highest Salaries
+                            // Finally we limit the number of results to 10, as we will be only showing 10 results in the table
+                            $sql = "SELECT Country, CountryCode, AverageExpense FROM Countries ORDER BY AverageExpense ASC limit 10";
+                            // We run the query on the database table
+                            $result = $conn->query($sql);
+
+                            // We test if the query retrieved any rows of information
+                            if ($result->num_rows > 0) {
+
+                                //
+                                // If there is data, we follow by outputting it into page - formatted into a list
+                                //
+
+                                // We use variable count to index list items with a number
+                                $count = 1;
+                                while($row = $result->fetch_assoc()) {
+                                    echo "<li>";
+                                    // Here we test for $count variable because after it reaches number 10,
+                                    // we don't want to output "010" but "10" for the last item
+                                    if ($count < 10) {
+                                        echo "<span class=\"mad-income-stats-no\">" . "0" . $count . "</span>";
+                                    } else {
+                                        echo "<span class=\"mad-income-stats-no-last\">" . $count . "</span>";
+                                    }
+                                    // After the iteration, we increment the $count variable to get another number
+                                    $count++;
+                                    // Here we use the CountryCode to select the correct flag from our directory
+                                    // (This is the reason why we named flags of countries by their respective country code)
+                                    if ($row["CountryCode"] == "np") {
+                                        echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-nepal img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
+                                    } else {
+                                        echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
+                                    }
+                                    // We output the Country name
+                                    echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
+                                    // And finally we output the AverageIncome value
+                                    echo "<span class=\"mad-income-stats-value\">" . $row["AverageExpense"] . "$" . "</span>";
+                                    echo "</li>";
+                                }
+                            } else {
+                                echo "0 results";
+                            }
+
+                            $conn->close();
+                            ?>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mad-expenses-content">
+                <p>
+                    On the other table we find out that <strong>Nepal</strong> 🇳🇵 is the country with <strong>lowest cost of living
+                        in the world</strong>, closely followed by second most populous country in the world - <strong>India</strong> 🇮🇳
+                    and neighbouring <strong>Bhutan</strong> 🇧🇹.
+                    On fourth place, there is <strong>Pakistan</strong> 🇵🇰 and fifth <strong>Egypt</strong> 🇪🇬, each of which
+                    require <strong>less than 330 dollars per month</strong> to survive by normal means.
+                </p>
+                <p>
+                    In fact, all of the <a class="link-main" href="#top10-highest-expenses">Top 10 countries with lowest cost of living</a>
+                    require <strong>less than 400$ per month</strong> for average lifestyle. Surprisingly, only 2 African countries make it
+                    to the top 10 with lowest cost of living, on 6th place <strong>Central African Republic</strong> 🇨🇫 and
+                    <strong>South Sudan</strong> 🇸🇸 on 10th place. <strong>Albania</strong> 🇦🇱 is also quite interesting entry for
+                    <strong>the cheapest country in Europe</strong>, while inflation-troubled <strong>Venezuela</strong> makes
+                    the 9th place to represent it's bizarre economic situation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--                          -->
+    <!--    04 Final Results      -->
+    <!--                          -->
+
+    <section id="mad-results">
+        <div class="container-fluid">
+            <h3 class="mad-section-header">
+                <span class="mad-section-header-numbering">04</span> Which country is the best for becoming millionaire on average income?
+            </h3>
+
+            <div class="mad-results-content">
+                Now that we have got insight into which countries top the positive and negative ranking,
+                whether we talk about average income or cost of living, it is time to present answers to initial question.
             </div>
         </div>
     </section>

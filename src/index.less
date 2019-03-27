@@ -163,6 +163,19 @@ strong {
   font-size: 10px !important;
 }
 
+.mad-content-video {
+  width: 100% !important;
+  box-shadow: 0 0 15px @main-font-color-50;
+  opacity: 0.8;
+  transition: opacity 1s, box-shadow 1s;
+
+  &:hover {
+    transition: opacity 1s, box-shadow 1s;
+    opacity: 1;
+    box-shadow: 0 0 20px @main-font-color;
+  }
+}
+
 //-------------------------------------------------------------
 
 //                        Animations
@@ -264,7 +277,7 @@ body {
   .fs;
   .nobound;
 
-  // 01 Header
+  // Header
   #mad-header {
     .fs;
     .nobound;
@@ -319,7 +332,7 @@ body {
     }
   }
 
-  // 02 Introduction
+  // 00 Introduction
   #mad-introduction {
     .section-setup;
 
@@ -331,7 +344,7 @@ body {
     }
   }
 
-  // 03 Preparation
+  // 01 Preparation
   #mad-preparation {
     .section-setup;
 
@@ -367,7 +380,7 @@ body {
     }
   }
 
-  // 03 Average Income
+  // 02 Average Income
   #mad-income {
     .section-setup;
     padding: 5% 10% 5% !important;
@@ -457,6 +470,125 @@ body {
           }
         }
 
+      }
+    }
+  }
+
+  // 03 Average Expenses
+  #mad-expenses {
+    .section-setup;
+    padding: 5% 10% 5% !important;
+
+    .container-fluid {
+
+      h3.mad-section-header {
+        width: 100%;
+        padding: 0 16% 5%;
+      }
+
+      .mad-expenses-content {
+        .main-content-style;
+        width: 100%;
+        padding: 0 16% 0;
+      }
+
+      #mad-expenses-stats {
+        .main-content-style;
+        width: 90% !important;
+        padding: 5% 0;
+
+        h4 {
+          .h4-heading-style;
+          color: @main-font-color-50 !important;
+          letter-spacing: 0px;
+          margin-bottom: 3%;
+
+          span {
+            .display(inline);
+            font-size: 14px;
+            opacity: 0.4;
+          }
+        }
+
+        ol.mad-income-stats-list {
+          .nobound;
+
+          li:first-child {
+            border-top: 0.5px @main-font-color-20 solid;
+          }
+
+          li {
+            width: 90%;
+            padding: 3%;
+            border-bottom: 0.5px @main-font-color-20 solid;
+
+            &:hover {
+              background: rgba(200, 200, 200, 0.2);
+              cursor: pointer;
+            }
+
+            span {
+              .display(inline);
+            }
+
+            .mad-income-stats-no {
+              opacity: 0.4;
+              font-weight: normal;
+              margin-right: 5px;
+            }
+
+            .mad-income-stats-no-last {
+              opacity: 0.4;
+              font-weight: normal;
+              margin-right: 8px;
+            }
+
+            .mad-income-stats-img {
+              .display(inline);
+              width: 30px !important;
+              height: 18px !important;
+              vertical-align: middle;
+              margin: 0 2%;
+              //
+              box-shadow: 0 0 5px @main-font-color-50;
+            }
+
+            .img-nepal {
+              box-shadow: none !important;
+            }
+
+            .mad-income-stats-country {
+              font-weight: bolder !important;
+            }
+
+            .mad-income-stats-value {
+              float: right;
+              font-family: @font2 !important;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+
+  // 04 Final Results
+  #mad-results {
+    .section-setup;
+    padding: 5% 10% 5% !important;
+
+    .container-fluid {
+
+      h3.mad-section-header {
+        width: 100%;
+        padding: 0 16% 5%;
+      }
+
+      .mad-results-content {
+        .main-content-style;
+        width: 100%;
+        padding: 0 16% 0;
       }
     }
   }
