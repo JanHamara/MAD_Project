@@ -993,6 +993,63 @@ body {
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts .mad-stats-list li:nth-last-child(-n+5):hover {
   background: rgba(222, 104, 104, 0.3);
 }
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form {
+  text-align: center;
+  width: 30%;
+  margin: 5% auto 5%;
+  border-bottom: 0.5px rgba(0, 0, 0, 0.6) solid;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form input {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  background: none !important;
+  border: none !important;
+  padding: 2% 5%;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form input::placeholder {
+  opacity: 0.5;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form input:focus {
+  outline: none !important;
+  border: none !important;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .col-lg-6:first-child {
+  padding-right: 35px !important;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .col-lg-6:last-child {
+  padding-left: 35px !important;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output img {
+  margin-top: 5%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: transform 1s, box-shadow 1s;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output img:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  transition: transform 1s, box-shadow 1s;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h1 {
+  margin: 0 0 5%;
+  font-size: 28px;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h4 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  font-size: 12px !important;
+  padding-bottom: 1%;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h4 span {
+  float: right;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-desc,
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-expense {
+  padding-bottom: 3%;
+}
 #mad-content #mad-references {
   width: 100%;
   height: 100%;

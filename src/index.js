@@ -52,6 +52,7 @@ import Chart from 'chart.js';
 // #mad-chart-2
 //
 // ----------------------------------------------------
+
 var ctx = document.getElementById('mad-chart-2').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -89,3 +90,30 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
+// ----------------------------------------------------
+//
+// #mad-search-form-input
+//
+// ----------------------------------------------------
+
+function queryCountry() {
+    var mysql = require('mysql');
+
+    var con = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "#Excelsior1808",
+        database: "Countries"
+    });
+
+    con.connect(function(err) {
+        if (err) throw err;
+        con.query("SELECT * FROM customers", function (err, result, fields) {
+            if (err) throw err;
+            console.log(result);
+        });
+    });
+}
+
+document.getElementById("mad-search-form-input").addEventListener("input", queryCountry);

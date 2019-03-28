@@ -820,6 +820,75 @@ body {
               }
             }
           }
+
+          #mad-search-form {
+            .aligntext;
+            width: 30%;
+            margin: 5% auto 5%;
+            //
+            border-bottom: 0.5px @main-font-color-50 solid;
+
+            input {
+              .aligntext;
+              .main-text-style;
+              background: none !important;
+              border: none !important;
+              //
+              padding: 2% 5%;
+
+              &::placeholder {
+                opacity: 0.5;
+              }
+
+              &:focus {
+                outline: none !important;
+                border: none !important;
+              }
+            }
+          }
+
+          #mad-search-form-output {
+
+            .col-lg-6:first-child {
+              padding-right: 35px !important;
+            }
+
+            .col-lg-6:last-child {
+              padding-left: 35px !important;
+            }
+
+            img {
+              //transform: scale(0.7);
+              margin-top: 5%;
+              box-shadow: 0 0 15px @main-font-color-50;
+              transition: transform 1s, box-shadow 1s;
+
+              &:hover {
+                //transform: scale(0.9);
+                box-shadow: 0 0 25px @main-font-color-50;
+                transition: transform 1s, box-shadow 1s;
+              }
+            }
+
+            h1 {
+              margin: 0 0 5%;
+              font-size: 28px;
+            }
+
+            h4 {
+              .main-text-style;
+              font-size: 12px !important;
+              padding-bottom: 1%;
+
+              span {
+                float: right;
+              }
+            }
+
+            .mad-output-desc, .mad-output-expense {
+              padding-bottom: 3%;
+            }
+          }
         }
       }
     }

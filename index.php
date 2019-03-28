@@ -983,6 +983,37 @@
                             ?>
                         </ol>
                     </li>
+
+                    <li>
+                        <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i>What about my country</h4>
+
+                        <p>
+                            <strong>Are you curious about how long it would take in your country</strong> and you didn't see it in results, yet?
+                            Just type your country in the <a class="link-main" href="#mad-search-form">search box below</a> and see all statistics available for your queried country.
+                        </p>
+
+                        <form id="mad-search-form">
+                            <input id="mad-search-form-input" type="text" name="country" placeholder="e.g. United States"/>
+                        </form>
+
+                        <div id="mad-search-form-output">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h1>Slovakia</h1>
+                                    <h4 class="mad-output-desc"><strong>Slovakia</strong> is a country in <strong>Europe</strong> that uses<br/>
+                                        <strong>Euro (EUR)</strong> as a currency.</h4>
+                                    <h4><strong>Country Code:</strong> <span>SK</span></h4>
+                                    <h4><strong>Average Salary:</strong> <span>2312.21$</span></h4>
+                                    <h4 class="mad-output-expense"><strong>Average Expenses:</strong> <span>789.21$</span></h4>
+
+                                    <h4>It would take <strong>26 years, 2 months and 14 days</strong> to become a millionaire in this country on average income.</h4>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="./assets/flags/sk.png" class="img-responsive" alt="country-flag">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ol>
             </div>
         </div>
