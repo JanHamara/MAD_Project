@@ -100,30 +100,31 @@
                     article</a> discussing <strong>how one could realistically become a millionaire</strong>. It was talking about
                 some of the most important principles for achieving this goal, among which three stood out in my view.
                 These were talking about <strong>living below your means</strong>,
-                <strong>thinking long term</strong> and <strong>having more than one source of income</strong>.
+                <strong>thinking long term</strong> and <strong>having more than one source of income</strong><a class="mad-ref-link" href="#mad-ref-1"><sup>[1]</sup></a>.
                 </p>
 
                 <p>
-                It really got me thinking about conditions that accompany each person on their way to the first million
-                and why only so few reach this goal. After a bit more of browsing around, I have found an <a class="link-main" href="https://www.inc.com/business-insider/36-million-millionaires-in-the-world-hold-46-percent-wealth-credit-suisse-global-wealth-report-2017.html" target="_blank">
+                    It really got me thinking about conditions that accompany each person on their way to the first million
+                    and why only so few reach this goal. After a bit more of browsing around, I have found an <a class="link-main" href="https://www.inc.com/business-insider/36-million-millionaires-in-the-world-hold-46-percent-wealth-credit-suisse-global-wealth-report-2017.html" target="_blank">
                     online report</a> from Credit Suisse that was showing how there were <strong>2.3 million new millionaires in the world in 2016</strong>,
-                putting the total at <strong>36 million</strong> millionaires in the world (2016)<a class="mad-ref-link" href="#mad-ref-1"><sup>[1]</sup></a>.
-                That makes up less than <strong>1%</strong> of the world's population, however,
-                this one percent owns the same amount of wealth as <strong>46% of the world</strong>.
+                    putting the total at <strong>36 million</strong> millionaires in the world (2016)<a class="mad-ref-link" href="#mad-ref-2"><sup>[2]</sup></a>.
+                    That makes up less than <strong>1%</strong> of the world's population, however,
+                    this one percent owns as much as <strong>half of the wealth of the world</strong>.
+                    Following chart greatly illustrates this great imbalance in the distribution of wealth worldwide.
                 </p>
 
-<!--                <p>-->
-<!--                    <div id="mad-chart1">-->
-<!--                        <div class="row">-->
-<!--                            <div class="col-lg-6">-->
-<!--                                <canvas id="mad-chart-1" width="200" height="200"></canvas>-->
-<!--                            </div>-->
-<!--                            <div class="col-lg-6">-->
-<!---->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </p>-->
+                <div class="mad-chart-container">
+                    <div id="mad-chart1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <canvas id="mad-chart-1" width="200" height="200"></canvas>
+                            </div>
+                            <div class="col-lg-6">
+                                <canvas id="mad-chart-2" width="200" height="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <p>
                 Despite the widely discussed fact that <a class="link-main" href="http://www.bbc.com/future/story/20130326-why-money-cant-buy-you-happiness" target="_blank">
@@ -134,18 +135,16 @@
                 <p>
                 Depending on the environment (country) that you're coming from, having an average lifestyle
                 and by simple decision of lowering your expenses as much as possible while keeping an average standard of living -
-                <strong>COULD YOU ACHIEVE IT IN A LIFETIME?</strong>
+                <strong>Could you achieve it in a lifetime?</strong>
                 </p>
 
                 <p>I have decided to conduct research and gather enough data to be able to determine
-                    <strong style="text-decoration: underline;">which countries wages and living conditions would allow a person to earn first million in fastest time
+                    <strong>which countries wages and living conditions would allow a person to earn first million in fastest time
                         and on the other side, which country would be the worst choice.</strong>
                 </p>
             </div>
         </div>
     </section>
-
-    <hr/>
 
     <!--                        -->
     <!--     01 Preparation     -->
@@ -207,7 +206,7 @@
                                 that would represent a true value of income, after taking into account all taxes and other required payments in each country.
                             </p>
                             <p>
-                                It was, therefore, again necessary to set standards for collecting these values,
+                                It was necessary to set certain standards for collecting these values,
                                 in order to get meaningful results. Thus following definitions...
                             </p>
                             <p>
@@ -259,15 +258,13 @@
                 </ol>
 
                 <p>
-                    Now that we have specified all necessary conditions for managing the data used in this project,
-                    it's time to use this information and present some of the most interesting findings.
+                    Now that I have specified all necessary conditions for managing the data used in this project,
+                    it is time to use this information and present some of the most interesting findings.
                 </p>
             </div>
 
         </div>
     </section>
-
-    <hr/>
 
     <!--                        -->
     <!--    02 Average Income   -->
@@ -291,7 +288,7 @@
                     Looking at <a class="link-main" href="#top10-highest-wage">Top 10 countries with the highest average wage</a>, we can immediately notice
                     that <strong>8 of them are in Europe</strong>, demonstrating its strong overall economic dominance in the world.
                     The <strong>highest average wage worldwide</strong> is in <strong>Liechtenstein</strong>🇱🇮, a German-speaking microstate in central Europe,
-                    that was once known once known as a billionaire tax haven, nowadays much well known for its prosperous,
+                    that was once known as a billionaire tax haven, nowadays much well known for its prosperous,
                     highly industrialized free-enterprise economy.
                     Its neighbouring country <strong>Switzerland</strong>🇨🇭 has the second-highest average wage,
                     also famous for being one of the most developed countries in the world, in terms of nominal wealth per adult,
@@ -304,12 +301,10 @@
                     The only 2 non-European countries to make it into top 10 are <strong>Singapore</strong> 🇸🇬 on the 10th place - the Asian megalopolis and
                     an island city-state that is ranked very highly in many international rankings,
                     and is being associated with having <em>best investment potential</em>, being <em>world's smartest city</em> or
-                    <em>the most technology-ready nation</em><a class="mad-ref-link" href="#mad-ref-2"><sup>[2]</sup></a>.
+                    <em>the most technology-ready nation</em><a class="mad-ref-link" href="#mad-ref-3"><sup>[3]</sup></a>.
                     To much less surprise the other place with 9th highest salary goes to <strong>United States of America</strong> 🇺🇸,
                     a country with <strong>the world's largest economy by nominal GDP</strong>
-                    <a class="mad-ref-link" href="#mad-ref-3"><sup>[3]</sup></a>, whose economic strength is hardly necessary to justify.
-
-
+                    <a class="mad-ref-link" href="#mad-ref-4"><sup>[4]</sup></a>, whose economic strength is hardly necessary to justify.
                 </p>
             </div>
 
@@ -457,8 +452,6 @@
             </div>
         </div>
     </section>
-
-    <hr/>
 
     <!--                          -->
     <!--    03 Average Expenses   -->
@@ -646,13 +639,9 @@
         </div>
     </section>
 
-    <hr/>
-
     <!--                          -->
     <!--    04 Final Results      -->
     <!--                          -->
-
-    <hr/>
 
     <section id="mad-results">
         <div class="container-fluid">
@@ -850,7 +839,7 @@
                     $conn->close();
                     ?>
 
-                    <div id="mad-chart2">
+                    <div id="mad-chart3">
                         <div class="row">
                             <div class="col-lg-12">
                                 <canvas id="mad-chart-2" width="200" height="200"></canvas>
@@ -871,8 +860,6 @@
             </div>
         </div>
     </section>
-
-    <hr/>
 
     <!--                          -->
     <!--    05 Other Countries    -->
@@ -1093,8 +1080,6 @@
         </div>
     </section>
 
-    <hr/>
-
     <!--                                 -->
     <!--    06 More Interesting Facts    -->
     <!--                                 -->
@@ -1138,8 +1123,6 @@
         </div>
     </section>
 
-    <hr/>
-
     <!--                                 -->
     <!--    07 Feedback    -->
     <!--                                 -->
@@ -1182,13 +1165,9 @@
         </div>
     </section>
 
-    <hr/>
-
     <!--                        -->
     <!--      XX References     -->
     <!--                        -->
-
-    <hr/>
 
     <section id="mad-references">
         <div class="container-fluid">
@@ -1199,48 +1178,47 @@
 
             <ol id="mad-references-list">
                 <li id="mad-ref-1">
-                    1. Weller Chris, There Are 36 Million Millionaires in the World and They Own Nearly Half the Planet's Wealth [online]
+                    1. Reis Richard, How To Realistically Become A Millionaire [online]
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://medium.com/personal-finance-series-by-richard-reis/how-to-become-a-millionaire-19b1421a50a1" target="_blank">Source</a>
+                </li>
+                <li id="mad-ref-2">
+                    2. Weller Chris, There Are 36 Million Millionaires in the World and They Own Nearly Half the Planet's Wealth [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.inc.com/business-insider/36-million-millionaires-in-the-world-hold-46-percent-wealth-credit-suisse-global-wealth-report-2017.html" target="_blank">Source</a>
                 </li>
                 <li id="mad-ref-2">
-                    2. Wikipedia - the free encyclopedia, Singapore [online]
+                    3. Wikipedia - the free encyclopedia, Singapore [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://en.wikipedia.org/wiki/Singapore" target="_blank">Source</a>
                 </li>
                 <li id="mad-ref-3">
-                    3. Wikipedia - the free encyclopedia, United States [online]
+                    4. Wikipedia - the free encyclopedia, United States [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://en.wikipedia.org/wiki/United_States" target="_blank">Source</a>
                 </li>
                 <li id="mad-ref-4">
-                    4. BBC News - Venezuela crisis: How the political situation escalated [online]
+                    5. BBC News - Venezuela crisis: How the political situation escalated [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.bbc.co.uk/news/world-latin-america-36319877" target="_blank">Source</a>
                 </li>
                 <li id="mad-ref-5">
-                    5. WHO (World Health Organisation) - Global Health Observatory (GHO) data: Life Expectancy [online]
+                    6. WHO (World Health Organisation) - Global Health Observatory (GHO) data: Life Expectancy [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.who.int/gho/mortality_burden_disease/life_tables/situation_trends/en/" target="_blank">Source</a>
                 </li>
                 <li id="mad-ref-6">
-                    6. Wikipedia - the free encyclopedia, Age of Majority [online]
+                    7. Wikipedia - the free encyclopedia, Age of Majority [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://en.wikipedia.org/wiki/Age_of_majority" target="_blank">Source</a>
+                </li>
+                <li>
+                    The data was collected by <a class="link-main" href="https://www.numbeo.com/cost-of-living/" target="_blank">Numbeo</a>, the world’s largest database of user-contributed data on costs and prices around the world.
                 </li>
             </ol>
         </div>
     </section>
 </main>
-
-<div class="clearfix"></div>
-
-
-<footer id="mad-footer"></footer>
-
-
-
-
 
 <!--                                           -->
 <!--            End of Main Content            -->

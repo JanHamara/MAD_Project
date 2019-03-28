@@ -190,6 +190,9 @@ strong {
   float: right;
   font-family: 'Montserrat', sans-serif !important;
 }
+.mad-chart-container {
+  margin: 10% 0;
+}
 body,
 html,
 div,

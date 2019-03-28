@@ -14,38 +14,69 @@ import Chart from 'chart.js';
 
 // ----------------------------------------------------
 //
-// // #mad-chart-1
+// // #mad-chart-1 & #mad-chart-2
 //
-// // ----------------------------------------------------
-// // var ctx = document.getElementById('mad-chart-1').getContext('2d');
-// // var myChart = new Chart(ctx, {
-// //     type: 'doughnut',
-// //     data: {
-// //         labels: ['Millionaires', 'Rest of Population'],
-// //         datasets: [{
-// //             label: '% of Millionaires',
-// //             data: [3, 97],
-// //             backgroundColor: [
-// //                 'rgba(255, 99, 132, 0.6)',
-// //                 'rgba(50, 50, 50, 0.6)',
-// //             ],
-// //             borderColor: [
-// //                 'rgba(255, 99, 132, 0.6)',
-// //                 'rgba(50, 50, 50, 0.6)',
-// //             ],
-// //             borderWidth: 1
-// //         }]
-// //     },
-// //     options: {
-// //         gridLines: {
-// //             display: false
-// //         },
-// //     },
-// //     ticks: {
-// //         fontColor: 'rgba(0, 0, 0, 0.6)',
-// //         fontFamily: "'Raleway', sans-serif",
-// //     },
-// // });
+// ----------------------------------------------------
+
+var ctx = document.getElementById('mad-chart-1').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Millionaires (%)', 'Rest of Population (%)'],
+        datasets: [{
+            label: '% of Millionaires',
+            data: [3, 97],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(50, 50, 50, 0.6)',
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(50, 50, 50, 0.6)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        gridLines: {
+            display: false
+        },
+    },
+    ticks: {
+        fontColor: 'rgba(0, 0, 0, 0.6)',
+        fontFamily: "'Raleway', sans-serif",
+    },
+});
+
+var ctx2 = document.getElementById('mad-chart-2').getContext('2d');
+var myChart2 = new Chart(ctx2, {
+    type: 'doughnut',
+    data: {
+        labels: ['World Wealth owned by Millionaires (%)', 'World Wealth owned by rest of population (%)'],
+        datasets: [{
+            label: '% of Millionaires',
+            data: [50, 50],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(50, 50, 50, 0.6)',
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(50, 50, 50, 0.6)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        gridLines: {
+            display: false
+        },
+    },
+    ticks: {
+        fontColor: 'rgba(0, 0, 0, 0.6)',
+        fontFamily: "'Raleway', sans-serif",
+    },
+});
 
 // ----------------------------------------------------
 //
@@ -53,8 +84,8 @@ import Chart from 'chart.js';
 //
 // ----------------------------------------------------
 
-var ctx = document.getElementById('mad-chart-2').getContext('2d');
-var myChart = new Chart(ctx, {
+var ctx3 = document.getElementById('mad-chart-3').getContext('2d');
+var myChart3 = new Chart(ctx3, {
     type: 'bar',
     data: {
         labels: ['Europe', 'Asia', 'Africa', 'North America', 'South America', 'Australia'],
@@ -90,28 +121,3 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-
-// ----------------------------------------------------
-//
-// #mad-search-form-input
-//
-// ----------------------------------------------------
-
-// function queryCountry() {
-//     var mysql = require('mysql');
-//
-//     var con = mysql.createConnection({
-//         host: "localhost",
-//         user: "root",
-//         password: "#Excelsior1808",
-//         database: "Countries"
-//     });
-//
-//     con.connect(function(err) {
-//         if (err) throw err;
-//         con.query("SELECT * FROM customers", function (err, result, fields) {
-//             if (err) throw err;
-//             console.log(result);
-//         });
-//     });
-// }
