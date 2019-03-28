@@ -15,7 +15,9 @@
 @main-font-color: #2f2f2f;
 @main-font-color-50: rgba(0, 0, 0, 0.6);
 @main-font-color-20: rgba(0, 0, 0, 0.2);
+
 @main-red: #de6868;
+@main-green: #619358;
 
 //--------------------------
 // Media Queries
@@ -88,6 +90,12 @@
   -webkit-background-size: cover;
   -ms-content-zooming: none;
 }
+
+//------------------------------------------------------------------------------
+
+// Project Specific Classes
+
+// ------------------------------------------------------------------------------
 
 strong {
   color: @main-font-color !important;
@@ -176,6 +184,84 @@ strong {
   }
 }
 
+.question-list-style {
+  .nobound;
+
+  li {
+    padding: 5% 0 3%;
+    //
+    border-top: 0.5px @main-font-color-20 solid !important;
+
+    h4 {
+      .h4-heading-style;
+
+      .fa-question-circle-o {
+        color: @main-red;
+        transform: scale(1.5);
+        margin-right: 1%;
+      }
+    }
+
+    p {
+      margin: 0 0 2%;
+    }
+  }
+}
+
+.mad-stats-list {
+  .nobound;
+
+  li:first-child {
+    border-top: 0.5px @main-font-color-20 solid;
+  }
+
+  li {
+    width: 90%;
+    padding: 3%;
+    border-bottom: 0.5px @main-font-color-20 solid;
+
+    &:hover {
+      background: rgba(200, 200, 200, 0.2);
+      cursor: pointer;
+    }
+
+    span {
+      .display(inline);
+    }
+
+    .mad-income-stats-no {
+      opacity: 0.4;
+      font-weight: normal;
+      margin-right: 5px;
+    }
+
+    .mad-income-stats-no-last {
+      opacity: 0.4;
+      font-weight: normal;
+      margin-right: 8px;
+    }
+
+    .mad-income-stats-img {
+      .display(inline);
+      width: 30px !important;
+      height: 18px !important;
+      vertical-align: middle;
+      margin: 0 2%;
+      //
+      box-shadow: 0 0 5px @main-font-color-50;
+    }
+
+    .mad-income-stats-country {
+      font-weight: bolder !important;
+    }
+
+    .mad-income-stats-value {
+      float: right;
+      font-family: @font2 !important;
+    }
+  }
+}
+
 //-------------------------------------------------------------
 
 //                        Animations
@@ -226,7 +312,13 @@ a.mad-ref-link:hover {
 //
 
 .link-main {
+  .display(inline);
   color: @main-red !important;
+}
+
+.link-main-green {
+  .display(inline);
+  color: @main-green !important;
 }
 
 //
@@ -354,27 +446,7 @@ body {
         .main-content-style;
 
         #mad-preparation-standards {
-          .nobound;
-
-          li {
-            padding: 5% 0 3%;
-            //
-            border-top: 0.5px @main-font-color-20 solid !important;
-
-            h4 {
-              .h4-heading-style;
-
-              .fa-question-circle-o {
-                color: @main-red;
-                transform: scale(1.5);
-                margin-right: 1%;
-              }
-            }
-
-            p {
-              margin: 0 0 2%;
-            }
-          }
+          .question-list-style;
         }
       }
     }
@@ -415,61 +487,6 @@ body {
             opacity: 0.4;
           }
         }
-
-        ol.mad-income-stats-list {
-          .nobound;
-
-          li:first-child {
-            border-top: 0.5px @main-font-color-20 solid;
-          }
-
-          li {
-            width: 90%;
-            padding: 3%;
-            border-bottom: 0.5px @main-font-color-20 solid;
-
-            &:hover {
-              background: rgba(200, 200, 200, 0.2);
-              cursor: pointer;
-            }
-
-            span {
-              .display(inline);
-            }
-
-            .mad-income-stats-no {
-              opacity: 0.4;
-              font-weight: normal;
-              margin-right: 5px;
-            }
-
-            .mad-income-stats-no-last {
-              opacity: 0.4;
-              font-weight: normal;
-              margin-right: 8px;
-            }
-
-            .mad-income-stats-img {
-              .display(inline);
-              width: 30px !important;
-              height: 18px !important;
-              vertical-align: middle;
-              margin: 0 2%;
-              //
-              box-shadow: 0 0 5px @main-font-color-50;
-            }
-
-            .mad-income-stats-country {
-              font-weight: bolder !important;
-            }
-
-            .mad-income-stats-value {
-              float: right;
-              font-family: @font2 !important;
-            }
-          }
-        }
-
       }
     }
   }
@@ -569,7 +586,6 @@ body {
         }
 
       }
-
     }
   }
 
@@ -589,6 +605,222 @@ body {
         .main-content-style;
         width: 100%;
         padding: 0 16% 0;
+
+        #mad-top100-chart {
+          width: 80%;
+          margin: auto;
+        }
+      }
+
+      #mad-podium {
+        width: 80% !important;
+        margin: 5% auto 5%;
+        .rel;
+
+        #mad-podium-img {
+          width: 100%;
+        }
+
+        .mad-podium-country {
+          .abs;
+          width: 180px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .country-container {
+            .fs;
+            transition: transform 1s;
+            transform: scale(0.9) !important;
+
+            &:hover {
+              transition: transform 1s;
+              transform: scale(1.1) !important;
+
+              img {
+                transition: box-shadow 1s;
+                box-shadow: 0 0 20px @main-font-color-50;
+              }
+            }
+
+            img {
+              width: 60%;
+              margin: auto;
+              //
+              transition: transform 1s, box-shadow 1s;
+              box-shadow: 0 0 15px @main-font-color-50;
+            }
+
+            h4 {
+              color: @main-font-color-50 !important;
+              font-weight: bolder !important;
+              margin: 15% 0 5%;
+            }
+
+            .mad-podium-time {
+              .main-text-style;
+              letter-spacing: 0px !important;
+            }
+          }
+        }
+
+        .mad-podium-country-lo {
+          .country-container {
+            transform: scale(0.7) !important;
+            &:hover {
+              transform: scale(0.9) !important;
+            }
+          }
+        }
+
+        #mad-podium-country-1 {
+          .p-center;
+        }
+
+        #mad-podium-country-2 {
+          .p-center;
+          left: 28%;
+          top: 60%;
+        }
+
+        #mad-podium-country-3 {
+          .p-center;
+          left: 72%;
+          top: 60%;
+        }
+      }
+
+      #mad-results-stats {
+        .main-content-style;
+        width: 90% !important;
+        padding: 5% 0;
+
+        h4 {
+          .h4-heading-style;
+          color: @main-font-color-50 !important;
+          letter-spacing: 0px;
+          margin-bottom: 3%;
+
+          span {
+            .display(inline);
+            font-size: 14px;
+            opacity: 0.4;
+          }
+        }
+
+        ol.mad-income-stats-list {
+          .nobound;
+
+          li:first-child {
+            border-top: 0.5px @main-font-color-20 solid;
+          }
+
+          li {
+            width: 90%;
+            padding: 3%;
+            border-bottom: 0.5px @main-font-color-20 solid;
+
+            &:hover {
+              background: rgba(200, 200, 200, 0.2);
+              cursor: pointer;
+            }
+
+            span {
+              .display(inline);
+            }
+
+            .mad-income-stats-no {
+              opacity: 0.4;
+              font-weight: normal;
+              margin-right: 5px;
+            }
+
+            .mad-income-stats-no-last {
+              opacity: 0.4;
+              font-weight: normal;
+              margin-right: 8px;
+            }
+
+            .mad-income-stats-img {
+              .display(inline);
+              width: 30px !important;
+              height: 18px !important;
+              vertical-align: middle;
+              margin: 0 2%;
+              //
+              box-shadow: 0 0 5px @main-font-color-50;
+            }
+
+            .img-nepal {
+              box-shadow: none !important;
+            }
+
+            .mad-income-stats-country {
+              font-weight: bolder !important;
+            }
+
+            .mad-income-stats-value {
+              float: right;
+              font-family: @font2 !important;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+
+  // 05 Other Countries
+  #mad-other-countries {
+    .section-setup;
+    padding: 5% 10% 5% !important;
+
+    .container-fluid {
+
+      h3.mad-section-header {
+        width: 100%;
+        padding: 0 16% 5%;
+      }
+
+      .mad-other-countries-content {
+        .main-content-style;
+        width: 100%;
+        padding: 0 16% 0;
+
+        #mad-other-countries-facts {
+          .question-list-style;
+
+          .mad-stats-list {
+            margin: 5% 0;
+
+            li {
+              width: 100% !important;
+              padding: 2% !important;
+
+              // Top 7 in table
+
+              &:nth-child(-n+7) {
+                background: rgba(143, 209, 132, 0.1);
+
+                &:hover {
+                  background: rgba(143, 209, 132, 0.3);
+                }
+              }
+
+              // Last 5 in table
+
+              &:nth-last-child(-n+5) {
+                background: rgba(222, 104, 104, 0.1);
+
+                &:hover {
+                  background: rgba(222, 104, 104, 0.3);
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

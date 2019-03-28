@@ -172,7 +172,7 @@
 
                             <p>
                                 <em>Being a millionaire</em> doesn't have to mean <em>being rich</em>
-                                in certain countries in the world.
+                                in certain countries of the world.
                             </p>
                             <p>
                                 While millionaire in <strong>France</strong> 🇫🇷(net worth bigger than <strong>1 000 000 €</strong>) is certainly considered worldwide as an extremely wealthy individual,
@@ -239,7 +239,7 @@
                                 These are the expenses that will be counted in the <strong>total sum spent each month (per each country)</strong>...
                             </p>
                             <p>
-                                <strong class="red-highlight">Rent</strong> = average monthly rent for a <strong>1 bedroom apartment in non-expensive area</strong>
+                                <strong class="red-highlight">Rent</strong> = average monthly rent for <strong>1 bedroom apartment in non-expensive area</strong>
                             </p>
                             <p>
                                 <strong class="red-highlight">Utilities</strong> = average monthly bill for <strong>electricity, heating, water, garbage collection</strong>
@@ -315,7 +315,7 @@
                     <div class="col-lg-6">
                         <h4 id="top10-highest-wage">Top 10 countries with highest average wage <span>(US$ / month)</span></h4>
 
-                        <ol class="mad-income-stats-list">
+                        <ol class="mad-stats-list">
 
                             <!--    We use PHP and MySQLi in order to connect to the database    -->
                             <?php
@@ -374,7 +374,7 @@
                     <div class="col-lg-6">
                         <h4 id="top10-lowest-wage">Top 10 countries with lowest average wage <span>(US$ / month)</span></h4>
 
-                        <ol class="mad-income-stats-list">
+                        <ol class="mad-stats-list">
                             <?php
                             $servername = "localhost";
                             $username = "root";
@@ -477,8 +477,8 @@
                 <p>
                     However, there are exceptions when a country may offer high average income with a reasonably low living expenses,
                     as well as worst-scenario cases where high living cost meets with low income. While the latter won't be of much interest to us,
-                    the former will be decisive in identifying the best country for becoming a millionaire. After the first look on following tables,
-                    we can already start noticing some interesting statistics.
+                    the former will be decisive in <strong>identifying the best country for becoming a millionaire</strong>.
+                    After the first look on following tables, we can already start noticing some interesting statistics.
                 </p>
                 <p>
                     As much as 7 countries from the <strong>Top 10 countries with highest average wage</strong>
@@ -501,7 +501,7 @@
                     <div class="col-lg-6">
                         <h4 id="top10-highest-expenses">Top 10 countries with highest cost of living <span>(US$ / month)</span></h4>
 
-                        <ol class="mad-income-stats-list">
+                        <ol class="mad-stats-list">
 
                             <!--    We use PHP and MySQLi in order to connect to the database    -->
                             <?php
@@ -552,7 +552,6 @@
                             } else {
                                 echo "0 results";
                             }
-
                             $conn->close();
                             ?>
                         </ol>
@@ -560,7 +559,7 @@
                     <div class="col-lg-6">
                         <h4 id="top10-lowest-expenses">Top 10 countries with lowest cost of living <span>(US$ / month)</span></h4>
 
-                        <ol class="mad-income-stats-list">
+                        <ol class="mad-stats-list">
                             <?php
                             $servername = "localhost";
                             $username = "root";
@@ -634,8 +633,8 @@
                     require <strong>less than 400$ per month</strong> for average lifestyle. Surprisingly, only 2 African countries make it
                     to the top 10 with lowest cost of living, on 6th place <strong>Central African Republic</strong> 🇨🇫 and
                     <strong>South Sudan</strong> 🇸🇸 on 10th place. <strong>Albania</strong> 🇦🇱 is also quite interesting entry for
-                    <strong>the cheapest country in Europe</strong>, while inflation-troubled <strong>Venezuela</strong> makes
-                    the 9th place to represent it's bizarre economic situation.
+                    <strong>the cheapest country in Europe</strong>, while inflation-troubled <strong>Venezuela</strong> 🇻🇪 makes
+                    the 9th place, representing it's bizarre economic situation.
                 </p>
             </div>
         </div>
@@ -652,8 +651,339 @@
             </h3>
 
             <div class="mad-results-content">
-                Now that we have got insight into which countries top the positive and negative ranking,
-                whether we talk about average income or cost of living, it is time to present answers to initial question.
+                <p>
+                    Now that we have got insight into which countries top the positive and negative ranking,
+                    whether we talk about <a class="link-main" href="#mad-income">average income</a>
+                    or <a class="link-main" href="#mad-expenses">cost of living</a>, it is time to present answer
+                    to the initial question.
+                </p>
+                <p>
+                    <strong>Which country is the best for becoming a millionaire on average income and how long would it take?</strong>
+                </p>
+            </div>
+
+            <!--      Podium of TOP 3 countries      -->
+            <div id="mad-podium">
+                <img id="mad-podium-img" src="./assets/figure1/podium.png" class="img-repsonsive">
+
+                <!--        PHP script loading data from the database and outputting generated HTML for the podium        -->
+                <?php
+                $servername = "localhost";
+                $username = "root";
+                $password = "#Excelsior1808";
+                $dbname = "Countries";
+
+                // We create connection with the database, using the login credentials
+                $conn = new mysqli($servername, $username, $password, $dbname);
+
+                // We select four columns from the database that are required for our podium [Country, CountryCode, AverageIncome, AverageExpense]
+                // We order the retrieved table by Average Income with DESCENDING option as we are looking for the BEST countries for earning a million
+                // Finally we limit the number of results to 3, as we will be only showing top 3 countries on the podium
+                $sql = "SELECT Country, CountryCode, AverageExpense, AverageIncome FROM Countries ORDER BY (AverageIncome - AverageExpense) DESC limit 3";
+                // We run the query on the database table
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+
+                    // Here we will iterate through 3 top countries, for which we will need to use different classes in HTML,
+                    // thus we will have to use variable $place to indicate to script, which iteration is currently being processed,
+                    // after finishing iteration we increment the variable by 1, to move on another place
+                    //
+
+                    $place = 1;
+
+                    //
+                    // Based on this condition, PHP will decide which HTML tags to use (by using IF statement)
+                    while($row = $result->fetch_assoc()) {
+
+                        //
+                        // First we need to compute the required time for becoming a millionaire
+                        //
+                        if ($row["AverageExpense"] > $row["AverageIncome"]) {
+                            // If country has higher AverageExpense than AverageIncome - automatically eliminate it from consideration for Top 3
+                            $eliminate1 = true;
+                        } else {
+                            // Computation of time required for earning 1000000 $USD
+                            $savedPerMonth = $row["AverageIncome"] - $row["AverageExpense"];
+                            $months = 1000000 / $savedPerMonth;
+                            $years = $months / 12;
+                            $yearsTotal = floor($years); // number of years
+                            $remainder1 = $years - $yearsTotal;
+                            $months = $remainder1 * 12;
+                            $monthsTotal = floor($months); // number of months
+                            $remainder2 = $months - floor($months);
+                            $days = $remainder2 * 30.5;
+                            $daysTotal = floor($days); // number of days
+                        }
+
+                        //
+                        // Now we have required values for time stored in following variables
+                        //
+                        //  $yearsTotal = number of years
+                        //  $monthsTotal = number of months
+                        //  $daysTotal = number of days
+                        //
+                        //  Thus $totalTimeRequired would be equal to sum of these three values
+                        //
+
+                        //
+                        //  With variables available to be output to HTML, we can start filling our podium with data of Top 3 countries
+                        //
+
+                        // Code to be executed for rendering country in 1st place
+                        if ($place == 1) {
+                            echo "<div id=\"mad-podium-country-1\" class=\"mad-podium-country\">";
+                            echo "<div class=\"country-container\">";
+                            // Here we will use CountryCode value from database, in order to select correct country flag
+                            echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"img-responsive\">";
+                            // We do the same for the name of country
+                            echo "<h4>" . $row["Country"] . "</h4>";
+                            // And finally we use our time variables to show them in our HTML
+                            echo "<span class=\"mad-podium-time\"><strong>" . $yearsTotal . "</strong> years <strong>" . $monthsTotal . "</strong> months 
+                            <strong>" . $daysTotal . "</strong> days</span>";
+                            echo "</div>";
+                            echo "</div>";
+                        }
+
+                        // We execute almost identical code for 2nd and 3rd country, with addition of few classes required for positioning these elements on podium
+                        if ($place == 2 || $place == 3) {
+                            // We use $place variable to create the ID value
+                            echo "<div id=\"mad-podium-country-" . $place . "\" class=\"mad-podium-country mad-podium-country-lo\">";
+                            echo "<div class=\"country-container\">";
+                            echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"img-responsive\">";
+                            echo "<h4>" . $row["Country"] . "</h4>";
+                            echo "<span class=\"mad-podium-time\"><strong>" . $yearsTotal . "</strong> years <strong>" . $monthsTotal . "</strong> months 
+                            <strong>" . $daysTotal . "</strong> days</span>";
+                            echo "</div>";
+                            echo "</div>";
+                        }
+
+                        // After executing the code for a country, we increment $place variable to move on to next country
+                        $place++;
+
+
+                        // End of Script
+                        //
+                        // This way we load the content dynamically from the database, instead of hardcoding values directly in HTML
+                        // That means that if values in database change (e.g. Top 3 countries change), changes will automatically be loaded by script
+                        // and correct podium will be loaded, without having to change anything in code
+                    }
+                } else {
+                    echo "0 results";
+                }
+                $conn->close();
+                ?>
+            </div>
+
+            <div class="mad-results-content">
+                <p>
+                    After looking at our podium we can see that the best country to become millionaire on average income
+                    and in fastest time is <strong>Liechtenstein</strong> 🇱🇮,
+                    where it would take almost exactly <strong>22 years to become a millionaire</strong>. Despite a very high average cost of living
+                    of <strong>2054.21$</strong>, the highest average wage worldwide of <strong>5242.14$</strong> gives an average inhabitant
+                    of this country a possibility to set aside (or invest) <strong>more than 3000$ dollars each month</strong> (3187.93$ exactly),
+                    making it <strong>the best country to live and work in, for aspiring millionaires</strong>.
+                </p>
+                <p>
+                    Second country is <strong>Austria</strong> 🇦🇹 with <strong>29 years</strong> of work required to earn a million
+                    and third <strong>Denmark</strong> 🇩🇰 with <strong>3 years, 3 months and 17 days</strong> long journey towards first million.
+                    We can notice that podium is entirely taken up by <strong>European countries</strong> demonstrating its strong economic balance,
+                    when we look at levels of profitability between average income and average cost of living.
+                </p>
+                <p>
+                    In fact, if we look at <strong>top 30 countries</strong> by time required to become a millionaire,
+                    we'll find out that <strong>21 of them are in Europe</strong>. That says a lot about the economic stability on this continent, when compared to others.
+                    Let's see what we will learn, if we look at the strength of each continent, considering <strong>top 100 countries</strong> in this ranking.
+                </p>
+
+                <!--       Top 100 countries by continent CHART         -->
+                <div id="mad-top100-chart">
+                    <!--         Getting percentual data about performance of continents in Top 100           -->
+                    <?php
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "#Excelsior1808";
+                    $dbname = "Countries";
+                    $conn = new mysqli($servername, $username, $password, $dbname);
+
+                    // We order this list by the same conditions as previous, but we will only need to use information about Country and Continent
+                    $sql = "SELECT Country, Continent, AverageExpense, AverageIncome FROM Countries ORDER BY (AverageIncome - AverageExpense) DESC limit 100";
+                    $result = $conn->query($sql);
+                    if ($result->num_rows > 0) {
+
+                        // IN ORDER TO GET REQUIRED DATA
+                        // We create variable for each continent, which we will increment per each country, for its respective continent
+                        $eu = 0;    // Europe
+                        $af = 0;    // Africa
+                        $as = 0;    // Asia
+                        $me = 0;    // Middle East - part of Asia
+                        $na = 0;    // North America
+                        $sa = 0;    // South America
+                        $ca = 0;    // Central America & The Carribean
+                        $au = 0;    // Australia & Oceania
+
+
+                        while($row = $result->fetch_assoc()) {
+
+                            if ($row["Continent"] == "eu") {$eu++;}
+                            if ($row["Continent"] == "af") {$af++;}
+                            if ($row["Continent"] == "as") {$as++;}
+                            if ($row["Continent"] == "me") {$me++;}
+                            if ($row["Continent"] == "na") {$na++;}
+                            if ($row["Continent"] == "sa") {$sa++;}
+                            if ($row["Continent"] == "ca") {$ca++;}
+                            if ($row["Continent"] == "au") {$au++;}
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+                    $conn->close();
+                    ?>
+
+                    <div id="mad-chart2">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <canvas id="mad-chart-2" width="200" height="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    <strong>Europe</strong> clearly dominates the chart with 40 countries in Top 100, followed by <strong>Asia</strong>
+                    with 22 countries in Top 100, 8 of which are located in <strong>Middle-East</strong>.
+                    Very surprisingly <strong>Africa</strong> has 12 countries in Top 10,
+                    same as <strong>North American continent</strong>, representing economy of <strong>United States</strong> 🇺🇸
+                    and <strong>Canada</strong> 🇨🇦, next to several small countries located in the Caribbean.
+                    <strong>South America</strong> has 8 countries in Top 100 and <strong>Australia</strong> places last with 6 countries.
+                    These include country <strong>Australia</strong> 🇦🇺, <strong>Papua New Guinea</strong> 🇵🇬 and 4 island nations in <strong>The Oceania</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--                          -->
+    <!--    05 Other Countries    -->
+    <!--                          -->
+
+    <section id="mad-other-countries">
+        <div class="container-fluid">
+            <h3 class="mad-section-header">
+                <span class="mad-section-header-numbering">05</span> What about the rest of the world?
+            </h3>
+
+            <div class="mad-other-countries-content">
+                <p>
+                    After answering the question that we set up to ourselves for this project, it is time to look at
+                    some <strong>more interesting statistics</strong> that came up during research as well as throughout the execution
+                    of our calculations.
+                </p>
+
+                <ol id="mad-other-countries-facts">
+
+                    <li>
+                        <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i>Can you make it in a lifetime in every country</h4>
+
+                        <p>
+                            Short answer: <strong>No</strong>. Out of 194 world countries that we have evaluated,
+                            <strong>only 75 had average income higher than average cost of living</strong> and that still did not mean
+                            all of these countries would provide a person with possibility of earning a million within a lifetime. For example,
+                            in <strong>Bosnia and Herczegovina</strong> 🇧🇦 - 73rd in ranking and last country with <strong>average income</strong>
+                            higher than <strong>average cost of living</strong> (by only 4 euros) - it would take a person with average income and expenses
+                            astonishing <strong>22 045 years, 10 months</strong> and <strong>8 days</strong> to earn a million</strong>.
+                        </p>
+                        <p>
+                            If we take the <strong>average life expectancy at birth of the global population</strong> to be at <strong>72.0 years</strong> (World Health Organisation, 2016).<a class="mad-ref-link" href="#mad-ref-5"><sup>[5]</sup></a>
+                            and we consider that most countries set <strong>the age of adulthood at 18 years old</strong><a class="mad-ref-link" href="#mad-ref-6"><sup>[6]</sup></a> (point when individual becomes adult - free to travel to & work in any country by himself),
+                            we end up with some very interesting results.
+                        </p>
+                        <p>
+                            You can become a millionaire on average income only in <strong>18 countries of the world</strong> and while
+                            in  <a class="link-main-green" href="#mad-top18-top7">7 of them</a> you can achieve this goal <strong>in under 40 years</strong>,
+                            <a class="link-main" href="#mad-top18-last5">last 5 of them</a> would barely leave you any time left for enjoying your newly acquired figure of one million dollars.
+                            If you are curious, which 18 countries I am talking about, you can find them in <a class="link-main" href="#mad-top18-lifetime">following list</a>, along with
+                            <strong>times required for reaching the set goal of 1 000 000$.</strong>
+                        </p>
+
+                        <ol id="mad-top18-lifetime" class="mad-stats-list">
+
+                            <!--    We use PHP and MySQLi in order to connect to the database    -->
+                            <?php
+                            $servername = "localhost";
+                            $username = "root";
+                            $password = "#Excelsior1808";
+                            $dbname = "Countries";
+
+                            // We create connection with the database, using the login credentials
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+
+                            // We select three columns from the database that are required for our table [Country, CountryCode, AverageIncome]
+                            // We order the retrieved table by Average Income with DESCENDING option as we are looking for Top 10 Highest Salaries
+                            // Finally we limit the number of results to 10, as we will be only showing 10 results in the table
+                             $sql = "SELECT Country, CountryCode, AverageExpense, AverageIncome FROM Countries ORDER BY (AverageIncome - AverageExpense) DESC limit 18";
+                            // We run the query on the database table
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+
+                                $count = 1;
+
+                                // Based on this condition, PHP will decide which HTML tags to use (by using IF statement)
+                                while($row = $result->fetch_assoc()) {
+
+                                    //
+                                    // First we need to compute the required time for becoming a millionaire
+                                    //
+                                    if ($row["AverageExpense"] > $row["AverageIncome"]) {
+                                        // If country has higher AverageExpense than AverageIncome - automatically eliminate it from consideration for Top 3
+                                        $eliminate1 = true;
+                                    } else {
+                                        // Computation of time required for earning 1000000 $USD
+                                        $savedPerMonth = $row["AverageIncome"] - $row["AverageExpense"];
+                                        $months = 1000000 / $savedPerMonth;
+                                        $years = $months / 12;
+                                        $yearsTotal = floor($years); // number of years
+                                        $remainder1 = $years - $yearsTotal;
+                                        $months = $remainder1 * 12;
+                                        $monthsTotal = floor($months); // number of months
+                                        $remainder2 = $months - floor($months);
+                                        $days = $remainder2 * 30.5;
+                                        $daysTotal = floor($days); // number of days
+                                    }
+
+                                    if ($count == 14) {
+                                        echo "<li id='mad-top18-last5'>";
+                                    } elseif ($count == 1) {
+                                        echo "<li id='mad-top18-top7'>";
+                                    } else {
+                                        echo "<li>";
+                                    }
+
+                                    // Here we test for $count variable because after it reaches number 10,
+                                    // we don't want to output "010" but "10" for the last item
+                                    if ($count < 10) {
+                                        echo "<span class=\"mad-income-stats-no\">" . "0" . $count . "</span>";
+                                    } else {
+                                        echo "<span class=\"mad-income-stats-no-last\">" . $count . "</span>";
+                                    }
+                                    echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
+                                    // We output the Country name
+                                    echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
+                                    // And finally we output the AverageIncome value
+                                    echo "<span class=\"mad-income-stats-value\">" . $yearsTotal . " years " . $monthsTotal . " months " . $daysTotal . " days " . "</span>";
+                                    echo "</li>";
+
+                                    $count++;
+                                }
+                            } else {
+                                echo "0 results";
+                            }
+
+                            $conn->close();
+                            ?>
+                        </ol>
+                    </li>
+                </ol>
             </div>
         </div>
     </section>
@@ -685,10 +1015,20 @@
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://en.wikipedia.org/wiki/United_States" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-3">
-                    3. BBC News - Venezuela crisis: How the political situation escalated [online]
+                <li id="mad-ref-4">
+                    4. BBC News - Venezuela crisis: How the political situation escalated [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.bbc.co.uk/news/world-latin-america-36319877" target="_blank">Source</a>
+                </li>
+                <li id="mad-ref-5">
+                    5. WHO (World Health Organisation) - Global Health Observatory (GHO) data: Life Expectancy [online]
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.who.int/gho/mortality_burden_disease/life_tables/situation_trends/en/" target="_blank">Source</a>
+                </li>
+                <li id="mad-ref-6">
+                    6. Wikipedia - the free encyclopedia, Age of Majority [online]
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://en.wikipedia.org/wiki/Age_of_majority" target="_blank">Source</a>
                 </li>
             </ol>
         </div>
