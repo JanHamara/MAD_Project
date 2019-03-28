@@ -97,23 +97,21 @@ var myChart = new Chart(ctx, {
 //
 // ----------------------------------------------------
 
-function queryCountry() {
-    var mysql = require('mysql');
-
-    var con = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "#Excelsior1808",
-        database: "Countries"
-    });
-
-    con.connect(function(err) {
-        if (err) throw err;
-        con.query("SELECT * FROM customers", function (err, result, fields) {
-            if (err) throw err;
-            console.log(result);
-        });
-    });
-}
-
-document.getElementById("mad-search-form-input").addEventListener("input", queryCountry);
+// function queryCountry() {
+//     var mysql = require('mysql');
+//
+//     var con = mysql.createConnection({
+//         host: "localhost",
+//         user: "root",
+//         password: "#Excelsior1808",
+//         database: "Countries"
+//     });
+//
+//     con.connect(function(err) {
+//         if (err) throw err;
+//         con.query("SELECT * FROM customers", function (err, result, fields) {
+//             if (err) throw err;
+//             console.log(result);
+//         });
+//     });
+// }

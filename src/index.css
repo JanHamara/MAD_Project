@@ -32,6 +32,18 @@
   -webkit-background-size: cover;
   -ms-content-zooming: none;
 }
+@-webkit-keyframes autofill {
+  to {
+    color: #2f2f2f !important;
+    background: none !important;
+  }
+}
+@keyframes autofill {
+  to {
+    color: #2f2f2f !important;
+    background: none !important;
+  }
+}
 strong {
   color: #2f2f2f !important;
   font-weight: bolder !important;
@@ -269,14 +281,6 @@ a.mad-ref-link:hover {
 }
 html {
   background: #f7f2ea;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  -ms-content-zooming: none;
 }
 body,
 html {
@@ -291,6 +295,10 @@ html {
 }
 body {
   background: #f7f2ea;
+}
+hr {
+  width: 80% !important;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.2);
 }
 #pre-loader {
   width: 100%;
@@ -532,6 +540,9 @@ body {
 }
 #mad-content #mad-income .container-fluid .mad-income-content p {
   margin: 5% 0;
+}
+#mad-content #mad-income .container-fluid .mad-income-content #mad-video-1 {
+  margin-top: 4%;
 }
 #mad-content #mad-income .container-fluid #mad-income-stats {
   text-align: justify;
@@ -995,11 +1006,10 @@ body {
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form {
   text-align: center;
-  width: 30%;
+  width: 80%;
   margin: 5% auto 5%;
-  border-bottom: 0.5px rgba(0, 0, 0, 0.6) solid;
 }
-#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form input {
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form #mad-search-form-input {
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
@@ -1007,14 +1017,29 @@ body {
   line-height: 200%;
   background: none !important;
   border: none !important;
+  border-bottom: 0.5px rgba(0, 0, 0, 0.6) solid !important;
   padding: 2% 5%;
+  margin-bottom: 2%;
+  width: 50%;
 }
-#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form input::placeholder {
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form #mad-search-form-input::placeholder {
   opacity: 0.5;
 }
-#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form input:focus {
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form #mad-search-form-input:focus {
   outline: none !important;
   border: none !important;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form #mad-search-form-submit {
+  background: none !important;
+  border: none !important;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+}
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form #mad-search-form-submit:hover {
+  color: #2f2f2f !important;
+  font-weight: bolder !important;
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .col-lg-6:first-child {
   padding-right: 35px !important;
@@ -1023,7 +1048,12 @@ body {
   padding-left: 35px !important;
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output img {
-  margin-top: 5%;
+  display: inline !important;
+  width: 55px !important;
+  height: 33px !important;
+  vertical-align: bottom;
+  margin-right: 15px;
+  margin-bottom: 2px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   transition: transform 1s, box-shadow 1s;
 }
@@ -1032,7 +1062,7 @@ body {
   transition: transform 1s, box-shadow 1s;
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h1 {
-  margin: 0 0 5%;
+  display: inline !important;
   font-size: 28px;
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h4 {
@@ -1040,15 +1070,198 @@ body {
   font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 200%;
-  font-size: 12px !important;
+  font-size: 14px !important;
   padding-bottom: 1%;
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h4 span {
   float: right;
 }
+#mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-desc {
+  padding-top: 4%;
+}
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-desc,
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-expense {
   padding-bottom: 3%;
+}
+#mad-content #mad-interesting-facts {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  height: auto !important;
+  padding: 5% 20% 5%;
+  padding: 5% 10% 5% !important;
+}
+#mad-content #mad-interesting-facts .container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+#mad-content #mad-interesting-facts .container-fluid h3.mad-section-header {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  color: #2f2f2f !important;
+  font-size: 27px;
+  font-family: 'Raleway', cursive;
+  font-weight: bolder;
+}
+#mad-content #mad-interesting-facts .container-fluid h3.mad-section-header .mad-section-header-numbering {
+  display: inline;
+  opacity: 0.4;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+#mad-content #mad-interesting-facts .container-fluid h3.mad-section-header {
+  width: 100%;
+  padding: 0 16% 5%;
+}
+#mad-content #mad-interesting-facts .container-fluid .mad-interesting-facts-content {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  width: 100%;
+  padding: 0 16% 0;
+}
+#mad-content #mad-interesting-facts .container-fluid .mad-interesting-facts-content p {
+  margin: 5% 0;
+}
+#mad-content #mad-interesting-facts .container-fluid .mad-interesting-facts-content .mad-interesting-facts-numbering {
+  opacity: 0.4;
+  font-size: 25px;
+}
+#mad-content #mad-interesting-facts .container-fluid .mad-interesting-facts-content .mad-ifn-r {
+  text-align: right;
+}
+#mad-content #mad-feedback {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  height: auto !important;
+  padding: 5% 20% 5%;
+  padding: 5% 10% 5% !important;
+}
+#mad-content #mad-feedback .container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+#mad-content #mad-feedback .container-fluid h3.mad-section-header {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  color: #2f2f2f !important;
+  font-size: 27px;
+  font-family: 'Raleway', cursive;
+  font-weight: bolder;
+}
+#mad-content #mad-feedback .container-fluid h3.mad-section-header .mad-section-header-numbering {
+  display: inline;
+  opacity: 0.4;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+#mad-content #mad-feedback .container-fluid h3.mad-section-header {
+  width: 100%;
+  padding: 0 16% 5%;
+}
+#mad-content #mad-feedback .container-fluid .mad-feedback-content {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  width: 100%;
+  padding: 0 16% 0;
+}
+#mad-content #mad-feedback .container-fluid .mad-feedback-content p {
+  margin: 5% 0;
+}
+#mad-content #mad-feedback .container-fluid #mad-feedback-form {
+  padding: 0 16%;
+  margin: 5% auto;
+}
+#mad-content #mad-feedback .container-fluid #mad-feedback-form input,
+#mad-content #mad-feedback .container-fluid #mad-feedback-form textarea {
+  background: none !important;
+  border: none !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  border-bottom: 0.5px rgba(0, 0, 0, 0.2) solid !important;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+}
+#mad-content #mad-feedback .container-fluid #mad-feedback-form input:focus,
+#mad-content #mad-feedback .container-fluid #mad-feedback-form textarea:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none !important;
+  border-bottom: 0.5px rgba(0, 0, 0, 0.2) solid !important;
+}
+#mad-content #mad-feedback .container-fluid #mad-feedback-form input::placeholder,
+#mad-content #mad-feedback .container-fluid #mad-feedback-form textarea::placeholder {
+  opacity: 0.5;
+}
+#mad-content #mad-feedback .container-fluid #mad-feedback-form #message {
+  margin-top: 3%;
+}
+#mad-content #mad-feedback .container-fluid #mad-feedback-form .errorMessage {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  margin: 2% 0 0 2%;
+  font-size: 10px;
+  color: #de6868;
+}
+#mad-content #mad-feedback .container-fluid #mad-feedback-form-submit {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+}
+#mad-content #mad-feedback .container-fluid #mad-feedback-form-submit:hover {
+  cursor: pointer;
+  color: #2f2f2f;
+  font-weight: bolder !important;
+}
+#mad-content #mad-feedback .container-fluid .form-submitted {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 200%;
+  margin-top: 3%;
+  font-size: 8px;
+  opacity: 0;
+  transition: transform 2s, opacity 2s;
 }
 #mad-content #mad-references {
   width: 100%;

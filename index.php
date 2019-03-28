@@ -145,6 +145,8 @@
         </div>
     </section>
 
+    <hr/>
+
     <!--                        -->
     <!--     01 Preparation     -->
     <!--                        -->
@@ -264,6 +266,8 @@
 
         </div>
     </section>
+
+    <hr/>
 
     <!--                        -->
     <!--    02 Average Income   -->
@@ -445,14 +449,16 @@
                     - all of them with average monthly income <strong>lower than 50 dollars</strong>.
                     Two non-African countries present in the lowest 10 are <strong>North Korea</strong> 🇰🇵,
                     led by the infamous Supreme Leader Kim Jong Un, and <strong>Venezuela</strong> 🇻🇪 -
-                    South-American country going through a tough period of <strong>economic depression</strong>
+                    South-American country going through a tough period of <a class="link-main" href="mad-video-1">economic depression</a>
                     that is currently dealing with <strong>extreme inflation</strong>, <strong>food shortages</strong> and <strong>electricity blackouts</strong>.<a class="mad-ref-link" href="#mad-ref-4"><sup>[4]</sup></a>
                 </p>
 
-                <iframe class="mad-content-video" width="560" height="315" src="https://www.youtube.com/embed/ytrS0SntUSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="mad-video-1" class="mad-content-video" width="560" height="315" src="https://www.youtube.com/embed/ytrS0SntUSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
+
+    <hr/>
 
     <!--                          -->
     <!--    03 Average Expenses   -->
@@ -640,9 +646,13 @@
         </div>
     </section>
 
+    <hr/>
+
     <!--                          -->
     <!--    04 Final Results      -->
     <!--                          -->
+
+    <hr/>
 
     <section id="mad-results">
         <div class="container-fluid">
@@ -862,6 +872,8 @@
         </div>
     </section>
 
+    <hr/>
+
     <!--                          -->
     <!--    05 Other Countries    -->
     <!--                          -->
@@ -881,6 +893,7 @@
 
                 <ol id="mad-other-countries-facts">
 
+                    <!--         Can you make it in a lifetime in every country?           -->
                     <li>
                         <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i>Can you make it in a lifetime in every country</h4>
 
@@ -984,33 +997,94 @@
                         </ol>
                     </li>
 
+                    <!--         What about my country?           -->
                     <li>
                         <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i>What about my country</h4>
 
                         <p>
                             <strong>Are you curious about how long it would take in your country</strong> and you didn't see it in results, yet?
-                            Just type your country in the <a class="link-main" href="#mad-search-form">search box below</a> and see all statistics available for your queried country.
+                            Just type your country in the <a id="mad-search-form-link" class="link-main" href="#mad-search-form">search box below</a> and see all statistics available for your queried country.
                         </p>
 
-                        <form id="mad-search-form">
+                        <form id="mad-search-form" action="<?php $country = $_POST['country']; ?>" method="POST">
                             <input id="mad-search-form-input" type="text" name="country" placeholder="e.g. United States"/>
+                            <br/>
+                            <input id="mad-search-form-submit" type="submit" name="countrySubmit" value="Search" onclick="window.location.hash = '#mad-search-form';"/>
                         </form>
 
                         <div id="mad-search-form-output">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <h1>Slovakia</h1>
-                                    <h4 class="mad-output-desc"><strong>Slovakia</strong> is a country in <strong>Europe</strong> that uses<br/>
-                                        <strong>Euro (EUR)</strong> as a currency.</h4>
-                                    <h4><strong>Country Code:</strong> <span>SK</span></h4>
-                                    <h4><strong>Average Salary:</strong> <span>2312.21$</span></h4>
-                                    <h4 class="mad-output-expense"><strong>Average Expenses:</strong> <span>789.21$</span></h4>
+                                <?php
+                                $servername = "localhost";
+                                $username = "root";
+                                $password = "#Excelsior1808";
+                                $dbname = "Countries";
 
-                                    <h4>It would take <strong>26 years, 2 months and 14 days</strong> to become a millionaire in this country on average income.</h4>
-                                </div>
-                                <div class="col-lg-6">
-                                    <img src="./assets/flags/sk.png" class="img-responsive" alt="country-flag">
-                                </div>
+                                $conn = new mysqli($servername, $username, $password, $dbname);
+                                $sql = "SELECT * FROM Countries WHERE Country = '" . $country . "'";
+                                $result = $conn->query($sql);
+                                $error = 0;
+
+                                if ($result->num_rows > 0) {
+
+                                    while($row = $result->fetch_assoc()) {
+
+                                        $eliminate = false;
+
+                                        // Counting again required time
+                                        if ($row["AverageExpense"] > $row["AverageIncome"]) {
+                                            $eliminate = true;
+                                        } else {
+                                            $savedPerMonth = $row["AverageIncome"] - $row["AverageExpense"];
+                                            $months = 1000000 / $savedPerMonth;
+                                            $years = $months / 12;
+                                            $yearsTotal = floor($years); // number of years
+                                            $remainder1 = $years - $yearsTotal;
+                                            $months = $remainder1 * 12;
+                                            $monthsTotal = floor($months); // number of months
+                                            $remainder2 = $months - floor($months);
+                                            $days = $remainder2 * 30.5;
+                                            $daysTotal = floor($days); // number of days
+                                        }
+
+                                        // Defining continent by continent code
+                                        $count = "xxxxx";
+
+                                        if ($row["Continent"] == "eu") {$count = "Europe";}
+                                        if ($row["Continent"] == "as") {$count = "Asia";}
+                                        if ($row["Continent"] == "me") {$count = "Middle East";}
+                                        if ($row["Continent"] == "af") {$count = "Africa";}
+                                        if ($row["Continent"] == "na") {$count = "North America";}
+                                        if ($row["Continent"] == "ca") {$count = "Central America";}
+                                        if ($row["Continent"] == "sa") {$count = "South America";}
+                                        if ($row["Continent"] == "au") {$count = "Australia & The Oceania";}
+
+                                        echo "<div class=\"col-lg-12\">";
+                                        echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"img-responsive\" alt=\"country-flag\"/><h1>" . $row["Country"] . "</h1>";
+                                        echo "<div class='clearfix margin-5'></div>";
+                                        echo "<h4 class=\"mad-output-desc\"><strong>" . $row["Country"] . "</strong> 
+                                        is a country in <strong>" . $count . "</strong> that uses
+                                        <strong>" . $row["CurrencyName"] . " (" . strtoupper($row["CurrencySign"]) . ")</strong> as a currency.</h4>";
+                                        echo "<h4><strong>Country Code:</strong> <span>" . strtoupper($row["CountryCode"]) . "</span></h4>";
+                                        echo "<h4><strong>Average Salary:</strong> <span>" . $row["AverageIncome"] . "$</span></h4>";
+                                        echo "<h4 class=\"mad-output-expense\"><strong>Average Expenses:</strong> <span>" . $row["AverageExpense"] . "$</span></h4>";
+                                        if ($eliminate == false) {
+                                            echo "<h4>It would take <strong>" . $yearsTotal . " years, " . $monthsTotal . " months and " . $daysTotal . " days</strong> to become a millionaire in this country on average income.</h4>";
+                                        } else {
+                                            echo "<h4 class='red-highlight'>It is not possible to become a millionaire in this country on average income, 
+                                                because the average income is lower than average cost of living.</h4>";
+                                        }
+                                        echo "</div>";
+                                    }
+                                } else {
+                                    if ($error > 0) {
+                                        echo "Sorry, but " . $country . " is not in the database (HINT: Try official name of the country)";
+                                    }
+                                    $error++;
+                                }
+
+                                $conn->close();
+                                ?>
                             </div>
                         </div>
                     </li>
@@ -1019,15 +1093,108 @@
         </div>
     </section>
 
+    <hr/>
+
+    <!--                                 -->
+    <!--    06 More Interesting Facts    -->
+    <!--                                 -->
+
+    <section id="mad-interesting-facts">
+        <div class="container-fluid">
+            <h3 class="mad-section-header">
+                <span class="mad-section-header-numbering">06</span> More interesting facts
+            </h3>
+
+            <div class="mad-interesting-facts-content">
+                <p>
+                    Still not satisfied? Hungry for more interesting information? If yes, then you can enjoy the following
+                    <strong>collection of fascinating facts</strong>, that have come across throughout the process of
+                    collection of data for this project.
+                </p>
+
+                <p>
+                    <div class="mad-interesting-facts-numbering mad-ifn-r">01</div>
+                    <strong>Nauru</strong> 🇳🇷, an island country in Micronesia is <strong>the smallest and wealthiest
+                    independent democracy in the world</strong>, surpassing a per capita income of any oil-rich Arab nation.
+                    Behind their bizarre success is a bloody tribal history, records of occupation by a succession of foreign powers
+                    and an ultimate triumph of a small but determined population over ruthless practices of colonisation.
+                </p>
+
+                <p>
+                    <div class="mad-interesting-facts-numbering">02</div>
+                    In <strong>Albania</strong> 🇦🇱, in addition to traditional monthly charges, you have to pay <strong>monthly fee for water</strong>
+                    as the tap water in the country has been reported to have extremely high levels of chlorine and heavy metals.
+                    While the monthly charge is only about 2000 LEK (~18 USD), inhabitants of Albania often make themselves heard,
+                    that they would much rather have tap water that is safe to drink.
+                </p>
+
+                <p>
+                    <div class="mad-interesting-facts-numbering  mad-ifn-r">03</div>
+                    <strong>Kiribati</strong> 🇰🇮 is the only country in the world to fall into <strong>all four hemispheres</strong>,
+                    straddling the equator and extending into the eastern and western hemispheres.
+                    Kiribati was also the first country to see the dawn of the third millennium on 1st January 2000.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <!--                                 -->
+    <!--    07 Feedback    -->
+    <!--                                 -->
+
+    <section id="mad-feedback">
+        <div class="container-fluid">
+            <h3 class="mad-section-header">
+                <span class="mad-section-header-numbering">07</span> Feedback
+            </h3>
+
+            <div class="mad-feedback-content">
+               If you feel that any of the information is inaccurate or incorrect,
+                if you would like to add or update any important data,
+                or if you would just like to discuss this project with the author,
+                <strong>feel free to use this contact form to send a message</strong>
+                and you will receive an answer as soon as possible.
+            </div>
+
+            <form id="mad-feedback-form">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <input class="form-control" id="name" name="name" placeholder="Full Name" required/>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <input class="form-control" id="email" name="email" placeholder="Email" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                          <textarea id="message" name="message" form="mad-feedback-form" class="form-control" rows="5"
+                                    placeholder="Your message..."></textarea>
+                    </div>
+                </div>
+            </form>
+
+            <div id="mad-feedback-form-submit" onclick="formSubmit()">Send message</div>
+            <span class="form-submitted">Thank you for sending a message! You will get a reply as soon as possible!</span>
+
+
+        </div>
+    </section>
+
+    <hr/>
+
     <!--                        -->
     <!--      XX References     -->
     <!--                        -->
+
+    <hr/>
 
     <section id="mad-references">
         <div class="container-fluid">
 
             <h3 class="mad-section-header">
-                <span class="mad-section-header-numbering">07</span> References
+                <span class="mad-section-header-numbering">08</span> References
             </h3>
 
             <ol id="mad-references-list">
@@ -1112,6 +1279,81 @@
 
 <script>
     AOS.init();
+
+    // The following code validates the form
+    //
+    // 1. Not to have any empty values
+    // 2. Not to have incorrect email format
+
+    function isNotEmpty(values, valueNames) {
+        var isNotEmpty = true;
+        for (x in values) {
+            if (values[x] === "") {
+                var errorInput = jQuery('#' + valueNames[x]);
+                var errorMsg = jQuery("<div class='errorMessage'></div>").text('This field is required!');
+                errorInput.after(errorMsg);
+                isNotEmpty = false;
+            }
+        }
+        return isNotEmpty;
+    }
+
+    function validateForm() {
+        var name = jQuery('#name').val();
+        var email =  jQuery('#email').val();
+        var message = jQuery('#message').val();
+        var formValues = [name, email, message];
+        var formValuesNames = ["name", "email", "message"];
+        if (isNotEmpty(formValues, formValuesNames)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function validateMail() {
+        var email =  jQuery('#email');
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(email.val().match(mailformat)) {
+            return true;
+        } else {
+            var errorMsg = jQuery("<div class='errorMessage'></div>").text('This is not correct email address!');
+            email.after(errorMsg);
+            email.focus();
+            return false;
+        }
+    }
+
+    function formSubmit(value) {
+        (jQuery('.errorMessage')).remove();
+        if (validateForm()) {
+            if (validateMail()) {
+                var dataString = jQuery('#mad-feedback-form').serialize();
+                // This shows us a success message after the form values passed validation
+                jQuery('.form-submitted').css({"opacity": 1, "transform": "scale(1.1, 1.1)"});
+                // This line removes all values from input fields, after the form is submitted
+                jQuery('#mad-feedback-form').trigger("reset");
+                // Hide the success message
+                setTimeout(function () {
+                    jQuery('.form-submitted').css({"opacity": 0, "transform": "scale(0.8, 0.8)"});
+                }, 3000);
+                // Here we use AJAX to post the data to another PHP file that will treat data and send email
+                jQuery.ajax({
+                    type: "POST",
+                    url: "send_form.php",
+                    data: dataString,
+                    // If sending is successful, we execute the success message
+                    success: function() {
+                        jQuery('.form-submitted').css({"opacity": 1, "transform": "scale(1.1, 1.1)"});
+                        jQuery('#ph-contact-form').trigger("reset");
+                        setTimeout(function () {
+                            jQuery('.form-submitted').css({"opacity": 0, "transform": "scale(0.8, 0.8)"});
+                        }, 3000);
+                    }
+                });
+            }
+        }
+    }
 </script>
 
 <script type="text/javascript">

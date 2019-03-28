@@ -91,6 +91,22 @@
   -ms-content-zooming: none;
 }
 
+// Prevent automatic Chrome styling for auto-filled inputs
+
+@-webkit-keyframes autofill {
+  to {
+    color: @main-font-color !important;
+    background: none !important;
+  }
+}
+
+@keyframes autofill {
+  to {
+    color: @main-font-color !important;
+    background: none !important;
+  }
+}
+
 //------------------------------------------------------------------------------
 
 // Project Specific Classes
@@ -325,7 +341,6 @@ a.mad-ref-link:hover {
 
 html {
   background: #f7f2ea;
-  .bg-setup;
 }
 
 
@@ -341,6 +356,11 @@ body,html {
 
 body {
   background: #f7f2ea;
+}
+
+hr {
+  width: 80% !important;
+  border-top: 0.5px solid @main-font-color-20;
 }
 
 //-------------------------------------------------------------
@@ -468,6 +488,11 @@ body {
         .main-content-style;
         width: 100%;
         padding: 0 16% 0;
+
+        #mad-video-1 {
+          margin-top: 4%;
+
+        }
       }
 
       #mad-income-stats {
@@ -823,18 +848,19 @@ body {
 
           #mad-search-form {
             .aligntext;
-            width: 30%;
+            width: 80%;
             margin: 5% auto 5%;
-            //
-            border-bottom: 0.5px @main-font-color-50 solid;
 
-            input {
+            #mad-search-form-input {
               .aligntext;
               .main-text-style;
               background: none !important;
               border: none !important;
               //
+              border-bottom: 0.5px @main-font-color-50 solid !important;
               padding: 2% 5%;
+              margin-bottom: 2%;
+              width: 50%;
 
               &::placeholder {
                 opacity: 0.5;
@@ -843,6 +869,17 @@ body {
               &:focus {
                 outline: none !important;
                 border: none !important;
+              }
+            }
+
+            #mad-search-form-submit {
+              background: none !important;
+              border: none !important;
+              .main-text-style;
+
+              &:hover {
+                color: @main-font-color !important;
+                font-weight: bolder !important;
               }
             }
           }
@@ -858,26 +895,29 @@ body {
             }
 
             img {
-              //transform: scale(0.7);
-              margin-top: 5%;
+              .display(inline) !important;
+              width: 55px !important;
+              height: 33px !important;
+              vertical-align: bottom;
+              margin-right: 15px;
+              margin-bottom: 2px;
               box-shadow: 0 0 15px @main-font-color-50;
               transition: transform 1s, box-shadow 1s;
 
               &:hover {
-                //transform: scale(0.9);
                 box-shadow: 0 0 25px @main-font-color-50;
                 transition: transform 1s, box-shadow 1s;
               }
             }
 
             h1 {
-              margin: 0 0 5%;
+              .display(inline) !important;
               font-size: 28px;
             }
 
             h4 {
               .main-text-style;
-              font-size: 12px !important;
+              font-size: 14px !important;
               padding-bottom: 1%;
 
               span {
@@ -885,11 +925,130 @@ body {
               }
             }
 
+            .mad-output-desc {
+              padding-top: 4%;
+            }
+
             .mad-output-desc, .mad-output-expense {
               padding-bottom: 3%;
             }
           }
         }
+      }
+    }
+  }
+
+  // 06 Interesting Facts
+  #mad-interesting-facts {
+    .section-setup;
+    padding: 5% 10% 5% !important;
+
+    .container-fluid {
+
+      h3.mad-section-header {
+        width: 100%;
+        padding: 0 16% 5%;
+      }
+
+      .mad-interesting-facts-content {
+        .main-content-style;
+        width: 100%;
+        padding: 0 16% 0;
+
+        .mad-interesting-facts-numbering {
+          opacity: 0.4;
+          font-size: 25px;
+        }
+
+        .mad-ifn-r {
+          .aligntext(right);
+        }
+      }
+
+    }
+  }
+
+  // 07 Feedback
+  #mad-feedback {
+    .section-setup;
+    padding: 5% 10% 5% !important;
+
+    .container-fluid {
+
+      h3.mad-section-header {
+        width: 100%;
+        padding: 0 16% 5%;
+      }
+
+      .mad-feedback-content {
+        .main-content-style;
+        width: 100%;
+        padding: 0 16% 0;
+      }
+
+      // Contact Form
+      #mad-feedback-form {
+        padding: 0 16%;
+        margin: 5% auto;
+
+        input, textarea {
+          background: none !important;
+          border: none !important;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none !important;
+          border-radius: 0 !important;
+          //
+          border-bottom: 0.5px @main-font-color-20 solid !important;
+          .main-text-style;
+
+          &:focus {
+            outline: none !important;
+            border: none !important;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none !important;
+            border-bottom: 0.5px @main-font-color-20 solid !important;
+          }
+
+          &::placeholder {
+            opacity: 0.5;
+          }
+        }
+
+        #message {
+          margin-top: 3%;
+        }
+
+        // This is styling for the error message
+        .errorMessage {
+          .aligntext(left);
+          .main-text-style;
+          margin: 2% 0 0 2%;
+          font-size: 10px;
+          //
+          color: @main-red;
+        }
+      }
+
+      // Form Submit Button & Success Message
+      #mad-feedback-form-submit {
+        .main-text-style;
+
+        &:hover {
+          cursor: pointer;
+          color: @main-font-color;
+          font-weight: bolder !important;
+        }
+      }
+
+      .form-submitted {
+        .main-text-style;
+        margin-top: 3%;
+        font-size: 8px;
+        //
+        opacity: 0;
+        transition: transform 2s, opacity 2s;
       }
     }
   }
