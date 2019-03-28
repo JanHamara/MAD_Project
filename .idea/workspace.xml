@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a83dfc8-eff8-4b10-8888-39215a59daed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="918" column="92" selection-start-line="918" selection-start-column="92" selection-end-line="918" selection-end-column="92" />
+            <state relative-caret-position="176">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="n#style#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -49,7 +42,6 @@
                 <element signature="n#footer#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#9;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#10;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#10;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
@@ -197,7 +189,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553814239748" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553815049858" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="" />
@@ -236,12 +228,12 @@
       <workItem from="1553519156026" duration="1143000" />
       <workItem from="1553523911490" duration="14557000" />
       <workItem from="1553595334357" duration="33478000" />
-      <workItem from="1553772177194" duration="33322000" />
+      <workItem from="1553772177194" duration="33927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88404000" />
+    <option name="totallyTimeSpent" value="89009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="706" extended-state="6" />
@@ -436,8 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="918" column="92" selection-start-line="918" selection-start-column="92" selection-end-line="918" selection-end-column="92" />
+        <state relative-caret-position="176">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="n#style#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -461,7 +453,6 @@
             <element signature="n#footer#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#9;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#10;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#10;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>

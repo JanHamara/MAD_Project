@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    <title>WebDev Template</title>
+    <title>Which country of the world is the best for becoming a millionaire?</title>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -12,11 +12,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="og:author" content="Jan Hamara"/>
-    <meta property="og:title" content="WebDev Template" />
-    <meta property="og:description" content="WebDev Tempate" />
-    <meta property="og:url" content="WebDev Tempate" />
-    <meta property="og:site_name" content="WebDev Tempate" />
-    <meta name="og:keywords" content="Web, Dev, Template"/>
+    <meta property="og:title" content="Which country of the world is the best for becoming a millionaire?" />
+    <meta property="og:description" content="Average person's guide on how fast you can become a millionaire on an average income" />
+    <meta property="og:url" content="http://2184316.students.arts.gla.ac.uk/" />
+    <meta property="og:site_name" content="Which country of the world is the best for becoming a millionaire" />
+    <meta name="og:keywords" content="country, world, millionaire, becoming, average, income, expense, cost, of, living"/>
     <meta http-equiv="Content-Type" content="text/html"/>
 
     <!-- Fix for automatic detection of numbers on Apple devices -->
@@ -1387,12 +1387,12 @@
     }
 </script>
 
-<script type="text/javascript">
+<script>
     $( document ).ready(function() {
         setTimeout(function () {
             $("#pre-loader").hide(500);
             $("#mad-content").show(500);
-        }, 0)
+        }, 0);
     });
 </script>
 
