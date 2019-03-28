@@ -31,6 +31,12 @@ module.exports = {
                 }, {
                     loader: 'css-loader' // translates CSS into CommonJS
                 }]
+            },
+            {
+                test: /\.(png|jpg)$/,
+                use: [{
+                    loader: 'url-loader' // loads images for Webpack
+                }]
             }
             ]
     }

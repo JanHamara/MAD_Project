@@ -360,6 +360,7 @@ body,html {
 
 body {
   background: #f7f2ea;
+  height: auto;
 }
 
 hr {
@@ -392,6 +393,8 @@ hr {
 #mad-content {
   .fs;
   .nobound;
+  //
+  height: auto !important;
 
   // Header
   #mad-header {
@@ -648,6 +651,38 @@ hr {
 
         #mad-podium-img {
           width: 100%;
+        }
+
+        #mad-podium-figure {
+          .rel;
+          width: 100%;
+          height: 480px !important;
+
+          div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+
+          .mad-podium-1 {
+            background-image: url("../assets/figure1/figure3.png");
+            z-index: 9999 !important;
+          }
+
+          .mad-podium-2 {
+            background-image: url("../assets/figure1/figure4.png");
+          }
+
+          .mad-podium-3 {
+            background-image: url("../assets/figure1/figure5.png");
+          }
+
+          .mad-podium-4 {
+            background-image: url("../assets/figure1/figure2.png");
+          }
         }
 
         .mad-podium-country {
@@ -1057,7 +1092,7 @@ hr {
     }
   }
 
-  // XX References
+  // 08 References
   #mad-references {
     .section-setup;
 
@@ -1077,5 +1112,15 @@ hr {
         }
       }
     }
+  }
+
+  // Footer
+  footer#mad-footer {
+    .nobound;
+    width: 100%;
+    padding-bottom: 1%;
+    //
+    .main-text-style;
+    font-size: 10px !important;
   }
 }
