@@ -56,6 +56,11 @@ strong {
   height: auto !important;
   padding: 5% 20% 5%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-setup {
+    padding: 5% 7%;
+  }
+}
 .section-setup .container-fluid {
   width: 100%;
   height: 100%;
@@ -76,6 +81,16 @@ strong {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-setup .container-fluid h3.mad-section-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .section-setup .container-fluid h3.mad-section-header {
+    font-size: 20px;
+  }
+}
 .section-setup .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
@@ -92,6 +107,11 @@ strong {
   letter-spacing: 0.1em;
   line-height: 200%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .main-content-style {
+    font-size: 10px;
+  }
+}
 .main-content-style p {
   margin: 5% 0;
 }
@@ -101,11 +121,24 @@ strong {
   letter-spacing: 0.1em;
   line-height: 200%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .main-text-style {
+    font-size: 10px;
+  }
+}
 .h4-heading-style {
   padding: 0 0 4%;
   color: #2f2f2f;
   font-size: 16px !important;
   font-weight: bold;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .h4-heading-style {
+    padding: 4% 0 8%;
+    font-size: 14px !important;
+    letter-spacing: 0px;
+    line-height: 170%;
+  }
 }
 .red-highlight {
   color: #de6868 !important;
@@ -138,10 +171,24 @@ strong {
   font-size: 16px !important;
   font-weight: bold;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .question-list-style li h4 {
+    padding: 4% 0 8%;
+    font-size: 14px !important;
+    letter-spacing: 0px;
+    line-height: 170%;
+  }
+}
 .question-list-style li h4 .fa-question-circle-o {
   color: #de6868;
   transform: scale(1.5);
   margin-right: 1%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .question-list-style li h4 .fa-question-circle-o {
+    margin-right: 4%;
+    letter-spacing: 0px;
+  }
 }
 .question-list-style li p {
   margin: 0 0 2%;
@@ -183,12 +230,24 @@ strong {
   margin: 0 2%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .mad-stats-list li .mad-income-stats-img {
+    width: 20px !important;
+    height: 12px !important;
+    margin: 0 4% 0 2%;
+  }
+}
 .mad-stats-list li .mad-income-stats-country {
   font-weight: bolder !important;
 }
 .mad-stats-list li .mad-income-stats-value {
   float: right;
   font-family: 'Montserrat', sans-serif !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  .mad-stats-list li .mad-income-stats-value {
+    font-size: 5px;
+  }
 }
 .mad-chart-container {
   margin: 10% 0;
@@ -335,6 +394,11 @@ hr {
   height: 100vh !important;
   padding: 3% 20% 3%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-header {
+    padding: 5%;
+  }
+}
 #mad-content #mad-header .container-fluid {
   width: 100%;
   height: 100%;
@@ -345,12 +409,24 @@ hr {
   width: 80%;
   margin: auto;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-header .container-fluid #mad-header-image {
+    width: 100%;
+    margin: 20% auto 30%;
+  }
+}
 #mad-content #mad-header .container-fluid #mad-header-heading {
   text-align: center;
   padding-bottom: 5%;
   font-family: 'Germania One', cursive;
   font-size: 40px;
   letter-spacing: 0.05em;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-header .container-fluid #mad-header-heading {
+    font-size: 20px;
+    margin-bottom: 5%;
+  }
 }
 #mad-content #mad-header .container-fluid #mad-header-sub-heading {
   padding-bottom: 6%;
@@ -359,9 +435,21 @@ hr {
   letter-spacing: 0.1em;
   font-weight: bolder;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-header .container-fluid #mad-header-sub-heading {
+    font-size: 10px;
+    line-height: 150%;
+  }
+}
 #mad-content #mad-header .container-fluid #mad-header-author-tag {
   font-size: 11px;
   letter-spacing: 0.1em;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-header .container-fluid #mad-header-author-tag {
+    font-size: 8px;
+    margin-top: 15%;
+  }
 }
 #mad-content #mad-header .container-fluid #mad-header-author-tag .fa-heart {
   color: #de6868;
@@ -384,6 +472,11 @@ hr {
   height: auto !important;
   padding: 5% 20% 5%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-introduction {
+    padding: 5% 7%;
+  }
+}
 #mad-content #mad-introduction .container-fluid {
   width: 100%;
   height: 100%;
@@ -404,6 +497,16 @@ hr {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-introduction .container-fluid h3.mad-section-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-introduction .container-fluid h3.mad-section-header {
+    font-size: 20px;
+  }
+}
 #mad-content #mad-introduction .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
@@ -420,8 +523,18 @@ hr {
   letter-spacing: 0.1em;
   line-height: 200%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-introduction .container-fluid #mad-introduction-content {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-introduction .container-fluid #mad-introduction-content p {
   margin: 5% 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-introduction .container-fluid #mad-introduction-content #mad-chart-1 {
+    margin-bottom: 10%;
+  }
 }
 #mad-content #mad-preparation {
   width: 100%;
@@ -430,6 +543,11 @@ hr {
   padding: 0%;
   height: auto !important;
   padding: 5% 20% 5%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-preparation {
+    padding: 5% 7%;
+  }
 }
 #mad-content #mad-preparation .container-fluid {
   width: 100%;
@@ -451,6 +569,16 @@ hr {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-preparation .container-fluid h3.mad-section-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-preparation .container-fluid h3.mad-section-header {
+    font-size: 20px;
+  }
+}
 #mad-content #mad-preparation .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
@@ -466,6 +594,11 @@ hr {
   font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 200%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-preparation .container-fluid #mad-preparation-content {
+    font-size: 10px;
+  }
 }
 #mad-content #mad-preparation .container-fluid #mad-preparation-content p {
   margin: 5% 0;
@@ -484,10 +617,24 @@ hr {
   font-size: 16px !important;
   font-weight: bold;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-preparation .container-fluid #mad-preparation-content #mad-preparation-standards li h4 {
+    padding: 4% 0 8%;
+    font-size: 14px !important;
+    letter-spacing: 0px;
+    line-height: 170%;
+  }
+}
 #mad-content #mad-preparation .container-fluid #mad-preparation-content #mad-preparation-standards li h4 .fa-question-circle-o {
   color: #de6868;
   transform: scale(1.5);
   margin-right: 1%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-preparation .container-fluid #mad-preparation-content #mad-preparation-standards li h4 .fa-question-circle-o {
+    margin-right: 4%;
+    letter-spacing: 0px;
+  }
 }
 #mad-content #mad-preparation .container-fluid #mad-preparation-content #mad-preparation-standards li p {
   margin: 0 0 2%;
@@ -500,6 +647,11 @@ hr {
   height: auto !important;
   padding: 5% 20% 5%;
   padding: 5% 10% 5% !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-income {
+    padding: 5% 7%;
+  }
 }
 #mad-content #mad-income .container-fluid {
   width: 100%;
@@ -521,6 +673,16 @@ hr {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-income .container-fluid h3.mad-section-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-income .container-fluid h3.mad-section-header {
+    font-size: 20px;
+  }
+}
 #mad-content #mad-income .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
@@ -531,6 +693,11 @@ hr {
 #mad-content #mad-income .container-fluid h3.mad-section-header {
   width: 100%;
   padding: 0 16% 5%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-income .container-fluid h3.mad-section-header {
+    padding: 0 0 5%;
+  }
 }
 #mad-content #mad-income .container-fluid .mad-income-content {
   text-align: justify;
@@ -543,8 +710,18 @@ hr {
   width: 100%;
   padding: 0 16% 0;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-income .container-fluid .mad-income-content {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-income .container-fluid .mad-income-content p {
   margin: 5% 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-income .container-fluid .mad-income-content {
+    padding: 0;
+  }
 }
 #mad-content #mad-income .container-fluid .mad-income-content #mad-video-1 {
   margin-top: 4%;
@@ -560,8 +737,18 @@ hr {
   width: 90% !important;
   padding: 5% 0;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-income .container-fluid #mad-income-stats {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-income .container-fluid #mad-income-stats p {
   margin: 5% 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-income .container-fluid #mad-income-stats .col-lg-6 {
+    margin: 10% 0 5%;
+  }
 }
 #mad-content #mad-income .container-fluid #mad-income-stats h4 {
   padding: 0 0 4%;
@@ -571,6 +758,14 @@ hr {
   color: rgba(0, 0, 0, 0.6) !important;
   letter-spacing: 0px;
   margin-bottom: 3%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-income .container-fluid #mad-income-stats h4 {
+    padding: 4% 0 8%;
+    font-size: 14px !important;
+    letter-spacing: 0px;
+    line-height: 170%;
+  }
 }
 #mad-content #mad-income .container-fluid #mad-income-stats h4 span {
   display: inline;
@@ -585,6 +780,11 @@ hr {
   height: auto !important;
   padding: 5% 20% 5%;
   padding: 5% 10% 5% !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-expenses {
+    padding: 5% 7%;
+  }
 }
 #mad-content #mad-expenses .container-fluid {
   width: 100%;
@@ -606,6 +806,16 @@ hr {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-expenses .container-fluid h3.mad-section-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-expenses .container-fluid h3.mad-section-header {
+    font-size: 20px;
+  }
+}
 #mad-content #mad-expenses .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
@@ -616,6 +826,11 @@ hr {
 #mad-content #mad-expenses .container-fluid h3.mad-section-header {
   width: 100%;
   padding: 0 16% 5%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-expenses .container-fluid h3.mad-section-header {
+    padding: 0 0 5%;
+  }
 }
 #mad-content #mad-expenses .container-fluid .mad-expenses-content {
   text-align: justify;
@@ -628,8 +843,18 @@ hr {
   width: 100%;
   padding: 0 16% 0;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-expenses .container-fluid .mad-expenses-content {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-expenses .container-fluid .mad-expenses-content p {
   margin: 5% 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-expenses .container-fluid .mad-expenses-content {
+    padding: 0;
+  }
 }
 #mad-content #mad-expenses .container-fluid #mad-expenses-stats {
   text-align: justify;
@@ -642,6 +867,11 @@ hr {
   width: 90% !important;
   padding: 5% 0;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-expenses .container-fluid #mad-expenses-stats {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-expenses .container-fluid #mad-expenses-stats p {
   margin: 5% 0;
 }
@@ -653,6 +883,14 @@ hr {
   color: rgba(0, 0, 0, 0.6) !important;
   letter-spacing: 0px;
   margin-bottom: 3%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-expenses .container-fluid #mad-expenses-stats h4 {
+    padding: 4% 0 8%;
+    font-size: 14px !important;
+    letter-spacing: 0px;
+    line-height: 170%;
+  }
 }
 #mad-content #mad-expenses .container-fluid #mad-expenses-stats h4 span {
   display: inline;
@@ -715,6 +953,11 @@ hr {
   padding: 5% 20% 5%;
   padding: 5% 10% 5% !important;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results {
+    padding: 5% 7%;
+  }
+}
 #mad-content #mad-results .container-fluid {
   width: 100%;
   height: 100%;
@@ -735,6 +978,16 @@ hr {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid h3.mad-section-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid h3.mad-section-header {
+    font-size: 20px;
+  }
+}
 #mad-content #mad-results .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
@@ -745,6 +998,11 @@ hr {
 #mad-content #mad-results .container-fluid h3.mad-section-header {
   width: 100%;
   padding: 0 16% 5%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid h3.mad-section-header {
+    padding: 0 0 5%;
+  }
 }
 #mad-content #mad-results .container-fluid .mad-results-content {
   text-align: justify;
@@ -757,8 +1015,18 @@ hr {
   width: 100%;
   padding: 0 16% 0;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid .mad-results-content {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-results .container-fluid .mad-results-content p {
   margin: 5% 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid .mad-results-content {
+    padding: 0;
+  }
 }
 #mad-content #mad-results .container-fluid .mad-results-content #mad-top100-chart {
   width: 80%;
@@ -769,6 +1037,11 @@ hr {
   margin: 5% auto 5%;
   position: relative;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-podium {
+    width: 100% !important;
+  }
+}
 #mad-content #mad-results .container-fluid #mad-podium #mad-podium-img {
   width: 100%;
 }
@@ -776,6 +1049,11 @@ hr {
   position: relative;
   width: 100%;
   height: 480px !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-podium #mad-podium-figure {
+    height: 150px !important;
+  }
 }
 #mad-content #mad-results .container-fluid #mad-podium #mad-podium-figure div {
   width: 100%;
@@ -802,6 +1080,11 @@ hr {
   position: absolute;
   width: 180px;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country {
+    width: 70px;
+  }
+}
 #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country:hover {
   cursor: pointer;
 }
@@ -811,9 +1094,19 @@ hr {
   transition: transform 1s;
   transform: scale(0.9) !important;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country .country-container {
+    transform: scale(0.8) !important;
+  }
+}
 #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country .country-container:hover {
   transition: transform 1s;
   transform: scale(1.1) !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country .country-container:hover {
+    transform: scale(1) !important;
+  }
 }
 #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country .country-container:hover img {
   transition: box-shadow 1s;
@@ -830,12 +1123,27 @@ hr {
   font-weight: bolder !important;
   margin: 15% 0 5%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country .country-container h4 {
+    font-size: 10px !important;
+  }
+}
 #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country .country-container .mad-podium-time {
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 200%;
   letter-spacing: 0px !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country .country-container .mad-podium-time {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country .country-container .mad-podium-time {
+    font-size: 5px !important;
+  }
 }
 #mad-content #mad-results .container-fluid #mad-podium .mad-podium-country-lo .country-container {
   transform: scale(0.7) !important;
@@ -857,6 +1165,11 @@ hr {
   left: 28%;
   top: 60%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-podium #mad-podium-country-2 {
+    left: 25%;
+  }
+}
 #mad-content #mad-results .container-fluid #mad-podium #mad-podium-country-3 {
   position: absolute;
   top: 50%;
@@ -864,6 +1177,11 @@ hr {
   transform: translate(-50%, -50%);
   left: 72%;
   top: 60%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-podium #mad-podium-country-3 {
+    left: 75%;
+  }
 }
 #mad-content #mad-results .container-fluid #mad-results-stats {
   text-align: justify;
@@ -876,6 +1194,11 @@ hr {
   width: 90% !important;
   padding: 5% 0;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-results-stats {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-results .container-fluid #mad-results-stats p {
   margin: 5% 0;
 }
@@ -887,6 +1210,14 @@ hr {
   color: rgba(0, 0, 0, 0.6) !important;
   letter-spacing: 0px;
   margin-bottom: 3%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-results .container-fluid #mad-results-stats h4 {
+    padding: 4% 0 8%;
+    font-size: 14px !important;
+    letter-spacing: 0px;
+    line-height: 170%;
+  }
 }
 #mad-content #mad-results .container-fluid #mad-results-stats h4 span {
   display: inline;
@@ -949,6 +1280,11 @@ hr {
   padding: 5% 20% 5%;
   padding: 5% 10% 5% !important;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries {
+    padding: 5% 7%;
+  }
+}
 #mad-content #mad-other-countries .container-fluid {
   width: 100%;
   height: 100%;
@@ -969,6 +1305,16 @@ hr {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid h3.mad-section-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid h3.mad-section-header {
+    font-size: 20px;
+  }
+}
 #mad-content #mad-other-countries .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
@@ -979,6 +1325,11 @@ hr {
 #mad-content #mad-other-countries .container-fluid h3.mad-section-header {
   width: 100%;
   padding: 0 16% 5%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid h3.mad-section-header {
+    padding: 0 0 5%;
+  }
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content {
   text-align: justify;
@@ -991,8 +1342,18 @@ hr {
   width: 100%;
   padding: 0 16% 0;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content p {
   margin: 5% 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content {
+    padding: 0;
+  }
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts {
   margin: 0%;
@@ -1008,10 +1369,24 @@ hr {
   font-size: 16px !important;
   font-weight: bold;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts li h4 {
+    padding: 4% 0 8%;
+    font-size: 14px !important;
+    letter-spacing: 0px;
+    line-height: 170%;
+  }
+}
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts li h4 .fa-question-circle-o {
   color: #de6868;
   transform: scale(1.5);
   margin-right: 1%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts li h4 .fa-question-circle-o {
+    margin-right: 4%;
+    letter-spacing: 0px;
+  }
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts li p {
   margin: 0 0 2%;
@@ -1053,6 +1428,11 @@ hr {
   margin-bottom: 2%;
   width: 50%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form #mad-search-form-input {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form #mad-search-form-input::placeholder {
   opacity: 0.5;
 }
@@ -1067,6 +1447,11 @@ hr {
   font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 200%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form #mad-search-form-submit {
+    font-size: 10px;
+  }
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form #mad-search-form-submit:hover {
   color: #2f2f2f !important;
@@ -1088,6 +1473,12 @@ hr {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   transition: transform 1s, box-shadow 1s;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output img {
+    width: 34px !important;
+    height: 20px !important;
+  }
+}
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output img:hover {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
   transition: transform 1s, box-shadow 1s;
@@ -1095,6 +1486,12 @@ hr {
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h1 {
   display: inline !important;
   font-size: 28px;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h1 {
+    font-size: 18px !important;
+    color: #2f2f2f;
+  }
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h4 {
   color: rgba(0, 0, 0, 0.6);
@@ -1104,15 +1501,37 @@ hr {
   font-size: 14px !important;
   padding-bottom: 1%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h4 {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h4 {
+    font-size: 10px !important;
+    padding-bottom: 0.5%;
+  }
+}
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output h4 span {
   float: right;
 }
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-desc {
   padding-top: 4%;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-desc {
+    padding-top: 10%;
+  }
+}
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-desc,
 #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-expense {
   padding-bottom: 3%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-desc,
+  #mad-content #mad-other-countries .container-fluid .mad-other-countries-content #mad-other-countries-facts #mad-search-form-output .mad-output-expense {
+    padding-bottom: 1%;
+  }
 }
 #mad-content #mad-interesting-facts {
   width: 100%;
@@ -1122,6 +1541,11 @@ hr {
   height: auto !important;
   padding: 5% 20% 5%;
   padding: 5% 10% 5% !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-interesting-facts {
+    padding: 5% 7%;
+  }
 }
 #mad-content #mad-interesting-facts .container-fluid {
   width: 100%;
@@ -1143,6 +1567,16 @@ hr {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-interesting-facts .container-fluid h3.mad-section-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-interesting-facts .container-fluid h3.mad-section-header {
+    font-size: 20px;
+  }
+}
 #mad-content #mad-interesting-facts .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
@@ -1153,6 +1587,11 @@ hr {
 #mad-content #mad-interesting-facts .container-fluid h3.mad-section-header {
   width: 100%;
   padding: 0 16% 5%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-interesting-facts .container-fluid h3.mad-section-header {
+    padding: 0 0 5%;
+  }
 }
 #mad-content #mad-interesting-facts .container-fluid .mad-interesting-facts-content {
   text-align: justify;
@@ -1165,8 +1604,18 @@ hr {
   width: 100%;
   padding: 0 16% 0;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-interesting-facts .container-fluid .mad-interesting-facts-content {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-interesting-facts .container-fluid .mad-interesting-facts-content p {
   margin: 5% 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-interesting-facts .container-fluid .mad-interesting-facts-content {
+    padding: 0;
+  }
 }
 #mad-content #mad-interesting-facts .container-fluid .mad-interesting-facts-content .mad-interesting-facts-numbering {
   opacity: 0.4;
@@ -1183,6 +1632,11 @@ hr {
   height: auto !important;
   padding: 5% 20% 5%;
   padding: 5% 10% 5% !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback {
+    padding: 5% 7%;
+  }
 }
 #mad-content #mad-feedback .container-fluid {
   width: 100%;
@@ -1204,6 +1658,16 @@ hr {
   font-family: 'Raleway', cursive;
   font-weight: bolder;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback .container-fluid h3.mad-section-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback .container-fluid h3.mad-section-header {
+    font-size: 20px;
+  }
+}
 #mad-content #mad-feedback .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
   opacity: 0.4;
@@ -1214,6 +1678,11 @@ hr {
 #mad-content #mad-feedback .container-fluid h3.mad-section-header {
   width: 100%;
   padding: 0 16% 5%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback .container-fluid h3.mad-section-header {
+    padding: 0 0 5%;
+  }
 }
 #mad-content #mad-feedback .container-fluid .mad-feedback-content {
   text-align: justify;
@@ -1226,12 +1695,27 @@ hr {
   width: 100%;
   padding: 0 16% 0;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback .container-fluid .mad-feedback-content {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-feedback .container-fluid .mad-feedback-content p {
   margin: 5% 0;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback .container-fluid .mad-feedback-content {
+    padding: 0;
+  }
 }
 #mad-content #mad-feedback .container-fluid #mad-feedback-form {
   padding: 0 16%;
   margin: 5% auto;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback .container-fluid #mad-feedback-form {
+    padding: 0;
+  }
 }
 #mad-content #mad-feedback .container-fluid #mad-feedback-form input,
 #mad-content #mad-feedback .container-fluid #mad-feedback-form textarea {
@@ -1246,6 +1730,12 @@ hr {
   font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 200%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback .container-fluid #mad-feedback-form input,
+  #mad-content #mad-feedback .container-fluid #mad-feedback-form textarea {
+    font-size: 10px;
+  }
 }
 #mad-content #mad-feedback .container-fluid #mad-feedback-form input:focus,
 #mad-content #mad-feedback .container-fluid #mad-feedback-form textarea:focus {
@@ -1273,11 +1763,21 @@ hr {
   font-size: 10px;
   color: #de6868;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback .container-fluid #mad-feedback-form .errorMessage {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-feedback .container-fluid #mad-feedback-form-submit {
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 200%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback .container-fluid #mad-feedback-form-submit {
+    font-size: 10px;
+  }
 }
 #mad-content #mad-feedback .container-fluid #mad-feedback-form-submit:hover {
   cursor: pointer;
@@ -1294,6 +1794,11 @@ hr {
   opacity: 0;
   transition: transform 2s, opacity 2s;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-feedback .container-fluid .form-submitted {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-references {
   width: 100%;
   height: 100%;
@@ -1301,6 +1806,11 @@ hr {
   padding: 0%;
   height: auto !important;
   padding: 5% 20% 5%;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-references {
+    padding: 5% 7%;
+  }
 }
 #mad-content #mad-references .container-fluid {
   width: 100%;
@@ -1321,6 +1831,16 @@ hr {
   font-size: 27px;
   font-family: 'Raleway', cursive;
   font-weight: bolder;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-references .container-fluid h3.mad-section-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-references .container-fluid h3.mad-section-header {
+    font-size: 20px;
+  }
 }
 #mad-content #mad-references .container-fluid h3.mad-section-header .mad-section-header-numbering {
   display: inline;
@@ -1343,6 +1863,11 @@ hr {
   padding-left: 5%;
   font-size: 10px !important;
 }
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-references .container-fluid #mad-references-list {
+    font-size: 10px;
+  }
+}
 #mad-content #mad-references .container-fluid #mad-references-list li {
   text-align: left !important;
   margin: 2% 0;
@@ -1357,5 +1882,15 @@ hr {
   letter-spacing: 0.1em;
   line-height: 200%;
   font-size: 10px !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content footer#mad-footer {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content footer#mad-footer {
+    padding-bottom: 3%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

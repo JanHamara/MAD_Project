@@ -362,7 +362,11 @@
                                     // (This is the reason why we named flags of countries by their respective country code)
                                     echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
                                     // We output the Country name
-                                    echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
+                                    if ($row["Country"] == "United States of America") {
+                                        echo "<span class=\"mad-income-stats-country\">United States</span>";
+                                    } else {
+                                        echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
+                                    }
                                     // And finally we output the AverageIncome value
                                     echo "<span class=\"mad-income-stats-value\">" . $row["AverageIncome"] . "$" . "</span>";
                                     echo "</li>";
@@ -1011,7 +1015,7 @@
                             <input id="mad-search-form-submit" type="submit" name="countrySubmit" value="Search" onclick="window.location.hash = '#mad-search-form';"/>
                         </form>
 
-                        <div id="mad-search-form-output" data-aos="zoom-in" data-aos-delay="1000">
+                        <div id="mad-search-form-output" data-aos="zoom-in" data-aos-delay="0">
                             <div class="row">
                                 <?php
                                 $servername = "localhost";
@@ -1303,7 +1307,7 @@
 <script>
     // This script initialises the AOS animation library that I use to animate elements on page
     AOS.init({
-        delay: 500,
+        delay: 200,
         duration: 1000,
         easing: 'ease',
     });
