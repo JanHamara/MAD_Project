@@ -690,7 +690,6 @@
 
             <!--      Podium of TOP 3 countries      -->
             <div id="mad-podium">
-<!--                <img id="mad-podium-img" src="./assets/figure1/podium.png" class="img-repsonsive">-->
                 <figure id="mad-podium-figure">
                     <div class="mad-podium-1" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-offset="450"></div>
                     <div class="mad-podium-2" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="450" data-aos-delay="200"></div>
