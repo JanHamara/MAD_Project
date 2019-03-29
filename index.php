@@ -63,6 +63,60 @@
 <!--    Here we need to set CSS Display property inline, because we want to hide this content BEFORE our stylesheets load   -->
 <main id="mad-content" style="display: none">
 
+    <!--                    -->
+    <!--     Navigation     -->
+    <!--                    -->
+
+    <!--     Bootstrap as a CSS Framework was designed to offer web developers base components (such as navigation)  -->
+    <!--     to start their development on (because it is time-consuming and unnecessary to ''reinvent the wheel'') -->
+    <!--     every single time a developer needs to make a navigation bar  -->
+
+    <!--     It also provides base for developing a responsive navbar for smartphones     -->
+
+    <!--     That's why I used Bootstrap navigation bar to base my navigation bar design on -->
+    <!--     and then I modify its design with my own classes  -->
+    <!--                                                                                               -->
+    <!--     It is not correct practice to overwrite or change CSS rules of default Bootstrap classes  -->
+    <!--     That is why if I want to change e.g. .navbar-brand element - I add my own class .mad-navbar-brand   -->
+    <!--     And then I write overwriting rules into that class in my CSS stylesheet   -->
+
+    <nav id="mad-navigation" class="navbar navbar-expand-lg navbar-light bg-light" data-aos="slide-down" data-aos-offset="1000">
+        <a class="navbar-brand mad-navbar-brand" href="http://2184316.students.arts.gla.ac.uk/">
+            <img src="./assets/header-pic-placeholder.png" width="30" height="30" alt="header-logo">
+        </a>
+        <button class="navbar-toggler mad-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="mad-navbar collapse navbar-collapse" id="navbarNav">
+            <ul class="mad-navbar-nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#mad-introduction">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mad-preparation">Preparation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mad-income">Average Income</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mad-expenses">Average Expenses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mad-results">Final Results</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mad-other-countries">Rest of the World</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mad-interesting-facts">Interesting Facts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mad-feedback">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <!--                  -->
     <!--      Header      -->
     <!--                  -->
@@ -280,7 +334,7 @@
     <section id="mad-income">
         <div class="container-fluid">
 
-            <h3 class="mad-section-header"  data-aos="fade-right">
+            <h3 class="mad-section-header"  data-aos="fade-right" data-aos-offset="800">
                 <span class="mad-section-header-numbering">02</span> Average Income
             </h3>
 
@@ -862,7 +916,7 @@
 
                     <!--         Can you make it in a lifetime in every country?           -->
                     <li>
-                        <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i>Can you make it in a lifetime in every country</h4>
+                        <h4 data-aos="fade-right"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Can you make it in a lifetime in every country</h4>
 
                         <p data-aos="fade-up">
                             Short answer: <strong>No</strong>. Out of 194 world countries that we have evaluated,
@@ -956,7 +1010,7 @@
 
                     <!--         What about my country?           -->
                     <li>
-                        <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i>What about my country</h4>
+                        <h4 data-aos="fade-right"><i class="fa fa-question-circle-o" aria-hidden="true"></i>What about my country</h4>
 
                         <p data-aos="fade-up">
                             <strong>Are you curious about how long it would take in your country</strong> and you didn't see it in results, yet?
@@ -1369,6 +1423,16 @@
             $("#pre-loader").hide(500);
             $("#mad-content").show(500);
         }, 0);
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $(".navbar-nav li a").click(function(event) {
+            if(jQuery.browser.mobile) {
+                $(".navbar-collapse").collapse('hide');
+            }
+        });
     });
 </script>
 

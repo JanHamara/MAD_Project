@@ -386,6 +386,72 @@ hr {
   padding: 0%;
   height: auto !important;
 }
+#mad-content #mad-navigation {
+  position: fixed;
+  width: 100% !important;
+  background: #f7f2ea !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  z-index: 9999 !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-navigation {
+    justify-content: flex-end;
+  }
+}
+#mad-content #mad-navigation .mad-navbar-brand {
+  margin: 0% !important;
+  padding: 0% !important;
+}
+#mad-content #mad-navigation .mad-navbar-brand img {
+  width: 75px !important;
+  height: 50px !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-navigation .mad-navbar-brand {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-navigation .mad-navbar-toggler {
+    float: right !important;
+  }
+}
+#mad-content #mad-navigation .mad-navbar {
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-size: 14px !important;
+  letter-spacing: 0.1em !important;
+  line-height: 200% !important;
+  font-size: 12px !important;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-navigation .mad-navbar {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-navigation .mad-navbar {
+    text-align: center;
+  }
+}
+#mad-content #mad-navigation .mad-navbar .mad-navbar-nav {
+  float: right;
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-navigation .mad-navbar .mad-navbar-nav {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 479px) and (orientation: portrait) {
+  #mad-content #mad-navigation .mad-navbar .mad-navbar-nav li {
+    padding: 5% 0;
+  }
+}
+#mad-content #mad-navigation .mad-navbar .mad-navbar-nav a {
+  padding: 0 1.2rem;
+}
+#mad-content #mad-navigation .mad-navbar .mad-navbar-nav a:hover {
+  text-decoration: none !important;
+}
 #mad-content #mad-header {
   width: 100%;
   height: 100%;
@@ -1065,7 +1131,7 @@ hr {
 }
 #mad-content #mad-results .container-fluid #mad-podium #mad-podium-figure .mad-podium-1 {
   background-image: url("../assets/figure1/figure3.png");
-  z-index: 9999 !important;
+  z-index: 9998 !important;
 }
 #mad-content #mad-results .container-fluid #mad-podium #mad-podium-figure .mad-podium-2 {
   background-image: url("../assets/figure1/figure4.png");

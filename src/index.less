@@ -12,6 +12,9 @@
 @max: 100%;
 @font: 'Raleway', sans-serif;
 @font2: 'Montserrat', sans-serif;
+
+@bg-color: #f7f2ea;
+
 @main-font-color: #2f2f2f;
 @main-font-color-50: rgba(0, 0, 0, 0.6);
 @main-font-color-20: rgba(0, 0, 0, 0.2);
@@ -369,7 +372,7 @@ a.mad-ref-link:hover {
 //
 
 html {
-  background: #f7f2ea;
+  background: @bg-color;
 }
 
 
@@ -420,6 +423,72 @@ hr {
   .nobound;
   //
   height: auto !important;
+
+  // Navigation
+  #mad-navigation {
+    // We fix navigation at top of viewport, so it is available even when scrolling down
+    .position(fixed);
+    width: 100% !important;
+    //
+    background: @bg-color !important;
+    box-shadow: 0 0 15px @main-font-color-50;
+    //
+    z-index: 9999 !important;
+
+    @media @smartphone-all {
+      justify-content: flex-end;
+    }
+
+    .mad-navbar-brand {
+      .nobound !important;
+
+      img {
+        width: 75px !important;
+        height: 50px !important;
+      }
+
+      @media @smartphone-all {
+        width: 85%;
+      }
+    }
+
+    .mad-navbar-toggler {
+      @media @smartphone-all {
+        float: right !important;
+      }
+    }
+
+    .mad-navbar {
+      .main-text-style !important;
+      font-size: 12px !important;
+
+      @media @smartphone-all {
+        .aligntext;
+      }
+
+      .mad-navbar-nav {
+        float: right;
+
+        @media @smartphone-all {
+          width: 100%;
+        }
+
+        li {
+          @media @smartphone-all {
+            padding: 5% 0;
+          }
+        }
+
+        a {
+          padding: 0 1.2rem;
+        }
+
+        a:hover {
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
 
   // Header
   #mad-header {
@@ -763,7 +832,7 @@ hr {
 
           .mad-podium-1 {
             background-image: url("../assets/figure1/figure3.png");
-            z-index: 9999 !important;
+            z-index: 9998 !important;
           }
 
           .mad-podium-2 {
