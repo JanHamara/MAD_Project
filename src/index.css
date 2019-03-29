@@ -72,6 +72,7 @@ strong {
   width: 90%;
   margin: auto;
   padding-bottom: 5%;
+  padding-top: 7% !important;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -554,6 +555,7 @@ hr {
   width: 90%;
   margin: auto;
   padding-bottom: 5%;
+  padding-top: 7% !important;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -626,6 +628,7 @@ hr {
   width: 90%;
   margin: auto;
   padding-bottom: 5%;
+  padding-top: 7% !important;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -730,6 +733,7 @@ hr {
   width: 90%;
   margin: auto;
   padding-bottom: 5%;
+  padding-top: 7% !important;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -758,7 +762,7 @@ hr {
 }
 #mad-content #mad-income .container-fluid h3.mad-section-header {
   width: 100%;
-  padding: 0 16% 5%;
+  padding: 7% 16% 5%;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   #mad-content #mad-income .container-fluid h3.mad-section-header {
@@ -863,6 +867,7 @@ hr {
   width: 90%;
   margin: auto;
   padding-bottom: 5%;
+  padding-top: 7% !important;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -891,7 +896,7 @@ hr {
 }
 #mad-content #mad-expenses .container-fluid h3.mad-section-header {
   width: 100%;
-  padding: 0 16% 5%;
+  padding: 7% 16% 5%;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   #mad-content #mad-expenses .container-fluid h3.mad-section-header {
@@ -1035,6 +1040,7 @@ hr {
   width: 90%;
   margin: auto;
   padding-bottom: 5%;
+  padding-top: 7% !important;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -1063,7 +1069,7 @@ hr {
 }
 #mad-content #mad-results .container-fluid h3.mad-section-header {
   width: 100%;
-  padding: 0 16% 5%;
+  padding: 7% 16% 5%;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   #mad-content #mad-results .container-fluid h3.mad-section-header {
@@ -1362,6 +1368,7 @@ hr {
   width: 90%;
   margin: auto;
   padding-bottom: 5%;
+  padding-top: 7% !important;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -1390,7 +1397,7 @@ hr {
 }
 #mad-content #mad-other-countries .container-fluid h3.mad-section-header {
   width: 100%;
-  padding: 0 16% 5%;
+  padding: 7% 16% 5%;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   #mad-content #mad-other-countries .container-fluid h3.mad-section-header {
@@ -1624,6 +1631,7 @@ hr {
   width: 90%;
   margin: auto;
   padding-bottom: 5%;
+  padding-top: 7% !important;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -1652,7 +1660,7 @@ hr {
 }
 #mad-content #mad-interesting-facts .container-fluid h3.mad-section-header {
   width: 100%;
-  padding: 0 16% 5%;
+  padding: 7% 16% 5%;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   #mad-content #mad-interesting-facts .container-fluid h3.mad-section-header {
@@ -1715,6 +1723,7 @@ hr {
   width: 90%;
   margin: auto;
   padding-bottom: 5%;
+  padding-top: 7% !important;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -1743,7 +1752,7 @@ hr {
 }
 #mad-content #mad-feedback .container-fluid h3.mad-section-header {
   width: 100%;
-  padding: 0 16% 5%;
+  padding: 7% 16% 5%;
 }
 @media only screen and (max-width: 479px) and (orientation: portrait) {
   #mad-content #mad-feedback .container-fluid h3.mad-section-header {
@@ -1889,6 +1898,7 @@ hr {
   width: 90%;
   margin: auto;
   padding-bottom: 5%;
+  padding-top: 7% !important;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   letter-spacing: 0.1em;
