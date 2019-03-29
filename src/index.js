@@ -1,7 +1,5 @@
 // index.js
 
-import _ from 'lodash';
-
 // Main Stylesheet
 import './index.less';
 
@@ -17,6 +15,9 @@ import Chart from 'chart.js';
 // // #mad-chart-1 & #mad-chart-2
 //
 // ----------------------------------------------------
+
+
+// I use Chart.js framework to create beautiful charts or doughnuts from my data
 
 var ctx = document.getElementById('mad-chart-1').getContext('2d');
 var myChart = new Chart(ctx, {

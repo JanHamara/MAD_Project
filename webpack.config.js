@@ -1,3 +1,9 @@
+// This is a webpack configuration file
+//
+// I am using Webpack to bundle all of my Javascript and LESS / CSS files into one bundle JS file
+//
+// Files are processed by Webpack and outputted into /dist folder and bundled in main.js file
+
 const path = require('path');
 
 module.exports = {

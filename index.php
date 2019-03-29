@@ -22,18 +22,19 @@
     <!-- Fix for automatic detection of numbers on Apple devices -->
     <meta name="format-detection" content="telephone=no"/>
 
+    <!-- Here I link favicon, the tiny picture next to site title on browser tab   -->
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 
-    <!--     Fonts      -->
+    <!-- I import my fonts from fonts.googleapis.com because they load fast and there is huge database of fonts to choose from      -->
     <link href="https://fonts.googleapis.com/css?family=Germania+One|Montserrat|Raleway" rel="stylesheet">
 
-    <!--    CDN Bootstrap   -->
+    <!--    CDN Bootstrap  (CSS Framework used for simplified layouts and styling)   -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--    Font Awesome    -->
+    <!--    Font Awesome   (Used for icons)    -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <!--    AOS    -->
+    <!--     AOS Framework (Used for animating elements on page as they appear in viewport)    -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
@@ -51,7 +52,7 @@
 <!--                                    -->
 
 <body>
-<!--Test availability of Bootstrap CSS CDN-->
+<!-- I use this element to test availability of Bootstrap CSS CDN, if unavailable I load it locally -->
 <div id="bootstrapCssTest" class="hidden"></div>
 
 <!--    We're going to use this pre-loader to show a loading screen while all images and data pre-load    -->
@@ -94,6 +95,7 @@
         <div class="container-fluid">
 
             <div id="mad-introduction-content">
+
                 <p data-aos="fade-up">
                     One Sunday evening, when I was browsing <strong>Medium</strong> (fantastic website
                     that curates some of the best articles on the internet on various topics), I came across
@@ -266,8 +268,8 @@
                     Now that I have specified all necessary conditions for managing the data used in this project,
                     it is time to use this information and present some of the most interesting findings.
                 </p>
-            </div>
 
+            </div>
         </div>
     </section>
 
@@ -283,12 +285,14 @@
             </h3>
 
             <div class="mad-income-content">
+
                 <p data-aos="fade-up">
                     First step in calculating time required for becoming a millionaire in a particular country
                     is looking at their average income and, indeed, these statistics are already a great indicator regarding
                     which countries will be most likely to be the best for becoming a millionaire
                     and which, on the other side, would be absolutely unsuitable for such goal.
                 </p>
+
                 <p data-aos="fade-up">
                     Looking at <a class="link-main" href="#top10-highest-wage">Top 10 countries with the highest average wage</a>, we can immediately notice
                     that <strong>8 of them are in Europe</strong>, demonstrating its strong overall economic dominance in the world.
@@ -302,6 +306,7 @@
                     The rest of European countries in Top 10 are (in respective order) <strong>Austria</strong> 🇦🇹, Scandinavian duo
                     of <strong>Denmark</strong> 🇩🇰 and <strong>Norway</strong> 🇳🇴 and finally <strong>Iceland</strong> 🇮🇸.
                 </p>
+
                 <p data-aos="fade-up">
                     The only 2 non-European countries to make it into top 10 are <strong>Singapore</strong> 🇸🇬 on the 10th place - the Asian megalopolis and
                     an island city-state that is ranked very highly in many international rankings,
@@ -311,6 +316,7 @@
                     a country with <strong>the world's largest economy by nominal GDP</strong>
                     <a class="mad-ref-link" href="#mad-ref-4"><sup>[4]</sup></a>, whose economic strength is hardly necessary to justify.
                 </p>
+
             </div>
 
             <!--    Lists with Top 10 countries with highest / lowest wage    -->
@@ -321,8 +327,9 @@
 
                         <ol class="mad-stats-list" data-aos="zoom-in-right">
 
-                            <!--    We use PHP and MySQLi in order to connect to the database    -->
+                            <!--    Here we use PHP and MySQLi in order to connect to the database and perform operations on retrieved data    -->
                             <?php
+                            // We define our login credentials in variables
                             $servername = "localhost";
                             $username = "root";
                             $password = "#Excelsior1808";
@@ -335,6 +342,7 @@
                             // We order the retrieved table by Average Income with DESCENDING option as we are looking for Top 10 Highest Salaries
                             // Finally we limit the number of results to 10, as we will be only showing 10 results in the table
                             $sql = "SELECT Country, CountryCode, AverageIncome FROM Countries ORDER BY AverageIncome DESC limit 10";
+
                             // We run the query on the database table
                             $result = $conn->query($sql);
 
@@ -347,6 +355,8 @@
 
                                 // We use variable count to index list items with a number
                                 $count = 1;
+
+                                // And then we start looping through all entries in the retrieved data
                                 while($row = $result->fetch_assoc()) {
                                     echo "<li>";
                                     // Here we test for $count variable because after it reaches number 10,
@@ -358,9 +368,11 @@
                                     }
                                     // After the iteration, we increment the $count variable to get another number
                                     $count++;
+
                                     // Here we use the CountryCode to select the correct flag from our directory
                                     // (This is the reason why we named flags of countries by their respective country code)
                                     echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
+
                                     // We output the Country name
                                     if ($row["Country"] == "United States of America") {
                                         echo "<span class=\"mad-income-stats-country\">United States</span>";
@@ -375,6 +387,7 @@
                                 echo "0 results";
                             }
 
+                            // We close the connection to the database
                             $conn->close();
                             ?>
                         </ol>
@@ -384,54 +397,41 @@
 
                         <ol class="mad-stats-list" data-aos="zoom-in-left">
                             <?php
+
+                            // !!!
+                            //
+                            // For most scripts on this page, the process of retrieving data from database will be SAME
+                            // That's why I won't repeat same comments and just comment on new processes further
+                            //
+                            // !!!
+
                             $servername = "localhost";
                             $username = "root";
                             $password = "#Excelsior1808";
                             $dbname = "Countries";
-
-                            // We create connection with the database, using the login credentials
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
-                            // We select three columns from the database that are required for our table [Country, CountryCode, AverageIncome]
-                            // We order the retrieved table by Average Income with DESCENDING option as we are looking for Top 10 Highest Salaries
-                            // Finally we limit the number of results to 10, as we will be only showing 10 results in the table
+                            // This time we order entries in ASCENDING order
                             $sql = "SELECT Country, CountryCode, AverageIncome FROM Countries ORDER BY AverageIncome ASC limit 10";
-                            // We run the query on the database table
                             $result = $conn->query($sql);
-
-                            // We test if the query retrieved any rows of information
                             if ($result->num_rows > 0) {
-
-                                //
-                                // If there is data, we follow by outputting it into page - formatted into a list
-                                //
-
-                                // We use variable count to index list items with a number
                                 $count = 1;
                                 while($row = $result->fetch_assoc()) {
                                     echo "<li>";
-                                    // Here we test for $count variable because after it reaches number 10,
-                                    // we don't want to output "010" but "10" for the last item
                                     if ($count < 10) {
                                         echo "<span class=\"mad-income-stats-no\">" . "0" . $count . "</span>";
                                     } else {
                                         echo "<span class=\"mad-income-stats-no-last\">" . $count . "</span>";
                                     }
-                                    // After the iteration, we increment the $count variable to get another number
                                     $count++;
-                                    // Here we use the CountryCode to select the correct flag from our directory
-                                    // (This is the reason why we named flags of countries by their respective country code)
                                     echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
-                                    // We output the Country name
                                     echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
-                                    // And finally we output the AverageIncome value
                                     echo "<span class=\"mad-income-stats-value\">" . $row["AverageIncome"] . "$" . "</span>";
                                     echo "</li>";
                                 }
                             } else {
                                 echo "0 results";
                             }
-
                             $conn->close();
                             ?>
                         </ol>
@@ -511,50 +511,31 @@
                         <h4 id="top10-highest-expenses" data-aos="fade-down">Top 10 countries with highest cost of living <span>(US$ / month)</span></h4>
 
                         <ol class="mad-stats-list" data-aos="zoom-in-right">
-
-                            <!--    We use PHP and MySQLi in order to connect to the database    -->
                             <?php
                             $servername = "localhost";
                             $username = "root";
                             $password = "#Excelsior1808";
                             $dbname = "Countries";
-
-                            // We create connection with the database, using the login credentials
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
-                            // We select three columns from the database that are required for our table [Country, CountryCode, AverageIncome]
-                            // We order the retrieved table by Average Income with DESCENDING option as we are looking for Top 10 Highest Salaries
-                            // Finally we limit the number of results to 10, as we will be only showing 10 results in the table
+                            //
+                            // Same process as previous script, only change is that we select AverageExpense instead of AverageIncome
+                            //
+
                             $sql = "SELECT Country, CountryCode, AverageExpense FROM Countries ORDER BY AverageExpense DESC limit 10";
-                            // We run the query on the database table
                             $result = $conn->query($sql);
-
-                            // We test if the query retrieved any rows of information
                             if ($result->num_rows > 0) {
-
-                                //
-                                // If there is data, we follow by outputting it into page - formatted into a list
-                                //
-
-                                // We use variable count to index list items with a number
                                 $count = 1;
                                 while($row = $result->fetch_assoc()) {
                                     echo "<li>";
-                                    // Here we test for $count variable because after it reaches number 10,
-                                    // we don't want to output "010" but "10" for the last item
                                     if ($count < 10) {
                                         echo "<span class=\"mad-income-stats-no\">" . "0" . $count . "</span>";
                                     } else {
                                         echo "<span class=\"mad-income-stats-no-last\">" . $count . "</span>";
                                     }
-                                    // After the iteration, we increment the $count variable to get another number
                                     $count++;
-                                    // Here we use the CountryCode to select the correct flag from our directory
-                                    // (This is the reason why we named flags of countries by their respective country code)
                                     echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
-                                    // We output the Country name
                                     echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
-                                    // And finally we output the AverageIncome value
                                     echo "<span class=\"mad-income-stats-value\">" . $row["AverageExpense"] . "$" . "</span>";
                                     echo "</li>";
                                 }
@@ -574,54 +555,36 @@
                             $username = "root";
                             $password = "#Excelsior1808";
                             $dbname = "Countries";
-
-                            // We create connection with the database, using the login credentials
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
-                            // We select three columns from the database that are required for our table [Country, CountryCode, AverageIncome]
-                            // We order the retrieved table by Average Income with DESCENDING option as we are looking for Top 10 Highest Salaries
-                            // Finally we limit the number of results to 10, as we will be only showing 10 results in the table
+                            //
+                            // Same process as previous script, only change is that we select AverageExpense instead of AverageIncome
+                            //
+
                             $sql = "SELECT Country, CountryCode, AverageExpense FROM Countries ORDER BY AverageExpense ASC limit 10";
-                            // We run the query on the database table
                             $result = $conn->query($sql);
-
-                            // We test if the query retrieved any rows of information
                             if ($result->num_rows > 0) {
-
-                                //
-                                // If there is data, we follow by outputting it into page - formatted into a list
-                                //
-
-                                // We use variable count to index list items with a number
                                 $count = 1;
                                 while($row = $result->fetch_assoc()) {
                                     echo "<li>";
-                                    // Here we test for $count variable because after it reaches number 10,
-                                    // we don't want to output "010" but "10" for the last item
                                     if ($count < 10) {
                                         echo "<span class=\"mad-income-stats-no\">" . "0" . $count . "</span>";
                                     } else {
                                         echo "<span class=\"mad-income-stats-no-last\">" . $count . "</span>";
                                     }
-                                    // After the iteration, we increment the $count variable to get another number
                                     $count++;
-                                    // Here we use the CountryCode to select the correct flag from our directory
-                                    // (This is the reason why we named flags of countries by their respective country code)
                                     if ($row["CountryCode"] == "np") {
                                         echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-nepal img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
                                     } else {
                                         echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
                                     }
-                                    // We output the Country name
                                     echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
-                                    // And finally we output the AverageIncome value
                                     echo "<span class=\"mad-income-stats-value\">" . $row["AverageExpense"] . "$" . "</span>";
                                     echo "</li>";
                                 }
                             } else {
                                 echo "0 results";
                             }
-
                             $conn->close();
                             ?>
                         </ol>
@@ -688,18 +651,17 @@
                 $password = "#Excelsior1808";
                 $dbname = "Countries";
 
-                // We create connection with the database, using the login credentials
                 $conn = new mysqli($servername, $username, $password, $dbname);
 
                 // We select four columns from the database that are required for our podium [Country, CountryCode, AverageIncome, AverageExpense]
                 // We order the retrieved table by Average Income with DESCENDING option as we are looking for the BEST countries for earning a million
                 // Finally we limit the number of results to 3, as we will be only showing top 3 countries on the podium
                 $sql = "SELECT Country, CountryCode, AverageExpense, AverageIncome FROM Countries ORDER BY (AverageIncome - AverageExpense) DESC limit 3";
-                // We run the query on the database table
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
 
+                    //
                     // Here we will iterate through 3 top countries, for which we will need to use different classes in HTML,
                     // thus we will have to use variable $place to indicate to script, which iteration is currently being processed,
                     // after finishing iteration we increment the variable by 1, to move on another place
@@ -714,10 +676,13 @@
                         //
                         // First we need to compute the required time for becoming a millionaire
                         //
+
                         if ($row["AverageExpense"] > $row["AverageIncome"]) {
+
                             // If country has higher AverageExpense than AverageIncome - automatically eliminate it from consideration for Top 3
                             $eliminate1 = true;
                         } else {
+
                             // Computation of time required for earning 1000000 $USD
                             $savedPerMonth = $row["AverageIncome"] - $row["AverageExpense"];
                             $months = 1000000 / $savedPerMonth;
@@ -921,39 +886,29 @@
                         </p>
 
                         <ol id="mad-top18-lifetime" class="mad-stats-list" data-aos="fade-up">
-
-                            <!--    We use PHP and MySQLi in order to connect to the database    -->
                             <?php
                             $servername = "localhost";
                             $username = "root";
                             $password = "#Excelsior1808";
                             $dbname = "Countries";
 
-                            // We create connection with the database, using the login credentials
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
-                            // We select three columns from the database that are required for our table [Country, CountryCode, AverageIncome]
-                            // We order the retrieved table by Average Income with DESCENDING option as we are looking for Top 10 Highest Salaries
-                            // Finally we limit the number of results to 10, as we will be only showing 10 results in the table
+                            //
+                            // Same process as previous script for the podium, only now we output Top 18 countries
+                            // along with time computed to be required for becoming a millionaire
+                            //
+
                              $sql = "SELECT Country, CountryCode, AverageExpense, AverageIncome FROM Countries ORDER BY (AverageIncome - AverageExpense) DESC limit 18";
                             // We run the query on the database table
                             $result = $conn->query($sql);
 
                             if ($result->num_rows > 0) {
-
                                 $count = 1;
-
-                                // Based on this condition, PHP will decide which HTML tags to use (by using IF statement)
                                 while($row = $result->fetch_assoc()) {
-
-                                    //
-                                    // First we need to compute the required time for becoming a millionaire
-                                    //
                                     if ($row["AverageExpense"] > $row["AverageIncome"]) {
-                                        // If country has higher AverageExpense than AverageIncome - automatically eliminate it from consideration for Top 3
                                         $eliminate1 = true;
                                     } else {
-                                        // Computation of time required for earning 1000000 $USD
                                         $savedPerMonth = $row["AverageIncome"] - $row["AverageExpense"];
                                         $months = 1000000 / $savedPerMonth;
                                         $years = $months / 12;
@@ -966,6 +921,7 @@
                                         $daysTotal = floor($days); // number of days
                                     }
 
+                                    // Adding id's for linking to Top 7 and Last 5 countries
                                     if ($count == 14) {
                                         echo "<li id='mad-top18-last5'>";
                                     } elseif ($count == 1) {
@@ -981,10 +937,9 @@
                                     } else {
                                         echo "<span class=\"mad-income-stats-no-last\">" . $count . "</span>";
                                     }
+
                                     echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"mad-income-stats-img img-responsive\" alt=\"" . $row["Country"] . "-flag\"/>";
-                                    // We output the Country name
                                     echo "<span class=\"mad-income-stats-country\">" .$row["Country"] . "</span>";
-                                    // And finally we output the AverageIncome value
                                     echo "<span class=\"mad-income-stats-value\">" . $yearsTotal . " years " . $monthsTotal . " months " . $daysTotal . " days " . "</span>";
                                     echo "</li>";
 
@@ -1024,6 +979,12 @@
                                 $dbname = "Countries";
 
                                 $conn = new mysqli($servername, $username, $password, $dbname);
+
+                                //
+                                // In this instance we select EVERYTHING from Countries table, but only for the queried country
+                                // We get the country from the input field, that user fills with their query
+                                //
+
                                 $sql = "SELECT * FROM Countries WHERE Country = '" . $country . "'";
                                 $result = $conn->query($sql);
                                 $error = 0;
@@ -1031,10 +992,7 @@
                                 if ($result->num_rows > 0) {
 
                                     while($row = $result->fetch_assoc()) {
-
                                         $eliminate = false;
-
-                                        // Counting again required time
                                         if ($row["AverageExpense"] > $row["AverageIncome"]) {
                                             $eliminate = true;
                                         } else {
@@ -1052,7 +1010,6 @@
 
                                         // Defining continent by continent code
                                         $count = "xxxxx";
-
                                         if ($row["Continent"] == "eu") {$count = "Europe";}
                                         if ($row["Continent"] == "as") {$count = "Asia";}
                                         if ($row["Continent"] == "me") {$count = "Middle East";}
@@ -1062,6 +1019,7 @@
                                         if ($row["Continent"] == "sa") {$count = "South America";}
                                         if ($row["Continent"] == "au") {$count = "Australia & The Oceania";}
 
+                                        // Here we use all retrieved values from database, as well as calculated values in order to fill up our HTML output template
                                         echo "<div class=\"col-lg-12\">";
                                         echo "<img src=\"./assets/flags/" . $row["CountryCode"] . ".png\" class=\"img-responsive\" alt=\"country-flag\"/><h1>" . $row["Country"] . "</h1>";
                                         echo "<div class='clearfix margin-5'></div>";
@@ -1085,7 +1043,6 @@
                                     }
                                     $error++;
                                 }
-
                                 $conn->close();
                                 ?>
                             </div>
@@ -1158,6 +1115,11 @@
                 and you will receive an answer as soon as possible.
             </div>
 
+            <!-- --------------------- -->
+            <!--     Feedback Form     -->
+            <!-- --------------------- -->
+
+            <!--     Here we use HTML form to allow user submit feedback via email       -->
             <form id="mad-feedback-form" data-aos="zoom-out" data-aos-duration="2000">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -1175,10 +1137,11 @@
                 </div>
             </form>
 
+            <!--     On clicking submit button, Javascript executes formSubmit() function       -->
+            <!--     This function uses AJAX to send form data to php file send_form.php        -->
+            <!--     The php file then validates data and sends a formatted email to me         -->
             <div id="mad-feedback-form-submit" onclick="formSubmit()">Send message</div>
             <span class="form-submitted">Thank you for sending a message! You will get a reply as soon as possible!</span>
-
-
         </div>
     </section>
 
@@ -1262,6 +1225,8 @@
 
     <footer id="mad-footer">
         ©Copyright by Jan Hamara,
+        <!--    I use PHP to setup timezone for the site    -->
+        <!--    And then I retrieve current year for the Copyright statement in footer    -->
         <?php
             date_default_timezone_set("GMT");
             echo date("Y");
@@ -1277,6 +1242,7 @@
 
 <!--     jQuery      -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- First I link jQuery from CDN (because it's faster), then I test for its availability and if it's not available I load my local copy of jQuery-->
 <script>window.jQuery || document.write('<script src="./node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
 
 <!--     Popper.js   -->
@@ -1288,9 +1254,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./src/vendor/bootstrap.min.js"><\/script>')}</script>
 
-<!--       AOS       -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 <!--    Test Bootstrap CSS CDN    -->
 <script type="text/javascript">
     if ($('#bootstrapCssTest').is(':visible') === true) {
@@ -1299,14 +1262,20 @@
     }
 </script>
 
-<!--    All stylesheets and scripts are loaded via this Webpack bundle    -->
-<script type="text/javascript" src="./dist/main.js?v=<?=time();?>"></script>
-
+<!--       AOS JS       -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--        In case 2.3.1 version was not available I load this one -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!--    All stylesheets and scripts are loaded via this Webpack bundle    -->
+<!--    The reason I use PHP time function for setting version of JS file is that -->
+<!--    it makes browser reload all changes in CSS and JS, instead of using cached files -->
+<script type="text/javascript" src="./dist/main.js?v=<?=time();?>"></script>
 
 <script>
     // This script initialises the AOS animation library that I use to animate elements on page
     AOS.init({
+        // And I set default options for animations, such as duration or delay
         delay: 200,
         duration: 1000,
         easing: 'ease',
@@ -1319,6 +1288,7 @@
     //
     // 1. Not to have any empty values
     // 2. Not to have incorrect email format
+    //
 
     function isNotEmpty(values, valueNames) {
         var isNotEmpty = true;
@@ -1348,6 +1318,7 @@
 
     function validateMail() {
         var email =  jQuery('#email');
+        // Regular Expression to test email adresses
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if(email.val().match(mailformat)) {
             return true;
@@ -1393,6 +1364,7 @@
 
 <script>
     $( document ).ready(function() {
+        // After the document has loaded, I hide the pre-loader and show the content of the website
         setTimeout(function () {
             $("#pre-loader").hide(500);
             $("#mad-content").show(500);
