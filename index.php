@@ -150,7 +150,7 @@
 
             <div id="mad-introduction-content">
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     One Sunday evening, when I was browsing <strong>Medium</strong> (fantastic website
                     that curates some of the best articles on the internet on various topics), I came across
                     an <a class="link-main" href="https://medium.com/personal-finance-series-by-richard-reis/how-to-become-a-millionaire-19b1421a50a1" target="_blank">
@@ -160,7 +160,7 @@
                     <strong>thinking long term</strong> and <strong>having more than one source of income</strong><a class="mad-ref-link" href="#mad-ref-1"><sup>[1]</sup></a>.
                 </p>
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     It really got me thinking about conditions that accompany each person on their way to the first million
                     and why only so few reach this goal. After a bit more of browsing around, I have found an <a class="link-main" href="https://www.inc.com/business-insider/36-million-millionaires-in-the-world-hold-46-percent-wealth-credit-suisse-global-wealth-report-2017.html" target="_blank">
                     online report</a> from Credit Suisse that was showing how there were <strong>2.3 million new millionaires in the world in 2016</strong>,
@@ -171,7 +171,7 @@
                 </p>
 
                 <!--        Chart 1 & Chart 2 showing the imbalance between number of millionaire and the wealth they own        -->
-                <div class="mad-chart-container" data-aos="zoom-in">
+                <div class="mad-chart-container" data-aos="zoom-in" data-aos-offset="150">
                     <div id="mad-chart1">
                         <div class="row">
                             <div class="col-lg-6">
@@ -184,19 +184,19 @@
                     </div>
                 </div>
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     Despite the widely discussed fact that <a class="link-main" href="http://www.bbc.com/future/story/20130326-why-money-cant-buy-you-happiness" target="_blank">
                     money cannot buy you happiness</a>, everybody would surely like to be a part of this one percent
                     and become a millionaire in their lifetime. And that got me thinking about a question...
                 </p>
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     Depending on the environment (country) that you're coming from, having an average lifestyle
                     and by simple decision of lowering your expenses as much as possible while keeping an average standard of living -
                     <strong>Could you achieve it in a lifetime?</strong>
                 </p>
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     I have decided to conduct research and gather enough data to be able to determine
                     <strong>which countries wages and living conditions would allow a person to earn
                         first million in fastest time and on the other side, which country would be the worst choice.</strong>
@@ -212,13 +212,13 @@
     <section id="mad-preparation">
         <div class="container-fluid">
 
-            <h3 class="mad-section-header" data-aos="fade-right">
+            <h3 class="mad-section-header" data-aos="fade-right" data-aos-offset="150">
                 <span class="mad-section-header-numbering">01</span> Preparation
             </h3>
 
             <div id="mad-preparation-content">
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     There is an uncountable number of factors that can influence a journey to a point,
                     when a person can be defined as a <strong>'milionaire'</strong>. Therefore, there are several standards
                     and definitions that are needed to be explained first - to show how this research presents
@@ -227,7 +227,7 @@
 
                 <ol id="mad-preparation-standards">
 
-                        <li data-aos="fade-up">
+                        <li data-aos="fade-up" data-aos-offset="150">
 
                             <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i> Who is a millionaire</h4>
 
@@ -256,7 +256,7 @@
                             </p>
                         </li>
 
-                        <li data-aos="fade-up">
+                        <li data-aos="fade-up" data-aos-offset="150">
 
                             <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i> What data to use</h4>
 
@@ -281,7 +281,7 @@
                             </p>
                         </li>
 
-                        <li data-aos="fade-up">
+                        <li data-aos="fade-up" data-aos-offset="150">
                             <h4><i class="fa fa-question-circle-o" aria-hidden="true"></i> Individual Profile / Calculating Cost of Living</h4>
 
                             <p>Calculating an average cost of living in a country can be a very complicated and lengthy process,
@@ -318,7 +318,7 @@
                         </li>
                 </ol>
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     Now that I have specified all necessary conditions for managing the data used in this project,
                     it is time to use this information and present some of the most interesting findings.
                 </p>
@@ -334,20 +334,20 @@
     <section id="mad-income">
         <div class="container-fluid">
 
-            <h3 class="mad-section-header"  data-aos="fade-right" data-aos-offset="800">
+            <h3 class="mad-section-header"  data-aos="fade-right" data-aos-offset="150">
                 <span class="mad-section-header-numbering">02</span> Average Income
             </h3>
 
             <div class="mad-income-content">
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     First step in calculating time required for becoming a millionaire in a particular country
                     is looking at their average income and, indeed, these statistics are already a great indicator regarding
                     which countries will be most likely to be the best for becoming a millionaire
                     and which, on the other side, would be absolutely unsuitable for such goal.
                 </p>
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     Looking at <a class="link-main" href="#top10-highest-wage">Top 10 countries with the highest average wage</a>, we can immediately notice
                     that <strong>8 of them are in Europe</strong>, demonstrating its strong overall economic dominance in the world.
                     The <strong>highest average wage worldwide</strong> is in <strong>Liechtenstein</strong>🇱🇮, a German-speaking microstate in central Europe,
@@ -361,7 +361,7 @@
                     of <strong>Denmark</strong> 🇩🇰 and <strong>Norway</strong> 🇳🇴 and finally <strong>Iceland</strong> 🇮🇸.
                 </p>
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     The only 2 non-European countries to make it into top 10 are <strong>Singapore</strong> 🇸🇬 on the 10th place - the Asian megalopolis and
                     an island city-state that is ranked very highly in many international rankings,
                     and is being associated with having <em>best investment potential</em>, being <em>world's smartest city</em> or
@@ -377,16 +377,16 @@
             <div id="mad-income-stats">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h4 id="top10-highest-wage" data-aos="fade-down">Top 10 countries with highest average wage <span>(US$ / month)</span></h4>
+                        <h4 id="top10-highest-wage" data-aos="fade-down" data-aos-offset="150">Top 10 countries with highest average wage <span>(US$ / month)</span></h4>
 
-                        <ol class="mad-stats-list" data-aos="zoom-in-right">
+                        <ol class="mad-stats-list" data-aos="zoom-in-right" data-aos-offset="150">
 
                             <!--    Here we use PHP and MySQLi in order to connect to the database and perform operations on retrieved data    -->
                             <?php
                             // We define our login credentials in variables
                             $servername = "localhost";
-                            $username = "root";
-                            $password = "#Excelsior1808";
+                            $username = "admin";
+                            $password = "excelsior1808";
                             $dbname = "Countries";
 
                             // We create connection with the database, using the login credentials
@@ -447,9 +447,9 @@
                         </ol>
                     </div>
                     <div class="col-lg-6">
-                        <h4 id="top10-lowest-wage" data-aos="fade-down">Top 10 countries with lowest average wage <span>(US$ / month)</span></h4>
+                        <h4 id="top10-lowest-wage" data-aos="fade-down" data-aos-offset="150">Top 10 countries with lowest average wage <span>(US$ / month)</span></h4>
 
-                        <ol class="mad-stats-list" data-aos="zoom-in-left">
+                        <ol class="mad-stats-list" data-aos="zoom-in-left" data-aos-offset="150">
                             <?php
 
                             // !!!
@@ -460,8 +460,8 @@
                             // !!!
 
                             $servername = "localhost";
-                            $username = "root";
-                            $password = "#Excelsior1808";
+                            $username = "admin";
+                            $password = "excelsior1808";
                             $dbname = "Countries";
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -494,14 +494,14 @@
             </div>
 
             <div class="mad-income-content">
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     On the other side, the list of <a class="link-main" href="#top10-highest-wage">Top 10 countries with the lowest average wage</a>
                     is dominated by <strong>8 African countries</strong>. Considering the overall economic situation and infrastructure of Africa,
                     this is not a very surprising fact. The <strong>lowest average wage in the world</strong> is earned in <strong>The Democratic Republic of Congo</strong> 🇨🇩 with only <strong>32.85$</strong> earned per month.
                     That is almost <strong>178 times less than the highest average wage</strong> of the world in Liechtenstein,
                     once again showing the staggering imbalance in the distribution of wealth in the world.
                 </p>
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     The DR Congo is closely followed by <strong>Guinea-Bissau</strong> 🇬🇼,
                     <strong>Madagascar</strong> 🇲🇬 and <strong>Ethiopia</strong> 🇪🇹
                     - all of them with average monthly income <strong>lower than 50 dollars</strong>.
@@ -524,12 +524,12 @@
     <section id="mad-expenses">
         <div class="container-fluid">
 
-            <h3 class="mad-section-header" data-aos="fade-right">
+            <h3 class="mad-section-header" data-aos="fade-right" data-aos-offset="150">
                 <span class="mad-section-header-numbering">03</span> Average Expenses
             </h3>
 
             <div class="mad-expenses-content">
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     As a second factor in our project, we consider the <strong>average cost of living</strong> in each country,
                     which is a crucial element in creating saving plans and in pursuing the goal of earning <strong>net worth of million dollars</strong>.
                     While some countries may offer an extremely high average salary, they may also be extremely expensive to live in,
@@ -537,13 +537,13 @@
                     while the cost of living may be extremely low, same applies for the average wage,
                     rendering the chance of having some money to spare nearly impossible.
                 </p>
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     However, there are exceptions when a country may offer high average income with a reasonably low living expenses,
                     as well as worst-scenario cases where high living cost meets with low income. While the latter won't be of much interest to us,
                     the former will be decisive in <strong>identifying the best country for becoming a millionaire</strong>.
                     After the first look on following tables, we can already start noticing some interesting statistics.
                 </p>
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     As much as 7 countries from the <strong>Top 10 countries with highest average wage</strong>
                     have also made it to the <a class="link-main" href="#top10-highest-expenses">Top 10 countries with highest cost of living</a>.
                     <strong>Switzerland</strong>🇨🇭 with the <strong>second highest average salary</strong> in the world
@@ -562,13 +562,13 @@
             <div id="mad-expenses-stats">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h4 id="top10-highest-expenses" data-aos="fade-down">Top 10 countries with highest cost of living <span>(US$ / month)</span></h4>
+                        <h4 id="top10-highest-expenses" data-aos="fade-down" data-aos-offset="150">Top 10 countries with highest cost of living <span>(US$ / month)</span></h4>
 
-                        <ol class="mad-stats-list" data-aos="zoom-in-right">
+                        <ol class="mad-stats-list" data-aos="zoom-in-right" data-aos-offset="150">
                             <?php
                             $servername = "localhost";
-                            $username = "root";
-                            $password = "#Excelsior1808";
+                            $username = "admin";
+                            $password = "excelsior1808";
                             $dbname = "Countries";
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -606,8 +606,8 @@
                         <ol class="mad-stats-list" data-aos="zoom-in-left">
                             <?php
                             $servername = "localhost";
-                            $username = "root";
-                            $password = "#Excelsior1808";
+                            $username = "admin";
+                            $password = "excelsior1808";
                             $dbname = "Countries";
                             $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -647,14 +647,14 @@
             </div>
 
             <div class="mad-expenses-content">
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     On the other table we find out that <strong>Nepal</strong> 🇳🇵 is the country with <strong>lowest cost of living
                         in the world</strong>, closely followed by second most populous country in the world - <strong>India</strong> 🇮🇳
                     and neighbouring <strong>Bhutan</strong> 🇧🇹.
                     On fourth place, there is <strong>Pakistan</strong> 🇵🇰 and fifth <strong>Egypt</strong> 🇪🇬, each of which
                     require <strong>less than 330 dollars per month</strong> to survive by normal means.
                 </p>
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     In fact, all of the <a class="link-main" href="#top10-highest-expenses">Top 10 countries with lowest cost of living</a>
                     require <strong>less than 400$ per month</strong> for average lifestyle. Surprisingly, only 2 African countries make it
                     to the top 10 with lowest cost of living, on 6th place <strong>Central African Republic</strong> 🇨🇫 and
@@ -672,18 +672,18 @@
 
     <section id="mad-results">
         <div class="container-fluid">
-            <h3 class="mad-section-header" data-aos="fade-right">
+            <h3 class="mad-section-header" data-aos="fade-right" data-aos-offset="150">
                 <span class="mad-section-header-numbering">04</span> Which country is the best for becoming millionaire on average income?
             </h3>
 
             <div class="mad-results-content">
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     Now that we have got insight into which countries top the positive and negative ranking,
                     whether we talk about <a class="link-main" href="#mad-income">average income</a>
                     or <a class="link-main" href="#mad-expenses">cost of living</a>, it is time to present answer
                     to the initial question.
                 </p>
-                <p data-aos="zoom-in">
+                <p data-aos="zoom-in" data-aos-offset="150">
                     <strong>Which country is the best for becoming a millionaire on average income and how long would it take?</strong>
                 </p>
             </div>
@@ -700,8 +700,8 @@
                 <!--        PHP script loading data from the database and outputting generated HTML for the podium        -->
                 <?php
                 $servername = "localhost";
-                $username = "root";
-                $password = "#Excelsior1808";
+                $username = "admin";
+                $password = "excelsior1808";
                 $dbname = "Countries";
 
                 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -809,7 +809,7 @@
             </div>
 
             <div class="mad-results-content">
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     After looking at our podium we can see that the best country to become millionaire on average income
                     and in fastest time is <strong>Liechtenstein</strong> 🇱🇮,
                     where it would take almost exactly <strong>22 years to become a millionaire</strong>. Despite a very high average cost of living
@@ -817,25 +817,25 @@
                     of this country a possibility to set aside (or invest) <strong>more than 3000$ dollars each month</strong> (3187.93$ exactly),
                     making it <strong>the best country to live and work in for aspiring millionaires</strong>.
                 </p>
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     Second country is <strong>Austria</strong> 🇦🇹 with <strong>29 years</strong> of work required to earn a million
                     and third <strong>Denmark</strong> 🇩🇰 with <strong>33 years, 3 months and 17 days</strong> long journey towards first million.
                     We can notice that podium is entirely taken up by <strong>European countries</strong> demonstrating its economic strength,
                     when we look at levels of profitability between average income and average cost of living.
                 </p>
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     In fact, if we look at <strong>top 30 countries</strong> by time required to become a millionaire,
                     we'll find out that <strong>21 of them are in Europe</strong>. That says a lot about the economic stability on this continent, when compared to others.
                     Let's see what we will learn, if we look at the strength of each continent, considering <strong>top 100 countries</strong> in this ranking.
                 </p>
 
                 <!--       Top 100 countries by continent CHART         -->
-                <div id="mad-top100-chart" data-aos="zoom-in" data-aos-delay="500">
+                <div id="mad-top100-chart" data-aos="zoom-in" data-aos-offset="150">
                     <!--         Getting percentual data about performance of continents in Top 100           -->
                     <?php
                     $servername = "localhost";
-                    $username = "root";
-                    $password = "#Excelsior1808";
+                    $username = "admin";
+                    $password = "excelsior1808";
                     $dbname = "Countries";
                     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -882,7 +882,7 @@
                     </div>
                 </div>
 
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     <strong>Europe</strong> clearly dominates the chart with 40 countries in Top 100, followed by <strong>Asia</strong>
                     with 22 countries, 8 of which are located in <strong>Middle-East</strong>.
                     Very surprisingly <strong>Africa</strong> has 12 countries in Top 100,
@@ -900,12 +900,12 @@
 
     <section id="mad-other-countries">
         <div class="container-fluid">
-            <h3 class="mad-section-header" data-aos="fade-right">
+            <h3 class="mad-section-header" data-aos="fade-right" data-aos-offset="150">
                 <span class="mad-section-header-numbering">05</span> What about the rest of the world?
             </h3>
 
             <div class="mad-other-countries-content">
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" data-aos-offset="150">
                     After answering the question that we set up to ourselves for this project, it is time to look at
                     some <strong>more interesting statistics</strong> that came up during research as well as throughout the execution
                     of our calculations.
@@ -915,9 +915,9 @@
 
                     <!--         Can you make it in a lifetime in every country?           -->
                     <li>
-                        <h4 data-aos="fade-right"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Can you make it in a lifetime in every country</h4>
+                        <h4 data-aos="fade-right" data-aos-offset="150"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Can you make it in a lifetime in every country</h4>
 
-                        <p data-aos="fade-up">
+                        <p data-aos="fade-up" data-aos-offset="150">
                             Short answer: <strong>No</strong>. Out of 194 world countries that we have evaluated,
                             <strong>only 75 had average income higher than average cost of living</strong> and that still did not mean
                             all of these countries would provide a person with possibility of earning a million within a lifetime. For example,
@@ -925,12 +925,12 @@
                             higher than <strong>average cost of living</strong> (by only 4 euros) - it would take a person with average income and expenses
                             astonishing <strong>22 045 years, 10 months</strong> and <strong>8 days</strong> to earn a million</strong>.
                         </p>
-                        <p data-aos="fade-up">
+                        <p data-aos="fade-up" data-aos-offset="150">
                             If we take the <strong>average life expectancy at birth of the global population</strong> to be at <strong>72.0 years</strong> (World Health Organisation, 2016).<a class="mad-ref-link" href="#mad-ref-7"><sup>[7]</sup></a>
                             and we consider that most countries set <strong>the age of adulthood at 18 years old</strong><a class="mad-ref-link" href="#mad-ref-8"><sup>[8]</sup></a> (point when individual becomes adult - free to travel to & work in any country by himself),
                             we end up with some very interesting results.
                         </p>
-                        <p data-aos="fade-up">
+                        <p data-aos="fade-up" data-aos-offset="150">
                             During a lifetime, you can manage to become a millionaire on average income only in one of <strong>18 countries of the world</strong> and while
                             in  <a class="link-main-green" href="#mad-top18-top7">7 of them</a> you can achieve this goal <strong>in under 40 years</strong>,
                             <a class="link-main" href="#mad-top18-last5">last 5 of them</a> would barely leave you any time left for enjoying your newly acquired figure of one million dollars.
@@ -938,11 +938,11 @@
                             <strong>times required for reaching the set goal of 1 000 000$.</strong>
                         </p>
 
-                        <ol id="mad-top18-lifetime" class="mad-stats-list" data-aos="fade-up">
+                        <ol id="mad-top18-lifetime" class="mad-stats-list" data-aos="fade-up" data-aos-offset="150">
                             <?php
                             $servername = "localhost";
-                            $username = "root";
-                            $password = "#Excelsior1808";
+                            $username = "admin";
+                            $password = "excelsior1808";
                             $dbname = "Countries";
 
                             $conn = new mysqli($servername, $username, $password, $dbname);
@@ -1009,26 +1009,26 @@
 
                     <!--         What about my country?           -->
                     <li>
-                        <h4 data-aos="fade-right"><i class="fa fa-question-circle-o" aria-hidden="true"></i>What about my country</h4>
+                        <h4 data-aos="fade-right" data-aos-offset="150"><i class="fa fa-question-circle-o" aria-hidden="true"></i>What about my country</h4>
 
-                        <p data-aos="fade-up">
+                        <p data-aos="fade-up" data-aos-offset="150">
                             <strong>Are you curious about how long it would take in your country</strong> and you didn't see it in results, yet?
                             Just type your country in the <a id="mad-search-form-link" class="link-main" href="#mad-search-form">
                                 search box below</a> and see all statistics available for your queried country.
                         </p>
 
-                        <form id="mad-search-form" action="<?php $country = $_POST['country']; ?>" method="POST">
+                        <form id="mad-search-form" action="<?php $country = $_POST['country']; ?>" method="POST" data-aos="zoom-in" data-aos-delay="0" data-aos-offset="150">
                             <input id="mad-search-form-input" type="text" name="country" placeholder="e.g. United States"/>
                             <br/>
                             <input id="mad-search-form-submit" type="submit" name="countrySubmit" value="Search" onclick="window.location.hash = '#mad-search-form';"/>
                         </form>
 
-                        <div id="mad-search-form-output" data-aos="zoom-in" data-aos-delay="0">
+                        <div id="mad-search-form-output" data-aos="zoom-in" data-aos-delay="0" data-aos-offset="150">
                             <div class="row">
                                 <?php
                                 $servername = "localhost";
-                                $username = "root";
-                                $password = "#Excelsior1808";
+                                $username = "admin";
+                                $password = "excelsior1808";
                                 $dbname = "Countries";
 
                                 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -1112,19 +1112,19 @@
 
     <section id="mad-interesting-facts">
         <div class="container-fluid">
-            <h3 class="mad-section-header" data-aos="fade-right">
+            <h3 class="mad-section-header" data-aos="fade-right" data-aos-offset="150">
                 <span class="mad-section-header-numbering">06</span> More interesting facts
             </h3>
 
-            <div class="mad-interesting-facts-content">
-                <p data-aos="fade-up">
+            <div class="mad-interesting-facts-content" data-aos="fade-up" data-aos-offset="150">
+                <p data-aos="fade-up" data-aos-offset="150">
                     Still not satisfied? Hungry for more interesting information? If yes, then you can enjoy few of these
                     <strong>fascinating facts</strong>, that have come across during the process of
                     research and data collection for this project.
                 </p>
 
-                <p data-aos="fade-up">
-                    <div class="mad-interesting-facts-numbering mad-ifn-r">01</div>
+                <p data-aos="fade-up" data-aos-offset="150">
+                    <div class="mad-interesting-facts-numbering mad-ifn-r" data-aos="fade-left">01</div>
                     <strong>Nauru</strong> 🇳🇷, an island country in Micronesia is <strong>the smallest and wealthiest
                     independent democracy in the world</strong>, surpassing a per capita income of any oil-rich Arab nation.
                     Behind their bizarre success is a bloody tribal history, records of occupation by a succession of foreign powers
@@ -1132,16 +1132,16 @@
                     <a class="mad-ref-link" href="#mad-ref-9"><sup>[9]</sup></a>
                 </p>
 
-                <p data-aos="fade-up">
-                    <div class="mad-interesting-facts-numbering">02</div>
+                <p data-aos="fade-up" data-aos-offset="150">
+                    <div class="mad-interesting-facts-numbering" data-aos="fade-right">02</div>
                     In <strong>Albania</strong> 🇦🇱, in addition to traditional monthly charges, you have to pay <strong>monthly fee for water</strong>
                     as the tap water in the country has been reported to have extremely high levels of chlorine and heavy metals.
                     While the monthly charge is only about 2000 LEK (~18 USD), inhabitants of Albania often make themselves heard,
                     that they would much rather have tap water that is safe to drink.<a class="mad-ref-link" href="#mad-ref-10"><sup>[10]</sup></a>
                 </p>
 
-                <p data-aos="fade-up">
-                    <div class="mad-interesting-facts-numbering  mad-ifn-r">03</div>
+                <p data-aos="fade-up" data-aos-offset="150">
+                    <div class="mad-interesting-facts-numbering  mad-ifn-r" data-aos="fade-left">03</div>
                     <strong>Kiribati</strong> 🇰🇮 is the only country in the world to fall into <strong>all four hemispheres</strong>,
                     straddling the equator and extending into the eastern and western hemispheres.
                     Kiribati was also the first country to see the dawn of the third millennium on 1st January 2000.<a class="mad-ref-link" href="#mad-ref-11"><sup>[11]</sup></a>
@@ -1156,11 +1156,11 @@
 
     <section id="mad-feedback">
         <div class="container-fluid">
-            <h3 class="mad-section-header" data-aos="fade-right">
+            <h3 class="mad-section-header" data-aos="fade-right" data-aos-offset="150">
                 <span class="mad-section-header-numbering">07</span> Feedback
             </h3>
 
-            <div class="mad-feedback-content" data-aos="fade-up">
+            <div class="mad-feedback-content" data-aos="fade-up" data-aos-offset="150">
                If you feel that any of the information is inaccurate or incorrect,
                 if you would like to add or update any important data,
                 or if you would just like to discuss this project with the author,
@@ -1173,7 +1173,7 @@
             <!-- --------------------- -->
 
             <!--     Here we use HTML form to allow user submit feedback via email       -->
-            <form id="mad-feedback-form" data-aos="zoom-out" data-aos-duration="2000">
+            <form id="mad-feedback-form" data-aos="zoom-out" data-aos-duration="2000"  data-aos-offset="150">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <input class="form-control" id="name" name="name" placeholder="Full Name" required/>
@@ -1205,67 +1205,67 @@
     <section id="mad-references">
         <div class="container-fluid">
 
-            <h3 class="mad-section-header" data-aos="fade-right">
+            <h3 class="mad-section-header" data-aos="fade-right" data-aos-offset="150">
                 <span class="mad-section-header-numbering">08</span> References
             </h3>
 
             <ol id="mad-references-list">
-                <li id="mad-ref-1" data-aos="fade-up">
+                <li id="mad-ref-1" data-aos="fade-up" data-aos-offset="150">
                     1. Reis Richard, How To Realistically Become A Millionaire [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://medium.com/personal-finance-series-by-richard-reis/how-to-become-a-millionaire-19b1421a50a1" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-2" data-aos="fade-up">
+                <li id="mad-ref-2" data-aos="fade-up" data-aos-offset="150">
                     2. Weller Chris, There Are 36 Million Millionaires in the World and They Own Nearly Half the Planet's Wealth [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.inc.com/business-insider/36-million-millionaires-in-the-world-hold-46-percent-wealth-credit-suisse-global-wealth-report-2017.html" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-3" data-aos="fade-up">
+                <li id="mad-ref-3" data-aos="fade-up" data-aos-offset="150">
                     3. Wikipedia - the free encyclopedia, Singapore [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://en.wikipedia.org/wiki/Singapore" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-4" data-aos="fade-up">
+                <li id="mad-ref-4" data-aos="fade-up" data-aos-offset="150">
                     4. Wikipedia - the free encyclopedia, United States [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://en.wikipedia.org/wiki/United_States" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-5" data-aos="fade-up">
+                <li id="mad-ref-5" data-aos="fade-up" data-aos-offset="150">
                     5. CNBC News Online - How Venezuela Descended Into Turmoil [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.youtube.com/watch?v=ytrS0SntUSQ" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-6" data-aos="fade-up">
+                <li id="mad-ref-6" data-aos="fade-up" data-aos-offset="150">
                     6. BBC News - Venezuela crisis: How the political situation escalated [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.bbc.co.uk/news/world-latin-america-36319877" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-7" data-aos="fade-up">
+                <li id="mad-ref-7" data-aos="fade-up" data-aos-offset="150">
                     7. WHO (World Health Organisation) - Global Health Observatory (GHO) data: Life Expectancy [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.who.int/gho/mortality_burden_disease/life_tables/situation_trends/en/" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-8" data-aos="fade-up">
+                <li id="mad-ref-8" data-aos="fade-up" data-aos-offset="150">
                     8. Wikipedia - the free encyclopedia, Age of Majority [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://en.wikipedia.org/wiki/Age_of_majority" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-9" data-aos="fade-up">
+                <li id="mad-ref-9" data-aos="fade-up" data-aos-offset="150">
                     9. Turnbull Robert - World's Richest Little Isle [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.nytimes.com/1982/03/07/magazine/world-s-richest-little-isle.html" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-10" data-aos="fade-up">
+                <li id="mad-ref-10" data-aos="fade-up" data-aos-offset="150">
                     10. Hendrieka Anita - Cost of Living in Albania as a Tourist [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://anitahendrieka.com/cost-of-living-in-albania/" target="_blank">Source</a>
                 </li>
-                <li id="mad-ref-11" data-aos="fade-up">
+                <li id="mad-ref-11" data-aos="fade-up" data-aos-offset="150">
                     11. Peter - 24 Interesting facts about the world's least known countries [online]
                     <br/>
                     &nbsp;&nbsp;&nbsp;<a class="link-main" href="https://www.atlasandboots.com/interesting-facts-about-the-worlds-least-known-countries/" target="_blank">Source</a>
                 </li>
-                <li data-aos="fade-up">
+                <li data-aos="fade-up" data-aos-offset="150">
                     The data was collected by <a class="link-main" href="https://www.numbeo.com/cost-of-living/" target="_blank">Numbeo</a>, the world’s largest database of user-contributed data on costs and prices around the world.
                 </li>
             </ol>
@@ -1358,7 +1358,7 @@
 
     function validateForm() {
         var name = jQuery('#name').val();
-        var email =  jQuery('#email').val();
+        var email =  jQuery('email').val();
         var message = jQuery('#message').val();
         var formValues = [name, email, message];
         var formValuesNames = ["name", "email", "message"];
@@ -1370,7 +1370,7 @@
     }
 
     function validateMail() {
-        var email =  jQuery('#email');
+        var email =  jQuery('email');
         // Regular Expression to test email adresses
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if(email.val().match(mailformat)) {
