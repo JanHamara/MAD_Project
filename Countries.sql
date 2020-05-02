@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 02, 2020 at 12:38 PM
+-- Generation Time: May 02, 2020 at 12:47 PM
 -- Server version: 8.0.19
 -- PHP Version: 7.3.9
 
@@ -77,7 +77,7 @@ INSERT INTO `Countries` (`CountryNo`, `Country`, `CountryCode`, `Continent`, `Cu
 (31, 'Cambodia', 'KH', 'as', 'Cambodian Riel', 'KHR', '222.31', '800.00'),
 (32, 'Cameroon', 'CM', 'af', 'Central African Franc', 'XAF', '238.09', '857.51'),
 (33, 'Canada', 'CA', 'na', 'Canadian Dollar', 'CAD', '3166.63', '1420.80'),
-(34, 'Central African Republic', 'CF', 'af', 'Central African Franc', 'XAF', '146.34', '345.23'),
+(34, 'Central African Republic', 'CF', 'af', 'Central African Franc', 'XAF', '146.34', '342.23'),
 (35, 'Chad', 'TD', 'af', 'Central African Franc', 'XAF', '103.70', '533.18'),
 (36, 'Chile', 'CL', 'sa', 'Chilean Peso', 'CLP', '794.34', '964.91'),
 (37, 'China', 'CN', 'as', 'Chinese Yuan', 'CNY', '922.52', '880.75'),
@@ -205,7 +205,7 @@ INSERT INTO `Countries` (`CountryNo`, `Country`, `CountryCode`, `Continent`, `Cu
 (160, 'Somalia', 'SO', 'af', 'Somali Shilling', 'SOS', '350.00', '534.41'),
 (161, 'South Africa', 'ZA', 'af', 'South African Rand', 'ZAR', '1141.46', '865.55'),
 (162, 'South Korea', 'KR', 'as', 'South Korean Won', 'KRW', '2405.33', '823.12'),
-(163, 'South Sudan', 'SS', 'af', 'South Sudanese Pound', 'SSP', '68.28', '369.63'),
+(163, 'South Sudan', 'SS', 'af', 'South Sudanese Pound', 'SSP', '68.28', '361.63'),
 (164, 'Spain', 'ES', 'eu', 'Euro', 'EUR', '1423.21', '1105.92'),
 (165, 'Sri Lanka', 'LK', 'as', 'Sri Lankan Rupee', 'LKR', '246.47', '395.89'),
 (166, 'Sudan', 'SD', 'af', 'Sudanese Pound', 'SDG', '68.28', '369.64'),
@@ -230,9 +230,9 @@ INSERT INTO `Countries` (`CountryNo`, `Country`, `CountryCode`, `Continent`, `Cu
 (185, 'United Kingdom', 'GB', 'eu', 'Pound Sterling', 'GBP', '3094.26', '1480.43'),
 (186, 'United States of America', 'US', 'na', 'United States Dollar', 'USD', '3926.43', '2372.83'),
 (187, 'Uruguay', 'UY', 'sa', 'Uruguayan Peso', 'UYU', '838.64', '969.87'),
-(188, 'Uzbekistan', 'UZ', 'as', 'Uzbekistani Som', 'UZS', '207.36', '344.45'),
+(188, 'Uzbekistan', 'UZ', 'as', 'Uzbekistani Som', 'UZS', '207.36', '374.45'),
 (189, 'Vanuatu', 'VU', 'au', 'Vanuatu Vatu', 'VUV', '885.15', '1413.68'),
-(190, 'Venezuela', 'VE', 'sa', 'Venezuelan Bolivar', 'VEF', '68.21', '364.58'),
+(190, 'Venezuela', 'VE', 'sa', 'Venezuelan Bolivar', 'VEF', '68.21', '359.58'),
 (191, 'Vietnam', 'VN', 'as', 'Vietnamese Dong', 'VND', '230.94', '595.71'),
 (192, 'Yemen', 'YE', 'me', 'Yemeni Rial', 'YER', '195.32', '626.91'),
 (193, 'Zambia', 'ZM', 'af', 'Zambian Kwacha', 'ZMW', '195.40', '567.12'),

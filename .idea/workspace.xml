@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="946f7ddd-d93c-4b11-b98a-d423439abdee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="946f7ddd-d93c-4b11-b98a-d423439abdee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +65,7 @@
       <workItem from="1588341511073" duration="649000" />
       <workItem from="1588342885363" duration="956000" />
       <workItem from="1588419540774" duration="1127000" />
+      <workItem from="1588423192170" duration="412000" />
     </task>
     <servers />
   </component>
@@ -79,9 +77,9 @@
       <screen x="0" y="23" width="1280" height="699" />
     </state>
     <state x="213" y="158" key="EditFileWatcherDialog/0.23.1280.699@0.23.1280.699" timestamp="1588419594817" />
-    <state x="317" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1588419543602">
+    <state x="317" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1588423619545">
       <screen x="0" y="23" width="1280" height="699" />
     </state>
-    <state x="317" y="205" key="com.intellij.ide.util.TipDialog/0.23.1280.699@0.23.1280.699" timestamp="1588419543602" />
+    <state x="317" y="205" key="com.intellij.ide.util.TipDialog/0.23.1280.699@0.23.1280.699" timestamp="1588423619545" />
   </component>
 </project>
